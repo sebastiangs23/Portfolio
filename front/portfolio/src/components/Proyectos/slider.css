@@ -1,0 +1,93 @@
+/* Luego tengo q modificar algunas cosas para el responsive */
+.section__projects{
+    margin-top: 50px;
+}
+
+.slider {
+    position: relative;
+    height: 250px;
+    width: 600px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    font-size: 3rem;
+    color: black;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    font-size: 3rem;
+    color: black;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.contenedor-individual{
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 80px;
+}
+
+
+.subtitle__project {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 700px) {
+    .slider {
+        width: 400px;
+    }
+
+    .image{
+        width: 320px;
+        height: 160px;
+        margin-top: 50px;
+    }
+
+    .left-arrow{
+        font-size: 30px;
+    }
+    .right-arrow{
+        font-size: 30px;
+    }
+
+    .contenedor-individual{
+        display: inline;
+        
+    }
+
+    .contenedor-cadauno{
+        height: 220px;
+    }
+
+    .subtitle__project {
+        display: block;
+        font-size: var(--small-font-size);
+        text-align: center;
+        margin-top: 30px;
+      }
+
+}
