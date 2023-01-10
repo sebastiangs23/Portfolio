@@ -1,0 +1,44 @@
+.container-tecnologies{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imagen{
+    width: 100px;
+    height: auto;
+    display: inline-block;
+    margin: 10px;
+}
+
+.imagenes{
+    display: inline-block;
+    width: 800px;
+    text-align: center;
+    margin-left: 350px;
+    margin-top: 80px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .imagenes{
+        width: 300px;
+        margin-left: 45px;
+        margin-top: 30px;
+    }
+
+    .imagen{
+        width: 100px;
+        height: auto;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    
+}
