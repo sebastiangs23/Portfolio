@@ -19,7 +19,7 @@ function Header() {
             <h1 className='flex-1 font-poppins font-semibold ss:text-[50px]
                        text-[42px]  ss:leading-[100px] ml-5 ' >
                 <span className='text-gradient'>
-                    Sebastian <br className='sm:block hidden' />
+                    SG <br className='sm:block hidden' />
                 </span>
             </h1>
 

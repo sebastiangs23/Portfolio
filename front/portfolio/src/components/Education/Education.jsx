@@ -11,7 +11,7 @@ function Education() {
     return (
         <section className='qualification__education section' id='education' >
             <h2 className='section__title' >Background</h2>
-            <span className='section__subtitle' >My personal Journey</span>
+            <span className='section__subtitle' >Mi desarrollo</span>
 
             <div className="qualification__container container">
                 <div className="qualification__tabs">
@@ -80,7 +80,7 @@ function Education() {
 
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Administraciòn y Negocios Int.</h3>
+                                <h3 className="qualification__title">Administración y Negocios Int.</h3>
                                 <span className="qualification__subtitle">
                                     Universidad Peruana de Ciencias (UPC)</span>
                                 <br />

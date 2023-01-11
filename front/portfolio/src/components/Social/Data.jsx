@@ -56,7 +56,7 @@ function Data() {
             </h1>
 
             <h3 className="home__subtitle">Full Stack Developer</h3>
-            <p className="home__description">Me gusta estar constantemente aprendiendo nuevas tecnologias ya que estas te abren las puertas para poder brindar soluciones y crear cosas nuevas  </p>
+            <p className="home__description">Me gusta estar constantemente aprendiendo nuevas tecnologías, ya que gracias a estas uno es capaz de brindar soluciones y crear cosas nuevas.  </p>
 
             <a href="https://drive.google.com/file/d/1Oj4FGhxJsZEeQIK1U3XIC0nfQv4H_4w7/view" className='button button--flex' target="_black" >
                 Currículum 
