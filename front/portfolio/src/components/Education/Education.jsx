@@ -9,7 +9,7 @@ function Education() {
     }
 
     return (
-        <section className='qualification section' >
+        <section className='qualification__education section' id='education' >
             <h2 className='section__title' >Background</h2>
             <span className='section__subtitle' >My personal Journey</span>
 

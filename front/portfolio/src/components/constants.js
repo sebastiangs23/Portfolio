@@ -8,12 +8,12 @@ export const navLinks = [
       title: "Educación",
     },
     {
-      id: "projects",
+      id: "projectos",
       title: "Proyectos",
     },
     ,
     {
-      id: "contact",
+      id: "tecnologias",
       title: "Tecnologias"  
     }
   ];

@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.secciones{
+    padding: 5px;
+}
+
+.secciones:hover{
+    background-color: aqua;
+    border-radius: 5px;
+}

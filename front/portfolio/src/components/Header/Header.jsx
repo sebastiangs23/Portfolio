@@ -30,7 +30,7 @@ function Header() {
                         className={`font-poppins font-normal cursor-pointer text-[16px] 
             ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} `}
                     >
-                        <a href={`#${nav.id}`} >
+                        <a href={`#${nav.id}`} className="secciones"  >
                             {nav.title}
                         </a>
                     </li>

@@ -19,26 +19,77 @@ import imagenprueba12 from "../../assets/tecnologies-black/tailwind.jpg"
 
 function Tecnologies() {
     return (
-        <div className='container-tecnologies'>
+        <div className='container-tecnologies' id='tecnologias' >
 
             <h2 className='section__title'> Tecnologías </h2>
 
             <div className='imagenes' >
-                <img src={imagenprueba} alt="" className='imagen' />
-                <img src={imagenprueba10} alt="" className='imagen' />
-                <img src={imagenprueba1} alt="" className='imagen' />
-                <img src={imagenprueba2} alt="" className='imagen' />
-                <img src={imagenprueba3} alt="" className='imagen' />
-                <img src={imagenprueba4} alt="" className='imagen' />
-                <img src={imagenprueba5} alt="" className='imagen' />
-                <img src={imagenprueba6} alt="" className='imagen' />
-                <img src={imagenprueba7} alt="" className='imagen' />
-                
-                <img src={imagenprueba9} alt="" className='imagen' />
-                
-                <img src={imagenprueba11} alt="" className='imagen' />
-                <img src={imagenprueba12} alt="" className='imagen' />
+
+                <div className='solo'>
+                    <img src={imagenprueba} alt="" className='imagen' />
+                </div>
+                <div className='solo'>
+                    <img src={imagenprueba10} alt="" className='imagen' />
+                </div>
+
+                <div className='solo'>
+                    <img src={imagenprueba1} alt="" className='imagen' />
+                </div>
+
+                <div className='solo'>
+                    <img src={imagenprueba2} alt="" className='imagen' />
+                </div>
+
+                <div className="solo">
+                    <img src={imagenprueba3} alt="" className='imagen' />
+                </div>
+
+
+                <div className="solo">
+                    <img src={imagenprueba4} alt="" className='imagen' />
+                </div>
+
+                <div className="solo">
+                    <img src={imagenprueba5} alt="" className='imagen' />
+                </div>
+
+                <div className="solo">
+                    <img src={imagenprueba6} alt="" className='imagen' />
+                </div>
+
+                <div className="solo">
+                    <img src={imagenprueba7} alt="" className='imagen' />
+                </div>
+
+                <div className="solo">
+                    <img src={imagenprueba9} alt="" className='imagen' />
+                </div>
+
+                <div className="solo">
+                    <img src={imagenprueba11} alt="" className='imagen' />
+                </div>
+
+                <div className="solo">
+                    <img src={imagenprueba12} alt="" className='imagen' />
+                </div>
             </div>
+
+            <div className='imagenes-responsive' >
+                    <img src={imagenprueba} alt="" className='imagen' />
+                    <img src={imagenprueba10} alt="" className='imagen' />
+                    <img src={imagenprueba1} alt="" className='imagen' />
+                    <img src={imagenprueba2} alt="" className='imagen' />
+                    <img src={imagenprueba3} alt="" className='imagen' />
+                    <img src={imagenprueba4} alt="" className='imagen' />
+                    <img src={imagenprueba5} alt="" className='imagen' />
+                    <img src={imagenprueba6} alt="" className='imagen' />
+                    <img src={imagenprueba7} alt="" className='imagen' />
+                    <img src={imagenprueba9} alt="" className='imagen' />
+                    <img src={imagenprueba11} alt="" className='imagen' />
+                    <img src={imagenprueba12} alt="" className='imagen' />
+                
+            </div>
+
 
 
         </div>

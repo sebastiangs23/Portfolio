@@ -151,9 +151,10 @@ img {
   display: inline-block;
   background-color: var(--title-color);
   color: var(--container-color);
-  padding: 1.25rem 2rem;
+  padding: 10px;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  margin-right: 10px;
 }
 
 .button:hover {
@@ -169,6 +170,11 @@ img {
   align-items: center;
 }
 
+.uil{
+  font-size: 20px;
+  padding-left: 5px;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -178,7 +184,7 @@ img {
   }
 
   .button {
-    padding: 1rem 1.75rem;
+    padding: 10px;
   }
 
   .button__icon {

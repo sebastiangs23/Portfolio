@@ -5,7 +5,7 @@ import "./slider.css";
 
 function Proyectos() {
     return (
-        <section className='section__projects'>
+        <section className='section__projects' id='projectos'>
             <h2 className='section__title' >Proyectos</h2>
 
             <div className='contenedor-proyectos'>

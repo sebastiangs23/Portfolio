@@ -18,6 +18,7 @@
 
 .home__social-icon:hover{
     background-color: aqua;
+    border-radius: 5px;
 }
 
 .home__title{
