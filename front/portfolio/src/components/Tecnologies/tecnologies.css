@@ -44,6 +44,34 @@
     transition: 1s box-shadow;
 }
 
+#reactjs{
+    width: 200px;
+}
+
+#jsimagen{
+    width: 200px;
+}
+
+#nodeimg{
+    width: 120px;
+    padding-top: 15px;
+}
+
+#blender{
+    width: 120px;
+    padding-top: 35px;
+}
+
+#firebase{
+    width: 110px;
+    padding-top: 30px;
+}
+
+#express{
+    width: 110px;
+    padding-top: 17px;
+}
+
 .solo:hover {
     box-shadow: 0 5px 35px 0px rgba(0, 0, 0, .1);
 }
