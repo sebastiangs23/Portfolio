@@ -60,7 +60,7 @@ function Header() {
 
 
 
-      <span className={`transition-opacity duration-200 ease-in-out opacity-100`}>
+      <span className={`transition-opacity duration-200 ease-in-out opacity-100 mr-2`}>
         SP
       </span>
 
@@ -75,7 +75,7 @@ function Header() {
         </div>
       </div>
       
-      <span className={`transition-opacity duration-200 ease-in-out opacity-100`}>
+      <span className={`transition-opacity duration-200 ease-in-out opacity-100 ml-2`}>
         EN
       </span>
     </nav>

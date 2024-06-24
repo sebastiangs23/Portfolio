@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FaLaptopCode, FaBuilding, FaRegBuilding } from "react-icons/fa";
-import "./Education.css";
+import { FaLaptopCode, FaRegBuilding } from "react-icons/fa";
+import "./Desarrollo.css";
 
 function Education() {
   const [toggleState, setToggleState] = useState(1);
@@ -10,11 +10,13 @@ function Education() {
   };
 
   return (
-    <section className="qualification__education section" id="education">
+    <section className="qualification__education section" id="desarrollo">
+      {/* TITLE AND SUBTITLE */}
       <h2 className="section__title">Background </h2>
       <span className="section__subtitle">Mi desarrollo </span>
 
       <div className="qualification__container container">
+        {/* BUTTONS */}
         <div className="qualification__tabs">
           <div
             className={
@@ -22,7 +24,7 @@ function Education() {
                 ? "qualification__button qualification__active button--flex"
                 : "qualification__button button--flex"
             }
-            onClick={() => toggleTab(3)}
+            onClick={() => toggleTab(1)}
           >
             <FaLaptopCode />
             <p>Experiencia laboral </p>
@@ -34,7 +36,7 @@ function Education() {
                 ? "qualification__button qualification__active button--flex"
                 : "qualification__button button--flex"
             }
-            onClick={() => toggleTab(1)}
+            onClick={() => toggleTab(2)}
           >
             <i className="uil uil-graduation-cap qualification__icon"></i>
             <p>Educación </p>
@@ -46,7 +48,7 @@ function Education() {
                 ? "qualification__button qualification__active button--flex"
                 : "qualification__button button--flex"
             }
-            onClick={() => toggleTab(2)}
+            onClick={() => toggleTab(3)}
           >
             <i class="uil uil-smile qualification__icon"></i>
             <p>Aptitudes </p>
@@ -54,9 +56,139 @@ function Education() {
         </div>
 
         <div className="qualification__sections">
+
+          {/* JOB EXPERIENCE */}
           <div
             className={
               toggleState === 1
+                ? "qualification__content qualification__content-active"
+                : "qualification__content"
+            }
+          >
+            {/* IBC */}
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">Software Developer</h3>
+                <div className="company_name">
+                  <FaRegBuilding className="icon_office" />
+                  <p className="text-job">IBC Institute - Ceoline</p>
+                </div>
+                <div className="flex items-center">
+                  <i className="uil uil-calendar-alt"></i>
+                  <p className="text-range-date">2023 Noviembre - 2024 Junio</p>
+                </div>
+                <br />
+
+                <div>
+                  <p>
+                    -I Developed a service using Azure Speech AI which allows
+                    the client to enter into a conversation with the system. All
+                    the data is transformed into metrics and statistics, to be
+                    rendered in graphs on the administrator dashboard. <br />
+                    In addition to migrating the project from React 15 to React
+                    18 and applying hexagonal architecture in the front.
+                  </p>
+                </div>
+
+                <br />
+
+                <p>Click Here</p>
+              </div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+            </div>
+
+            {/* INTELIGENIO */}
+            <div className="qualification__data">
+              <div></div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 className="qualification__title">
+                  Backend Developer & Database Administrator
+                </h3>
+
+                <div className="company_name">
+                  <FaRegBuilding className="icon_office" />
+                  <p className="text-job">Inteligenio - Ceoline</p>
+                </div>
+
+                <div className="qualification__calender">
+                  <div className="flex items-center">
+                    <i className="uil uil-calendar-alt"></i>
+                    <p>2023 Marzo - 2024 Junio</p>
+                  </div>
+                </div>
+
+                <br />
+
+                <div>
+                  <p>
+                    I worked closely with the QA team, developers, and the
+                    product owner to redesign the database architecture,
+                    applying business rules, constraints, uniques, and
+                    relationships for an Education platform. <br />{" "}
+                    Additionally, I developed the administrative roles and
+                    permissions, considering performance and optimization.
+                  </p>
+                </div>
+
+                <br />
+
+                <p>Click Here</p>
+              </div>
+            </div>
+
+            {/* 3 */}
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">Full stack Developer</h3>
+
+                <div className="company_name">
+                  <FaRegBuilding className="icon_office" />
+                  <p className="text-job">OhrangeSoft</p>
+                </div>
+
+                <div className="qualification__calender">
+                  <div className="flex items-center  ">
+                    <i className="uil uil-calendar-alt"></i>
+                    <p>2023 Febrero - 2023 Marzo</p>
+                  </div>
+                </div>
+
+                <br />
+
+                <div>
+                  <p>
+                    I was in charge of designing the database, setting up the
+                    server from scratch , creating the landing page and the home
+                    for a clinic.
+                  </p>
+                </div>
+
+                <br />
+
+                <p>Click here</p>
+              </div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+            </div>
+          </div>
+          
+          {/* EDUCATION */}
+          <div
+            className={
+              toggleState === 2
                 ? "qualification__content qualification__content-active"
                 : "qualification__content"
             }
@@ -145,10 +277,11 @@ function Education() {
               </div>
             </div>
           </div>
-
+          
+          {/* SOFT SKILLS */}
           <div
             className={
-              toggleState === 2
+              toggleState === 3
                 ? "qualification__content qualification__content-active"
                 : "qualification__content"
             }
@@ -202,111 +335,6 @@ function Education() {
             </div>
           </div>
 
-          {/* JOB EXPERIENCE */}
-          <div
-            className={
-              toggleState === 3
-                ? "qualification__content qualification__content-active"
-                : "qualification__content"
-            }
-          >
-            {/* 1 */}
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Software Developer</h3>
-                <div className="company_name">
-                  <FaRegBuilding className="icon_office" />
-                  <p className="text-job">IBC Institute - Ceoline</p>
-                </div>
-                <div className="flex items-center">
-                  <i className="uil uil-calendar-alt"></i>
-                  <p className="text-range-date">2023 Noviembre - 2024 Junio</p>
-                </div>
-                <br />
-                -Developed a service using Azure Speech AI which allows the
-                client to enter into a conversation with the system.
-              </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-            {/* 2 */}
-            <div className="qualification__data">
-              <div></div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-
-              <div>
-                <h3 className="qualification__title">
-                  Backend Developer & Database Administrator
-                </h3>
-
-                <div className="company_name">
-                  <FaRegBuilding className="icon_office" />
-                  <p className="text-job">Inteligenio - Ceoline</p>
-                </div>
-
-                <div className="qualification__calender">
-                  <div className="flex items-center">
-                    <i className="uil uil-calendar-alt"></i>
-                    <p>2023 Marzo - 2024 Junio</p>
-                  </div>
-                </div>
-
-                <br />
-
-                <div>
-                  Empatía
-                  <br />
-                  Cooperativo
-                  <br />
-                  GitFlow
-                  <br />
-                </div>
-              </div>
-            </div>
-
-            {/* 3 */}
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Full stack Developer</h3>
-
-                <div className="company_name">
-                  <FaRegBuilding className="icon_office" />
-                  <p className="text-job">OhrangeSoft</p>
-                </div>
-
-                <div className="qualification__calender">
-                  <div className="flex items-center  ">
-                    <i className="uil uil-calendar-alt"></i>
-                    <p>2023 Febrero - 2023 Marzo XD</p>
-                  </div>
-                </div>
-
-                <div>
-                  <br />
-                  Organizado
-                  <br />
-                  Responsable
-                  <br />
-                  Resiliencia
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-            {/* 4 */}
-          </div>
         </div>
       </div>
     </section>

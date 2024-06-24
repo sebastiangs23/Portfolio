@@ -1,6 +1,6 @@
 import Header from "./components/Header/Header"
 import Home from "./components/Home/Home";
-import Education from "./components/Education/Education";
+import Desarrollo from "./components/Desarrollo/Desarrollo";
 import Proyectos from "./components/Proyectos/Proyectos";
 import Tecnologies from "./components/Tecnologies/Tecnologies";
 import "./App.css";
@@ -14,7 +14,7 @@ function App() {
 
       <main className="main" >
         <Home />
-        <Education />  
+        <Desarrollo />  
         <Proyectos/>
         <Tecnologies/>
       </main>
