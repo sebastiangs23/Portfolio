@@ -49,9 +49,6 @@ export const SliderManga = [
         image: manga1
     },
     {
-        image: manga2
-    },
-    {
         image: manga3
     },
     {

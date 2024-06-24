@@ -293,13 +293,15 @@ function Education() {
                   Personal
                 </h3>
                 <ul>
-                  <li>Organizado</li>
+                  <li>Motivación personal</li>
+                  <li>Autodidacta</li>
+                  <li>Ética profesional</li>
+                  <li>Empatia y solidaridad</li>
                   <li>Responsable</li>
                   <li>Resiliencia</li>
-                  <li>Autodidacta</li>
-                  <li>Creativo</li>
-                  <li>Comprensivo</li>
-                  <li>Anlisis de Problemas</li>
+                  <li>Análisis de Problemas</li>
+                  <li>Aprendizaje continuo</li>
+                  
                 </ul>
               </div>
 
@@ -323,13 +325,14 @@ function Education() {
                   Equipo
                 </h3>
                 <ul className="pl-5">
-                  <li>Empatía</li>
-                  <li>Cooperativo</li>
-                  <li>GitFlow</li>
-                  <li>Metodología Scrum</li>
-                  <li>Resolución de Problemas</li>
+                  <li>Team Work Scrum</li>
+                  <li>Metodologías ágiles</li>
+                  <li>Proponer ídeas</li>
+                  <li>Gestión de tiempo</li>
+                  <li>Comunicación efectiva</li>
                   <li>Escucha Activa</li>
-                  <li>Flexibilidad</li>
+                  <li>Capacitar</li>
+                  <li>Adaptabilidad y flexibilidad</li>
                 </ul>
               </div>
             </div>

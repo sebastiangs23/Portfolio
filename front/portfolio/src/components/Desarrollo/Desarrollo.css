@@ -22,7 +22,7 @@
 }
 
 .qualification__button:hover {
-  background-color: aqua;
+  background-color: rgba(74, 253, 253, 0.899);
   border-radius: 10px;
 }
 

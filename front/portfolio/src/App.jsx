@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
 
   return (
-    <>
+    <div>
       <Header />
 
       <main className="main" >
@@ -19,7 +19,7 @@ function App() {
         <Tecnologies/>
       </main>
  
-    </>
+    </div>
   )
 }
 

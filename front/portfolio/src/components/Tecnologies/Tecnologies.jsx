@@ -135,9 +135,7 @@ function Tecnologies() {
 
 
             </div>
-
-
-
+            
         </div>
     )
 }
