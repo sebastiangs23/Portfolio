@@ -55,7 +55,7 @@ function Data() {
                 </svg>
             </h1>
 
-            <h3 className="home__subtitle">Full Stack Developer</h3>
+            <h3 className="home__subtitle">Software Developer</h3>
             <p className="home__description">Me gusta estar constantemente aprendiendo nuevas tecnologías, ya que gracias a estas uno es capaz de brindar soluciones y crear cosas nuevas.  </p>
 
             <a href="https://drive.google.com/file/d/1zTZ1h8ziIaQ-Mm-_t9l4EGPOimGNnvDA/view" className='button button--flex' target="_black" >
