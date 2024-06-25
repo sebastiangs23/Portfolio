@@ -1,217 +1,248 @@
 .container-tecnologies {
-    margin-top: 150px;
-    margin-bottom: 150px;
-    display: block;
-    align-items: center;
-    justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .imagen {
-    width: 100px;
-    height: auto;
-    display: inline-block;
-    margin-top: 20px;
+  width: 100px;
+  height: auto;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .imagenes {
-    display: inline-block;
-    width: 1200px;
-    text-align: center;
-    margin-left: 180px;
-    margin-top: 80px;
+  display: inline-block;
+  width: 1200px;
+  text-align: center;
+  margin-left: 180px;
+  margin-top: 80px;
 }
 
-.imagenes-responsive{
-    display: none;
+.imagenes-responsive {
+  display: none;
+}
+
+.container-tecnologies {
+  padding: 2rem;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-left: 2px solid #ccc;
+}
+
+.seccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-left: 1rem;
+  flex: 1;
+  border-left: 2px solid #ccc;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 
 .solo {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 20px;
-    width: 140px;
-    height: 140px;
-    background: white;
-    border-radius: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    transition: 1s box-shadow;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px;
+  width: 140px;
+  height: 140px;
+  background: white;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
 }
 
-#reactjs{
-    width: 200px;
+#reactjs {
+  width: 200px;
 }
 
-#jsimagen{
-    width: 200px;
+#jsimagen {
+  width: 200px;
 }
 
-#nodeimg{
-    width: 120px;
-    padding-top: 15px;
+#nodeimg {
+  width: 120px;
+  padding-top: 15px;
 }
 
-#blender{
-    width: 120px;
-    padding-top: 35px;
+#blender {
+  width: 120px;
+  padding-top: 35px;
 }
 
-#firebase{
-    width: 110px;
-    padding-top: 30px;
+#firebase {
+  width: 110px;
+  padding-top: 30px;
 }
 
-#express{
-    width: 110px;
-    padding-top: 17px;
+#express {
+  width: 110px;
+  padding-top: 17px;
 }
 
 .solo:hover {
-    box-shadow: 0 5px 35px 0px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
 
 .solo:hover::before,
 .solo:hover::after {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    background-color: rgba(74, 253, 253, 0.899);
-    border-radius: 15px;
-    z-index: -1;
-    animation: 1s clockwise infinite;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background-color: rgba(74, 253, 253, 0.899);
+  border-radius: 15px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
 }
 
 .solo:hover:after {
-    background: black;
-    animation: 2s counterclockwise infinite;
+  background: black;
+  animation: 2s counterclockwise infinite;
 }
 
 @keyframes clockwise {
-    0% {
-        top: -5px;
-        left: 0;
-    }
+  0% {
+    top: -5px;
+    left: 0;
+  }
 
-    12% {
-        top: -2px;
-        left: 2px;
-    }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
 
-    25% {
-        top: 0;
-        left: 5px;
-    }
+  25% {
+    top: 0;
+    left: 5px;
+  }
 
-    37% {
-        top: 2px;
-        left: 2px;
-    }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
 
-    50% {
-        top: 5px;
-        left: 0;
-    }
+  50% {
+    top: 5px;
+    left: 0;
+  }
 
-    62% {
-        top: 2px;
-        left: -2px;
-    }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
 
-    75% {
-        top: 0;
-        left: -5px;
-    }
+  75% {
+    top: 0;
+    left: -5px;
+  }
 
-    87% {
-        top: -2px;
-        left: -2px;
-    }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
 
-    100% {
-        top: -5px;
-        left: 0;
-    }
+  100% {
+    top: -5px;
+    left: 0;
+  }
 }
 
 @keyframes counterclockwise {
-    0% {
-        top: -5px;
-        right: 0;
-    }
+  0% {
+    top: -5px;
+    right: 0;
+  }
 
-    12% {
-        top: -2px;
-        right: 2px;
-    }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
 
-    25% {
-        top: 0;
-        right: 5px;
-    }
+  25% {
+    top: 0;
+    right: 5px;
+  }
 
-    37% {
-        top: 2px;
-        right: 2px;
-    }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
 
-    50% {
-        top: 5px;
-        right: 0;
-    }
+  50% {
+    top: 5px;
+    right: 0;
+  }
 
-    62% {
-        top: 2px;
-        right: -2px;
-    }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
 
-    75% {
-        top: 0;
-        right: -5px;
-    }
+  75% {
+    top: 0;
+    right: -5px;
+  }
 
-    87% {
-        top: -2px;
-        right: -2px;
-    }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
 
-    100% {
-        top: -5px;
-        right: 0;
-    }
+  100% {
+    top: -5px;
+    right: 0;
+  }
 }
 
-
 @media screen and (max-width: 600px) {
-    .imagenes {
-        width: 300px;
-        margin-left: 45px;
-        margin-top: 30px;
-    }
+  .imagenes {
+    width: 300px;
+    margin-left: 45px;
+    margin-top: 30px;
+  }
 
-    .imagen {
-        width: 100px;
-        height: auto;
-        display: inline-block;
-        margin: 10px;
-    }
+  .imagen {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+    margin: 10px;
+  }
 
-    .solo{
-        display: none;
-    }
+  .solo {
+    display: none;
+  }
 
-    .imagenes-responsive{
-        display: block;
-        width: 300px;
-        margin-left: 75px;
-        margin-top: 30px;
-    }
-
+  .imagenes-responsive {
+    display: block;
+    width: 300px;
+    margin-left: 75px;
+    margin-top: 30px;
+  }
 }

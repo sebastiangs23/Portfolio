@@ -1,143 +1,106 @@
-import React from 'react'
-import "./tecnologies.css"
-import imagenprueba from "../../assets/tecnologies-black/js.png"
-import imagenprueba1 from "../../assets/tecnologies-black/node.png"
-import imagenprueba2 from "../../assets/tecnologies-black/css.png"
-import imagenprueba3 from "../../assets/tecnologies-black/reactjsb.png"
-import imagenprueba4 from "../../assets/tecnologies-black/blendeer.png"
-import imagenprueba5 from "../../assets/tecnologies-black/firebase.png"
-import imagenprueba6 from "../../assets/tecnologies-black/postgres.png"
-import imagenprueba7 from "../../assets/tecnologies-black/github.png"
+import React from "react";
+import "./tecnologies.css";
 
-import imagenprueba9 from "../../assets/tecnologies-black/bootsrap.png"
-import imagenprueba10 from "../../assets/tecnologies-black/html.png"
-import imagenprueba11 from "../../assets/tecnologies-black/figmablack.png"
-import imagenprueba12 from "../../assets/tecnologies-black/tailwind.jpg"
+/*_____________
+|   CLIENT   */
+import react from "../../assets/tecnologies-black/client/reactjsb.png";
+import reactNative from "../../assets/tecnologies-black/client/reactnativebb.png";
+import vue from "../../assets/tecnologies-black/client/vue-js.png";
+import figma from "../../assets/tecnologies-black/client/figmablack.png";
+import redux from "../../assets/tecnologies-black/client/reduxb.png";
 
-import imagenmysql from "../../assets/tecnologies-black/mysql.png"
-import imagennative from "../../assets/tecnologies-black/reactnativebb.png"
-import imagenpug from "../../assets/tecnologies-black/pug.png"
-import imagenexpress from "../../assets/tecnologies-black/expressssb.png"
-import imagenredux from "../../assets/tecnologies-black/reduxb.png"
+/*_____________
+|   SERVER   */
+import node from "../../assets/tecnologies-black/server/node.png";
+import express from "../../assets/tecnologies-black/server/expressssb.png";
 
+/*_________
+|   DB   */
+import mysql from "../../assets/tecnologies-black/database/mysql.png";
+import postgres from "../../assets/tecnologies-black/database/postgres.png";
+import mongodb from "../../assets/tecnologies-black/database/mongodb.png";
+
+/*__________
+|   ORM   */
+import mongoose from "../../assets/tecnologies-black/orm/mongoose.png";
+import sequelize from "../../assets/tecnologies-black/orm/sequelize.png";
+
+/*_______________________________________
+|   CLOUD, HOSTING & VERSION CONTROL   */
+import aws from "../../assets/tecnologies-black/cloud/aws.webp";
+import github from "../../assets/tecnologies-black/cloud/github.png";
 
 
 
 function Tecnologies() {
-    return (
-        <div className='container-tecnologies' id='tecnologias' >
-
-            <h2 className='section__title'> Tecnologías </h2>
-
-            <div className='imagenes' >
-
-                <div className="solo">
-                    <img src={imagenprueba3} alt="" className='imagen' id='reactjs' />
-                </div>
-
-                <div className="solo">
-                    <img src={imagenredux} alt="" className='imagen' />
-                </div>
-
-                <div className="solo">
-                    <img src={imagennative} alt="" className='imagen' />
-                </div>
-
-                <div className='solo'>
-                    <img src={imagenprueba1} alt="" className='imagen' id="nodeimg" />
-                </div>
-
-                <div className="solo">
-                    <img src={imagenexpress} alt="" className='imagen' id="express" />
-                </div>
-
-                <div className="solo">
-                    <img src={imagenmysql} alt="" className='imagen' />
-                </div>
-
-                <div className="solo">
-                    <img src={imagenprueba6} alt="" className='imagen' />
-                </div>
-
-                <div className='solo'>
-                    <img src={imagenprueba} alt="" className='imagen' id='jsimagen' />
-                </div>
-
-                <div className="solo">
-                    <img src={imagenpug} alt="" className='imagen' />
-                </div>
-                
-                <div className='solo'>
-                    <img src={imagenprueba10} alt="" className='imagen' />
-                </div>
-
-
-
-                <div className='solo'>
-                    <img src={imagenprueba2} alt="" className='imagen' />
-                </div>
-
-
-                <div className="solo">
-                    <img src={imagenprueba5} alt="" className='imagen' id="firebase" />
-                </div>
-
-
-
-                <div className="solo">
-                    <img src={imagenprueba7} alt="" className='imagen' />
-                </div>
-
-                <div className="solo">
-                    <img src={imagenprueba9} alt="" className='imagen' />
-                </div>
-
-                <div className="solo">
-                    <img src={imagenprueba11} alt="" className='imagen' />
-                </div>
-
-                <div className="solo">
-                    <img src={imagenprueba12} alt="" className='imagen' />
-                </div>
-
-
-                <div className="solo">
-                    <img src={imagenprueba4} alt="" className='imagen' id="blender" />
-                </div>
-
-
-            </div>
-
-            <div className='imagenes-responsive' >
-                <img src={imagenprueba3} alt="" className='imagen' />
-                <img src={imagenredux} alt="" className='imagen' />
-                <img src={imagennative} alt="" className='imagen' />
-                <img src={imagenprueba1} alt="" className='imagen' />
-                <img src={imagenexpress} alt="" className='imagen' />
-                <img src={imagenmysql} alt="" className='imagen' />
-                <img src={imagenprueba6} alt="" className='imagen' />
-
-                <img src={imagenprueba} alt="" className='imagen' />
-                <img src={imagenpug} alt="" className='imagen' />
-                <img src={imagenprueba10} alt="" className='imagen' />
-                <img src={imagenprueba2} alt="" className='imagen' />
-
-                <img src={imagenprueba5} alt="" className='imagen' />
-
-                <img src={imagenprueba7} alt="" className='imagen' />
-                <img src={imagenprueba9} alt="" className='imagen' />
-                <img src={imagenprueba11} alt="" className='imagen' />
-                <img src={imagenprueba12} alt="" className='imagen' />
-
-                <img src={imagenprueba4} alt="" className='imagen' />
-
-
-
-
-            </div>
-            
+  return (
+    <div className="container-tecnologies" id="tecnologias">
+      <h2 className="section__title">Tecnologías</h2>
+      <div className="flex-container">
+        <div className="seccion">
+          <h3 className="subtitulo">Front-end</h3>
+          <div className="solo">
+            <img src={react} alt="" className="imagen" id="reactjs" />
+          </div>
+          <div className="solo">
+            <img src={redux} alt="" className="imagen" />
+          </div>
+          <div className="solo">
+            <img src={reactNative} alt="" className="imagen" />
+          </div>
+          <div className="solo">
+            <img src={figma} alt="" />
+          </div>
+          <div className="solo">
+            <img src={vue} alt="" />
+          </div>
         </div>
-    )
+        <div className="seccion">
+          <h3 className="subtitulo">Server</h3>
+          <div className="solo">
+            <img src={node} alt="" className="imagen" id="nodeimg" />
+          </div>
+          <div className="solo">
+            <img src={express} alt="" className="imagen" id="express" />
+          </div>
+        </div>
+        <div className="seccion">
+          <h3 className="subtitulo">Database</h3>
+          <div className="solo">
+            <img src={mysql} alt="" className="imagen" />
+          </div>
+          <div className="solo">
+            <img src={postgres} alt="" className="imagen" />
+          </div>
+          <div className="solo">
+            <img src={mongodb} alt="" className="imagen" />
+          </div>
+        </div>
+        <div className="seccion">
+          <h3 className="subtitulo">ORM</h3>
+          <div className="solo">
+            <img src={sequelize} alt="" className="imagen" />
+          </div>
+          <div className="solo">
+            <img src={mongoose} alt="" className="imagen" />
+          </div>
+        </div>
+
+        <div className="seccion">
+          <h3 className="subtitulo">Cloud, hosting & Version Control</h3>
+          <div className="solo">
+            <img src={aws} alt="" className="imagen" />
+          </div>
+          <div className="solo">
+            <img src={github} alt="" className="imagen" />
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Tecnologies
+export default Tecnologies;
