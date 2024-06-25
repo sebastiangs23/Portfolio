@@ -7,10 +7,22 @@
 }
 
 .imagen {
-  width: 100px;
+  width: 80px;
   height: auto;
   display: inline-block;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+}
+
+.image-mongo {
+  width: 120px;
+  height: auto;
+  display: inline-block;
+}
+
+.image-big {
+  width: 60px;
+  height: auto;
+  display: inline-block;
 }
 
 .imagenes {
@@ -39,7 +51,7 @@
 .flex-container {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   border-left: 2px solid #ccc;
 }
 
@@ -59,19 +71,17 @@
   margin-bottom: 1rem;
 }
 
-
 .solo {
-  display: inline-block;
+  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 20px;
-  width: 140px;
-  height: 140px;
+  margin: 10px 0px;
+  width: 100px;
+  height: 100px;
   background: white;
   border-radius: 15px;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
   font-weight: lighter;
   letter-spacing: 2px;
   transition: 1s box-shadow;
@@ -86,23 +96,12 @@
 }
 
 #nodeimg {
-  width: 120px;
-  padding-top: 15px;
-}
-
-#blender {
-  width: 120px;
-  padding-top: 35px;
-}
-
-#firebase {
-  width: 110px;
-  padding-top: 30px;
+  width: 100px;
 }
 
 #express {
-  width: 110px;
-  padding-top: 17px;
+  width: 100px;
+  padding-top: 8px;
 }
 
 .solo:hover {
@@ -114,8 +113,8 @@
   display: block;
   content: "";
   position: absolute;
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
   background-color: rgba(74, 253, 253, 0.899);
   border-radius: 15px;
   z-index: -1;
