@@ -104,6 +104,19 @@
     width: 400px;
   }
 
+  .content p {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+
+  .slider_web_job {
+    position: relative;
+    height: 210px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
   .slider_mobile {
     position: relative;
     height: 410px;
