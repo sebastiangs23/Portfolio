@@ -3,12 +3,20 @@ import { ImageSlider } from "./ImageSlider";
 import {
   SliderData,
   SliderManga,
-  SliderPi,
-  SliderBlender,
+  SliderChatTutor,
 } from "../../assets/imagenesproyectos/imagenes";
-import phone from "../../assets/projects/phone.svg";
-import web from "../../assets/projects/web.svg";
 import "./slider.css";
+
+/*____________
+|   PHONE   */
+import phone from "../../assets/projects/phone.svg";
+import login from "../../assets/imagenesproyectos/phone/login-canva.png";
+import score from "../../assets/imagenesproyectos/phone/score-canva.png";
+import selectAi from "../../assets/imagenesproyectos/phone/select-ia-canva.png";
+
+/*____________
+|   WEB   */
+import web from "../../assets/projects/web.svg";
 
 function Proyectos() {
   const [type, setType] = useState("web");
@@ -57,27 +65,35 @@ function Proyectos() {
         <div className="contenedor-proyectos">
           <div className="contenedor-individual">
             <div className="subtitle__project">
-              {" "}
-              <h3>Trust Exchange</h3>{" "}
+              <h3>Trust Exchange</h3>
             </div>
             <div className="contenedor-cadauno">
-              <ImageSlider slides={SliderData} />
+              <ImageSlider slides={SliderData} type="web" />
             </div>
           </div>
 
           <div className="contenedor-individual">
             <div className="subtitle__project">
               {" "}
-              <h3>Manga E-commerce</h3>{" "}
+              <h3>E-commerce</h3>{" "}
             </div>
             <div className="contenedor-cadauno">
-              <ImageSlider slides={SliderManga} />
+              <ImageSlider slides={SliderManga} type="web" />
             </div>
           </div>
         </div>
       ) : (
         <div className="contenedor-proyectos">
-          <h2>ACA IRAN LOS MOBILES XD</h2>
+          <div className="contenedor-individual">
+            <div className="subtitle__project">
+              <h3>Chat Tutor Ingles AI</h3>{" "}
+            </div>
+            <div className="contenedor-cadauno">
+              <div>
+                <ImageSlider slides={SliderChatTutor} type="phone" />
+              </div>
+            </div>
+          </div>
         </div>
       )}
     </section>

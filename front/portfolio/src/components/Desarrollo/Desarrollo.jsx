@@ -56,7 +56,6 @@ function Education() {
         </div>
 
         <div className="qualification__sections">
-
           {/* JOB EXPERIENCE */}
           <div
             className={
@@ -92,7 +91,9 @@ function Education() {
 
                 <br />
 
-                <p>Click Here</p>
+                <a className="button  button--flex">
+                  Click here
+                </a>
               </div>
 
               <div>
@@ -142,7 +143,9 @@ function Education() {
 
                 <br />
 
-                <p>Click Here</p>
+                <a className="button  button--flex">
+                  Click here
+                </a>
               </div>
             </div>
 
@@ -175,7 +178,10 @@ function Education() {
 
                 <br />
 
-                <p>Click here</p>
+                <a className="button  button--flex">
+                  Click here
+                </a>
+
               </div>
 
               <div>
@@ -184,7 +190,7 @@ function Education() {
               </div>
             </div>
           </div>
-          
+
           {/* EDUCATION */}
           <div
             className={
@@ -277,7 +283,7 @@ function Education() {
               </div>
             </div>
           </div>
-          
+
           {/* SOFT SKILLS */}
           <div
             className={
@@ -301,7 +307,6 @@ function Education() {
                   <li>Resiliencia</li>
                   <li>Análisis de Problemas</li>
                   <li>Aprendizaje continuo</li>
-                  
                 </ul>
               </div>
 
@@ -337,7 +342,6 @@ function Education() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
