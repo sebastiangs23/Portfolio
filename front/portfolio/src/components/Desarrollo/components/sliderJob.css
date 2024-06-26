@@ -73,6 +73,17 @@
   margin-left: 50px;
 }
 
+.content_conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content p {
+  margin-bottom: 20px;
+  width: 1100px;
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 700px) {

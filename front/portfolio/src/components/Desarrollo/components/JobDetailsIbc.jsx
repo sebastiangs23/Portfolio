@@ -10,15 +10,33 @@ export default function JobDetailsIbc() {
         <SliderJob slides={sliderIbc} type="web" />
       </div>
 
-      <div>
-        <p>
-          -I Developed a service using Azure Speech AI which allows the client
-          to enter into a conversation with the system. All the data is
-          transformed into metrics and statistics, to be rendered in graphs on
-          the administrator dashboard. <br />
-          In addition to migrating the project from React 15 to React 18 and
-          applying hexagonal architecture in the front.
-        </p>
+      <div className="content_conteiner">
+        <div className="content">
+          <p>
+            - Plataforma de idiomas certificada con TrackTest, enfocada en los
+            niveles básico (A1 - A2) e intermedio (B1 - B2), con métodos
+            dinámicos de aprendizaje como prácticas de vocabulario, gramática,
+            pronunciación, simuladores de exámenes y conversaciones interactivas
+            que se desbloquean a medida que el estudiante aprueba las lecciones.
+          </p>
+
+          <p>
+            - Cada nivel cuenta con múltiples lecciones, y dentro de cada
+            lección el estudiante adquiere conocimientos que le permiten seguir
+            avanzando. Además, el sistema recopila datos de las evaluaciones
+            para generar gráficos y métricas que identifican los puntos fuertes
+            y débiles de los estudiantes.
+          </p>
+          <p>
+            - Uno de mis roles fue rediseñar la base de datos para hacerla más
+            escalable y capaz de soportar la enseñanza de más idiomas en el
+            futuro. Además, migré el sistema de evaluación para utilizar una API
+            integrada con el reconocedor de voz de inteligencia artificial de
+            Azure Speech, que es más preciso al evaluar al estudiante en
+            aspectos como pronunciación, prosodia, fluidez y oraciones
+            completas, entre otros.
+          </p>
+        </div>
       </div>
     </div>
   );
