@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaLaptopCode, FaRegBuilding } from "react-icons/fa";
 import "./Desarrollo.css";
 
@@ -91,9 +92,9 @@ function Education() {
 
                 <br />
 
-                <a className="button  button--flex">
-                  Click here
-                </a>
+                <Link to="/experience/ibc-institute" className="button  button--flex">
+                  Ver más
+                </Link>
               </div>
 
               <div>
@@ -143,9 +144,9 @@ function Education() {
 
                 <br />
 
-                <a className="button  button--flex">
-                  Click here
-                </a>
+                <Link to="/experience/inteligenio" className="button  button--flex">
+                  Ver más
+                </Link>
               </div>
             </div>
 
@@ -177,10 +178,6 @@ function Education() {
                 </div>
 
                 <br />
-
-                <a className="button  button--flex">
-                  Click here
-                </a>
 
               </div>
 

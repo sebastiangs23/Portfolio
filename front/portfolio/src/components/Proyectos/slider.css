@@ -1,6 +1,6 @@
 .section__projects {
   margin-top: 120px;
-  min-height: 800px;
+  min-height: 400px;
 }
 
 .slider_web {
@@ -14,7 +14,7 @@
 
 .slider_mobile {
   position: relative;
-  height: 410px;
+  height: 400px;
   width: 350px;
   display: "flex";
   justify-content: center;
