@@ -40,6 +40,9 @@ function Tecnologies() {
         <div className="seccion">
           <h3 className="subtitulo">Front-end</h3>
           <div className="solo">
+            <img src={vue} className="image-big" />
+          </div>
+          <div className="solo">
             <img src={react} className="imagen" id="reactjs" />
           </div>
           <div className="solo">
@@ -51,9 +54,7 @@ function Tecnologies() {
           <div className="solo">
             <img src={figma} className="image-big" />
           </div>
-          <div className="solo">
-            <img src={vue} className="image-big" />
-          </div>
+          
         </div>
 
         {/* SERVER */}

@@ -68,7 +68,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fff;
 }
 
 html {
@@ -80,11 +79,11 @@ button,
 input,
 textarea {
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  font-size: var(--normal-font-size); 
 }
 
 body {
-  background-color: var(--body-color);
+  background-color: #fff;
   color: var(--text-color);
 }
 
