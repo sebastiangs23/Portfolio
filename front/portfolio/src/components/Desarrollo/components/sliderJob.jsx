@@ -19,7 +19,7 @@ export default function SliderJob({ slides, type }) {
   }
 
   return (
-    <section className={type == "web" ? "slider_web" : "slider_mobile"}>
+    <section className="slider_web_job">
       <FaArrowAltCircleLeft className="left-arrow" onClick={previousSlide} />
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
       {slides.map((s, index) => {
@@ -30,7 +30,7 @@ export default function SliderJob({ slides, type }) {
             {index === current && (
               <img
                 src={s.image}
-                className={type == "web" ? "image" : "screenshot-image"}
+                className={type == "web" ? "image-job" : "screenshot-image"}
                 // className="image"
               />
             )}

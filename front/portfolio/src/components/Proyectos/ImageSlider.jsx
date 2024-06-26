@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { SliderData } from "../../assets/imagenesproyectos/imagenes.js";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./slider.css";
 
@@ -34,7 +33,6 @@ export const ImageSlider = ({ slides, type }) => {
                 width="500px"
                 height="350px"
                 className={type == "web" ? "image" : "screenshot-image"}
-                // className="image"
               />
             )}
           </div>
