@@ -36,7 +36,7 @@ function Header() {
           <a href="#home" className="secciones" > {sentences.start} </a>
         </li>
         <li className="font-poppins font-normal cursor-pointer text-[16px] mr-7">
-          <a href="#desarrollo" className="secciones" > {sentences.background} </a>
+          <a href="#desarrollo" className="secciones" > {sentences.background_} </a>
         </li>
         <li className="font-poppins font-normal cursor-pointer text-[16px] mr-7">
           <a href="#projectos" className="secciones" > {sentences.projects} </a>

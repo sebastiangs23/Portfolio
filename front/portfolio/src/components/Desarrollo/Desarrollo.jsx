@@ -200,19 +200,23 @@ function Education() {
             <div className="qualification__data">
               <div>
                 <h3 className="qualification__title">
-                  Desarrollador Full Stack
+                  {sentences.carrer_henry}
                 </h3>
 
                 <div className="company_name">
                   <FaRegBuilding className="icon_office" />
-                  <span className="text-job">Henry</span>
+                  <span className="text-job">
+                    {sentences.carrer_place_henry}
+                  </span>
                 </div>
 
                 <br />
-                <span className="qualification__subtitle">Culminado</span>
+                <span className="qualification__subtitle">
+                  {sentences.carrer_status_henry}
+                </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>
-                  2022 Julio - 2022 Diciembre
+                  {sentences.carrer_date_henry}
                 </div>
               </div>
 
@@ -232,21 +236,23 @@ function Education() {
 
               <div>
                 <h3 className="qualification__title">
-                  Negocios Internacionales
+                  {sentences.carrer_zegel}
                 </h3>
 
                 <div className="company_name">
                   <FaRegBuilding className="icon_office" />
-                  <span className="text-job">Zegel Ipae</span>
+                  <span className="text-job">
+                    {sentences.carrer_place_zegel}
+                  </span>
                 </div>
 
                 <br />
                 <span className="qualification__subtitle">
-                  (1/3) años culminados.
+                  {sentences.carrer_status_zegel}
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2021 Marzo - 2022
-                  Marzo
+                  <i className="uil uil-calendar-alt"></i>{" "}
+                  {sentences.carrer_date_zegel}
                 </div>
               </div>
             </div>
@@ -254,24 +260,23 @@ function Education() {
             <div className="qualification__data">
               <div>
                 <h3 className="qualification__title">
-                  Administración y Negocios Int.
+                  {sentences.carrer_upc}
                 </h3>
 
                 <div className="company_name">
                   <FaRegBuilding className="icon_office" />
                   <span className="text-job">
-                    Universidad Peruana de Ciencias (UPC)
+                  {sentences.carrer_place_upc}
                   </span>
                 </div>
 
                 <br />
                 <span className="qualification__subtitle">
-                  (2/4) años culminados.
+                {sentences.carrer_status_upc}
                 </span>
 
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2019 Agosto - 2021
-                  Febrero
+                  <i className="uil uil-calendar-alt"></i> {sentences.carrer_date_upc}
                 </div>
               </div>
 
@@ -294,17 +299,17 @@ function Education() {
               <div>
                 <h3 className="qualification__title">
                   <i class="uil uil-user"></i>
-                  Personal
+                  {sentences.skills_personal}
                 </h3>
                 <ul>
-                  <li>Motivación personal</li>
-                  <li>Autodidacta</li>
-                  <li>Ética profesional</li>
-                  <li>Empatia y solidaridad</li>
-                  <li>Responsable</li>
-                  <li>Resiliencia</li>
-                  <li>Análisis de Problemas</li>
-                  <li>Aprendizaje continuo</li>
+                  <li>{sentences.skills_personal_1}</li>
+                  <li>{sentences.skills_personal_2}</li>
+                  <li>{sentences.skills_personal_3}</li>
+                  <li>{sentences.skills_personal_4}</li>
+                  <li>{sentences.skills_personal_5}</li>
+                  <li>{sentences.skills_personal_6}</li>
+                  <li>{sentences.skills_personal_7}</li>
+                  <li>{sentences.skills_personal_8}</li>
                 </ul>
               </div>
 
@@ -325,17 +330,17 @@ function Education() {
               <div>
                 <h3 className="qualification__title">
                   <i class="uil uil-users-alt"></i>
-                  Equipo
+                  {sentences.skills_team}
                 </h3>
                 <ul className="pl-5">
-                  <li>Team Work Scrum</li>
-                  <li>Metodologías ágiles</li>
-                  <li>Proponer ídeas</li>
-                  <li>Gestión de tiempo</li>
-                  <li>Comunicación efectiva</li>
-                  <li>Escucha Activa</li>
-                  <li>Capacitar</li>
-                  <li>Adaptabilidad y flexibilidad</li>
+                  <li>{sentences.skills_team_1}</li>
+                  <li>{sentences.skills_team_2}</li>
+                  <li>{sentences.skills_team_3}</li>
+                  <li>{sentences.skills_team_4}</li>
+                  <li>{sentences.skills_team_5}</li>
+                  <li>{sentences.skills_team_6}</li>
+                  <li>{sentences.skills_team_7}</li>
+                  <li>{sentences.skills_team_8}</li>
                 </ul>
               </div>
             </div>
