@@ -75,7 +75,7 @@ function Proyectos() {
           <div className="contenedor-individual">
             <div className="subtitle__project">
               {" "}
-              <h3>E-commerce</h3>{" "}
+              <h3>E-commerce</h3>
             </div>
             <div className="contenedor-cadauno">
               <ImageSlider slides={SliderManga} type="web" />
@@ -86,7 +86,7 @@ function Proyectos() {
         <div className="contenedor-proyectos">
           <div className="contenedor-individual">
             <div className="subtitle__project">
-              <h3>Chat Tutor Ingles AI</h3>{" "}
+              <h3>Chat Tutor Ingles AI - Mammoth</h3>
             </div>
             <div className="contenedor-cadauno">
               <div>

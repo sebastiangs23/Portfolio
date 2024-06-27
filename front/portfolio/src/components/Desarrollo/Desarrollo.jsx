@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../Language/Language";
 import { FaLaptopCode, FaRegBuilding } from "react-icons/fa";
 import "./Desarrollo.css";
 
 function Education() {
   const [toggleState, setToggleState] = useState(1);
+  const { sentences } = useLanguage();
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -13,8 +15,10 @@ function Education() {
   return (
     <section className="qualification__education section" id="desarrollo">
       {/* TITLE AND SUBTITLE */}
-      <h2 className="section__title">Background </h2>
-      <span className="section__subtitle">Mi desarrollo </span>
+      <h2 className="section__title">{sentences.background} </h2>
+      <span className="section__subtitle">
+        {sentences.background_subtitle}{" "}
+      </span>
 
       <div className="qualification__container container">
         {/* BUTTONS */}
@@ -28,7 +32,7 @@ function Education() {
             onClick={() => toggleTab(1)}
           >
             <FaLaptopCode />
-            <p>Experiencia laboral </p>
+            <p className="ml-2">{sentences.work_experience} </p>
           </div>
 
           <div
@@ -40,7 +44,7 @@ function Education() {
             onClick={() => toggleTab(2)}
           >
             <i className="uil uil-graduation-cap qualification__icon"></i>
-            <p>Educación </p>
+            <p> {sentences.education} </p>
           </div>
 
           <div
@@ -52,7 +56,7 @@ function Education() {
             onClick={() => toggleTab(3)}
           >
             <i class="uil uil-smile qualification__icon"></i>
-            <p>Aptitudes </p>
+            <p>{sentences.skill}</p>
           </div>
         </div>
 
@@ -68,32 +72,33 @@ function Education() {
             {/* IBC */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Software Developer</h3>
+                <h3 className="qualification__title">
+                  {sentences.work_ibc_position}
+                </h3>
                 <div className="company_name">
                   <FaRegBuilding className="icon_office" />
                   <p className="text-job">IBC Institute - Ceoline</p>
                 </div>
                 <div className="flex items-center">
                   <i className="uil uil-calendar-alt"></i>
-                  <p className="text-range-date">2023 Noviembre - 2024 Junio</p>
+                  <p className="text-range-date">{sentences.work_ibc_date} </p>
                 </div>
                 <br />
 
                 <div>
                   <p>
-                    -I Developed a service using Azure Speech AI which allows
-                    the client to enter into a conversation with the system. All
-                    the data is transformed into metrics and statistics, to be
-                    rendered in graphs on the administrator dashboard. <br />
-                    In addition to migrating the project from React 15 to React
-                    18 and applying hexagonal architecture in the front.
+                    {sentences.work_ibc_description} <br />
+                    {sentences.work_ibc_description_2}
                   </p>
                 </div>
 
                 <br />
 
-                <Link to="/experience/ibc-institute" className="button  button--flex">
-                  Ver más
+                <Link
+                  to="/experience/ibc-institute"
+                  className="button  button--flex"
+                >
+                  {sentences.see_more}
                 </Link>
               </div>
 
@@ -114,7 +119,7 @@ function Education() {
 
               <div>
                 <h3 className="qualification__title">
-                  Backend Developer & Database Administrator
+                  {sentences.work_inte_position}
                 </h3>
 
                 <div className="company_name">
@@ -125,7 +130,7 @@ function Education() {
                 <div className="qualification__calender">
                   <div className="flex items-center">
                     <i className="uil uil-calendar-alt"></i>
-                    <p>2023 Marzo - 2024 Junio</p>
+                    <p>{sentences.work_inte_date}</p>
                   </div>
                 </div>
 
@@ -133,19 +138,18 @@ function Education() {
 
                 <div>
                   <p>
-                    I worked closely with the QA team, developers, and the
-                    product owner to redesign the database architecture,
-                    applying business rules, constraints, uniques, and
-                    relationships for an Education platform. <br />{" "}
-                    Additionally, I developed the administrative roles and
-                    permissions, considering performance and optimization.
+                    {sentences.work_inte_description} <br />
+                    {sentences.work_inte_description_2}
                   </p>
                 </div>
 
                 <br />
 
-                <Link to="/experience/inteligenio" className="button  button--flex">
-                  Ver más
+                <Link
+                  to="/experience/inteligenio"
+                  className="button  button--flex"
+                >
+                  {sentences.see_more}
                 </Link>
               </div>
             </div>
@@ -153,7 +157,9 @@ function Education() {
             {/* 3 */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Full stack Developer</h3>
+                <h3 className="qualification__title">
+                  {sentences.work_1_position}{" "}
+                </h3>
 
                 <div className="company_name">
                   <FaRegBuilding className="icon_office" />
@@ -163,22 +169,17 @@ function Education() {
                 <div className="qualification__calender">
                   <div className="flex items-center  ">
                     <i className="uil uil-calendar-alt"></i>
-                    <p>2023 Febrero - 2023 Marzo</p>
+                    <p>{sentences.work_1_date} </p>
                   </div>
                 </div>
 
                 <br />
 
                 <div>
-                  <p>
-                    I was in charge of designing the database, setting up the
-                    server from scratch , creating the landing page and the home
-                    for a clinic.
-                  </p>
+                  <p>{sentences.work_1_description}</p>
                 </div>
 
                 <br />
-
               </div>
 
               <div>

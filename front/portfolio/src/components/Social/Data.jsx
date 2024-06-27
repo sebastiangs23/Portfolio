@@ -1,6 +1,9 @@
 import React from "react";
+import { useLanguage } from "../Language/Language";
 
 function Data() {
+  const { sentences } = useLanguage();
+
   return (
     <div className="home__data">
       <h1 className="flex home__title">
@@ -56,28 +59,24 @@ function Data() {
         </svg>
       </h1>
 
-      <h3 className="home__subtitle">Software Developer</h3>
-      <p className="home__description">
-        Me gusta llevar las ideas de la mente al software y crear nuevas
-        aplicaciones, herramientas y tecnologías con el objetivo ofrecer soluciones a traves de
-        ellas.
-      </p>
+      <h3 className="home__subtitle">{sentences.position}</h3>
+      <p className="home__description">{sentences.description_position} </p>
 
       <a
-        href="https://drive.google.com/file/d/1zTZ1h8ziIaQ-Mm-_t9l4EGPOimGNnvDA/view"
+        href={sentences.curriculum_link}
         className="button button--flex"
         target="_black"
       >
-        Currículum
+        {sentences.curriculum}
         <i class="uil uil-file-download"></i>
       </a>
 
       <a
-        href="https://drive.google.com/file/d/1xsxKDW2RfFMTazRfRas4DRdTyf9Cohiw/view"
+        href="https://drive.google.com/file/d/155D_WDM7ZLKUH_8rlangKlkF0TFTl3un/view"
         className="button button--flex"
         target="_blank"
       >
-        Certificados
+        {sentences.certifications}
         <i class="uil uil-graduation-cap"></i>
       </a>
     </div>

@@ -13,11 +13,19 @@ export default function JobDetailsIbc() {
       <div className="content_conteiner">
         <div className="content">
           <p>
-            - Plataforma de idiomas certificada con TrackTest, enfocada en los
-            niveles básico (A1 - A2) e intermedio (B1 - B2), con métodos
-            dinámicos de aprendizaje como prácticas de vocabulario, gramática,
-            pronunciación, simuladores de exámenes y conversaciones interactivas
-            que se desbloquean a medida que el estudiante aprueba las lecciones.
+            - Plataforma de idiomas certificada con{" "}
+            <a
+              href="https://tracktest.eu/"
+              target="_blank"
+              className="redirect-link"
+            >
+              TrackTest
+            </a>
+            , enfocada en los niveles básico (A1 - A2) e intermedio (B1 - B2),
+            con métodos dinámicos de aprendizaje como prácticas de vocabulario,
+            gramática, pronunciación, simuladores de exámenes y conversaciones
+            interactivas que se desbloquean a medida que el estudiante aprueba
+            las lecciones.
           </p>
 
           <p>
