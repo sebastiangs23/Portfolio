@@ -1,8 +1,11 @@
 import React from "react";
+import { useLanguage } from "../../Language/Language";
 import SliderJob from "./sliderJob";
 import { sliderIbc } from "../../../assets/imagenes-trabajo/imagenes";
 
 export default function JobDetailsIbc() {
+  const { sentences } = useLanguage();
+
   return (
     <div className="container-job-details">
       <h2 className="section__title">IBC - Institute</h2>
@@ -13,7 +16,7 @@ export default function JobDetailsIbc() {
       <div className="content_conteiner">
         <div className="content">
           <p>
-            - Plataforma de idiomas certificada con{" "}
+            {sentences.ibc_see_more_1}
             <a
               href="https://tracktest.eu/"
               target="_blank"
@@ -21,29 +24,11 @@ export default function JobDetailsIbc() {
             >
               TrackTest
             </a>
-            , enfocada en los niveles básico (A1 - A2) e intermedio (B1 - B2),
-            con métodos dinámicos de aprendizaje como prácticas de vocabulario,
-            gramática, pronunciación, simuladores de exámenes y conversaciones
-            interactivas que se desbloquean a medida que el estudiante aprueba
-            las lecciones.
+            {sentences.ibc_see_more_2}
           </p>
 
-          <p>
-            - Cada nivel cuenta con múltiples lecciones, y dentro de cada
-            lección el estudiante adquiere conocimientos que le permiten seguir
-            avanzando. Además, el sistema recopila datos de las evaluaciones
-            para generar gráficos y métricas que identifican los puntos fuertes
-            y débiles de los estudiantes.
-          </p>
-          <p>
-            - Uno de mis roles fue rediseñar la base de datos para hacerla más
-            escalable y capaz de soportar la enseñanza de más idiomas en el
-            futuro. Además, migré el sistema de evaluación para utilizar una API
-            integrada con el reconocedor de voz de inteligencia artificial de
-            Azure Speech, que es más preciso al evaluar al estudiante en
-            aspectos como pronunciación, prosodia, fluidez y oraciones
-            completas, entre otros.
-          </p>
+          <p>{sentences.ibc_see_more_3}</p>
+          <p>{sentences.ibc_see_more_4}</p>
         </div>
       </div>
     </div>
