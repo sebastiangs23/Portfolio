@@ -10,7 +10,7 @@ const sentences = {
     description_position:
       "Me gusta llevar las ideas de la mente al software y crear nuevas aplicaciones, herramientas y tecnologías con el objetivo ofrecer soluciones a traves de ellas.",
     curriculum: "Currículum",
-    curriculum_link: "",
+    curriculum_link: "https://drive.google.com/file/d/1lwf_E7eULprHsL3bQYPYfZdo4VmafAoX/view",
     certifications: "Certificados",
     background: "Formación",
     background_subtitle: "Mi desarrollo",
@@ -45,7 +45,7 @@ const sentences = {
     carrer_date_zegel: "2021 Marzo - 2022 Marzo",
     carrer_upc: "Administración y Negocios Int.",
     carrer_place_upc: "Universidad Privada de Ciencias Aplicadas (UPC)",
-    carrrr_status_upc: "(2/4) años culminados.",
+    carrer_status_upc: "(2/4) años culminados.",
     carrer_date_upc: "2019 Agosto - 2021 Febrero",
     skills_personal: "Personal",
     skills_personal_1: "Motivación personal",
