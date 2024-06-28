@@ -1,4 +1,5 @@
 import React from "react";
+import { useLanguage } from "../Language/Language";
 import "./tecnologies.css";
 
 /*_____________
@@ -32,9 +33,11 @@ import aws from "../../assets/tecnologies-black/cloud/aws.webp";
 import github from "../../assets/tecnologies-black/cloud/github.png";
 
 function Tecnologies() {
+  const {sentences} = useLanguage();
+
   return (
     <div className="container-tecnologies" id="tecnologias">
-      <h2 className="section__title">Tecnologías</h2>
+      <h2 className="section__title">{sentences.technologies} </h2>
       <div className="flex-container">
         {/* FRONT */}
         <div className="seccion">
@@ -73,7 +76,7 @@ function Tecnologies() {
 
         {/* DATABASE */}
         <div className="seccion">
-          <h3 className="subtitulo">Base de datos</h3>
+          <h3 className="subtitulo">{sentences.database} </h3>
           <div className="solo">
             <img src={mysql} className="imagen" />
           </div>

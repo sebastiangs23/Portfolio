@@ -70,7 +70,7 @@ function Header() {
       </div>
 
       <span
-        className={`transition-opacity duration-200 ease-in-out opacity-100 ml-2`}
+        className={`transition-opacity duration-200 ease-in-out opacity-100 ml-2 mr-2`}
       >
         EN
       </span>

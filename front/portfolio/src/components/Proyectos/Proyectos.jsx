@@ -17,8 +17,10 @@ import selectAi from "../../assets/imagenesproyectos/phone/select-ia-canva.png";
 /*____________
 |   WEB   */
 import web from "../../assets/projects/web.svg";
+import { useLanguage } from "../Language/Language";
 
 function Proyectos() {
+  const { sentences } = useLanguage();
   const [type, setType] = useState("web");
 
   const toggleTypeButton = () => {
@@ -27,7 +29,7 @@ function Proyectos() {
 
   return (
     <section className="section__projects" id="projectos">
-      <h2 className="section__title">Proyectos</h2>
+      <h2 className="section__title">{sentences._projects}</h2>
 
       {/* RADIO BUTTOM */}
       <div className="flex justify-center items-center mt-5 ">
