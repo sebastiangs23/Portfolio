@@ -1,74 +1,157 @@
-.qualification__education {
+.training {
   margin-top: 100px;
 }
 
-.qualification__container {
+.training__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.training__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+}
+
+.training__title,
+.training__subtitle {
+  text-align: center;
+}
+
+.training__core {
   max-width: 768px;
 }
 
-.qualification__tabs {
+.training__core-tabs {
   display: flex;
   justify-content: center;
+  gap: 8px;
   margin-bottom: var(--mb-2);
 }
 
-.qualification__button {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-  color: var(--title-color);
-  margin: 0 var(--mb-1);
-  cursor: pointer;
-  padding: 5px;
+.training__core-tabs-button {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  border: 1px solid #1c1e21;
+  border-radius: 50px;
+  color: #1c1e21;
+  line-height: 16px;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  transition: color 0.33s linear 0.5s, border-color ease-out 0.5s;
+  background-color: #fff;
+  white-space: pre;
+  z-index: 1;
 }
 
-.qualification__button:hover {
-  background-color: rgba(74, 253, 253, 0.899);
-  border-radius: 10px;
+.training__core-tabs-button:after {
+  background-color: #1c1e21;
+  border-radius: 50%;
+  content: "";
+  height: 167px;
+  min-width: 167px;
+  position: absolute;
+  top: 0;
+  transform: scale(1) translateY(67px);
+  transition: transform 1s cubic-bezier(0.66, 0, 0.34, 1);
+  z-index: -1;
 }
 
-.qualification__icon {
+.training__core-tabs-active {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  border: 1px solid #1c1e21;
+  border-radius: 50px;
+  color: #1c1e21;
+  line-height: 16px;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  transition: color 0.33s linear 0.5s, border-color ease-out 0.5s;
+  background-color: #fff;
+  white-space: pre;
+  z-index: 1;
+}
+
+.training__core-tabs-active:after {
+  background-color: #1c1e21;
+  border-radius: 50%;
+  content: "";
+  height: 167px;
+  min-width: 167px;
+  position: absolute;
+  top: 0;
+  transform: scale(1) translateY(67px);
+  transition: transform 1s cubic-bezier(0.66, 0, 0.34, 1);
+  width: 100%;
+  z-index: -1;
+}
+
+.training__core-icons {
   font-size: 1.8rem;
   margin-right: var(--mb-0-25);
 }
 
-.qualification__active {
-  color: var(--title-color-dark);
+.training__core-tabs-active {
+  /* color: var(--title-color-dark); */
+  transition-delay: 0.5s;
+  color: #fff;
 }
 
-.qualification__sections {
+.training__core-tabs-active:after {
+  transform: scale(1.47) translateY(0);
+  background-color: #1c1e21;
+  border-radius: 50%;
+  content: "";
+  height: 167px;
+  min-width: 167px;
+  position: absolute;
+  top: 0;
+  /* transform: scale(1) translateY(67px); */
+  transition: transform 1s cubic-bezier(0.66, 0, 0.34, 1);
+  width: 100%;
+  z-index: -1;
+}
+
+.training__core-data {
   display: grid;
   grid-template-columns: 0.9fr;
   justify-content: center;
   align-items: center;
 }
 
-.qualification__content {
+.training__core-data-content {
   /*  NOSE PUEDE ALINEAR CON GRID PQ MI PANTALLA NO ENCAJA CON LA DE EL*/
   display: none;
 }
 
-.qualification__content-active {
+.training__core-data-content-active {
   display: block;
 }
 
-.qualification__data {
+.training__core-data-content-each {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
 }
 
-.qualification__title {
+.training__core-title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 }
 
-.qualification__subtitle {
+.training__core-subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
 }
 
-.qualification__calender {
+.training__core-calendar {
   font-size: var(--small-font-size);
 }
 
@@ -90,7 +173,7 @@
   font-size: 14px;
 }
 
-.qualification__rounder {
+.training__timeline-rounder {
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -98,7 +181,7 @@
   border-radius: 50%;
 }
 
-.qualification__line {
+.training__timeline-line {
   display: block;
   width: 1px;
   height: 100%;
@@ -109,7 +192,7 @@
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
-  .qualification__container {
+  .training__core {
     margin-left: auto;
     margin-right: auto;
   }
@@ -117,25 +200,25 @@
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
-  .qualification__container {
+  .training__core {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb--1-5);
   }
 }
 
 @media screen and (max-width: 576px) {
-  .qualification__sections {
+  .training__core-data {
     grid-template-columns: initial;
   }
 
-  .qualification__button {
-    margin: 0 var(--mb-0-75);
+  .training__core-icons {
+    display: none;
   }
 }
 
 /* For small devices */
 @media screen and (max-width: 350px) {
-  .qualification__data {
+  .training__core-data-content-each {
     gap: 0.5rem;
   }
 }

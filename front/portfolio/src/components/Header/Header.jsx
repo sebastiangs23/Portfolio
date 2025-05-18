@@ -7,9 +7,12 @@ import { useLanguage } from "../Language/Language";
 
 function Header() {
   const [language, setLanguage] = useState("spanish");
+  const [animating, setAnimating] = useState(false);
   const { sentences, switchLanguage } = useLanguage();
 
   const toggleLanguageButton = () => {
+    setAnimating(true);
+
     if(language == "spanish"){
       switchLanguage("english");
       setLanguage("english");
@@ -17,7 +20,6 @@ function Header() {
       switchLanguage("spanish");
       setLanguage("spanish");
     };
-    
   };
 
   return (
@@ -32,17 +34,25 @@ function Header() {
       </h1>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 mr-10">
-        <li className="font-poppins font-normal cursor-pointer text-[16px] mr-7">
-          <a href="#home" className="secciones" > {sentences.start} </a>
+        <li className="font-poppins font-normal cursor-pointer text-[14px] mr-3">
+          <a href="#home" className="hover-style_v2">
+            {sentences.start}
+          </a>
         </li>
-        <li className="font-poppins font-normal cursor-pointer text-[16px] mr-7">
-          <a href="#desarrollo" className="secciones" > {sentences.background_} </a>
+        <li className="font-poppins font-normal cursor-pointer text-[14px] mr-3">
+          <a href="#desarrollo" className="hover-style_v2">
+            {sentences.background_}
+          </a>
         </li>
-        <li className="font-poppins font-normal cursor-pointer text-[16px] mr-7">
-          <a href="#projectos" className="secciones" > {sentences.projects} </a>
+        <li className="font-poppins font-normal cursor-pointer text-[14px] mr-3">
+          <a href="#projectos" className="hover-style_v2">
+            {sentences.projects}
+          </a>
         </li>
-        <li className="font-poppins font-normal cursor-pointer text-[16px] mr-7">
-          <a href="#tecnologias" className="secciones" > {sentences.technologies} </a>
+        <li className="font-poppins font-normal cursor-pointer text-[14px]">
+          <a href="#tecnologias" className="hover-style_v2">
+            {sentences.technologies}
+          </a>
         </li>
       </ul>
 
@@ -57,14 +67,18 @@ function Header() {
         onClick={toggleLanguageButton}
       >
         <div
-          className={`relative w-24 h-12 flex items-center bg-gray-300 rounded-full p-1 transition-all duration-300 ease-in-out ${
+          className={`relative w-24 h-12 flex items-center bg-gray-300 rounded-full p-1 ${
             language === "english" ? "justify-end" : "justify-start"
           }`}
         >
           <img
             src={language === "spanish" ? spanish : english}
-            className="w-[30px] h-[30px] rounded-full bg-white shadow-md"
             alt={language}
+            className={`
+            w-[30px] h-[30px] rounded-full bg-white shadow-md
+            transition-all duration-500
+            ${animating ? "girar" : ""}
+          `}
           />
         </div>
       </div>

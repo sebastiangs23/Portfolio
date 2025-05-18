@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 
-.secciones{
-    padding: 5px;
+@keyframes giroMoneda {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
 }
 
-.secciones:hover{
-    background-color: rgba(74, 253, 253, 0.899);
-    border-radius: 5px;
+.girar {
+  animation: giroMoneda 0.6s ease;
+  transform-style: preserve-3d;
 }
