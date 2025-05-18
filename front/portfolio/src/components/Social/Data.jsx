@@ -1,12 +1,13 @@
 import React from "react";
 import { useLanguage } from "../Language/Language";
+import HiFiveButton from "../Home/Picture";
 
 function Data() {
   const { sentences } = useLanguage();
 
   return (
     <div className="home__data">
-      <h1 className="flex home__title">
+      <h1 className="flex items-center home__title">
         Sebastian Gomez
         <svg
           width="65"
@@ -59,6 +60,8 @@ function Data() {
         </svg>
       </h1>
 
+      {/* <HiFiveButton /> */}
+
       <h3 className="home__subtitle">{sentences.position}</h3>
       <p className="home__description">{sentences.description_position} </p>
 
@@ -72,7 +75,7 @@ function Data() {
       </a>
 
       <a
-        href="https://drive.google.com/file/d/155D_WDM7ZLKUH_8rlangKlkF0TFTl3un/view"
+        href={sentences.certifications_link}
         className="button button--flex"
         target="_blank"
       >

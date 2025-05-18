@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import signature from '../../assets/icon/sgomezs.png';
 import { useState } from "react";
 import english from "../../assets/languages/united-states.svg";
 import spanish from "../../assets/languages/spain.svg";
@@ -29,7 +30,8 @@ function Header() {
                        text-[42px]  ss:leading-[100px] ml-5 "
       >
         <span className="text-gradient">
-          SGS <br className="sm:block hidden" />
+          <img className="signature" src={signature} alt="signature" />
+          {/* SGS <br className="sm:block hidden" /> */}
         </span>
       </h1>
 

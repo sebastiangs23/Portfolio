@@ -9,9 +9,10 @@ const sentences = {
     position: "Desarrollador de Software",
     description_position:
       "Me gusta llevar las ideas de la mente al software y crear nuevas aplicaciones, herramientas y tecnologías con el objetivo ofrecer soluciones a traves de ellas.",
-    curriculum: "Currículum",
-    curriculum_link: "https://drive.google.com/file/d/1lwf_E7eULprHsL3bQYPYfZdo4VmafAoX/view",
+    curriculum: "Currículum Español",
+    curriculum_link: "https://docs.google.com/document/d/189xJH_zdEJyKH3OHbvBwqJMLCChYMZ_73_zD72AmdSU/edit?tab=t.0",
     certifications: "Certificados",
+    certifications_link: "https://drive.google.com/file/d/155D_WDM7ZLKUH_8rlangKlkF0TFTl3un/view?usp=sharing",
     background: "Formación",
     background_subtitle: "Mi desarrollo",
     work_experience: "Experiencia laboral",
@@ -90,10 +91,11 @@ const sentences = {
     position: "Software Developer",
     description_position:
       "I enjoy taking ideas from the mind to software and creating new applications, tools, and technologies with the aim of providing solutions through them.",
-    curriculum: "Curriculum",
+    curriculum: "Curriculum English",
     curriculum_link:
-      "https://drive.google.com/file/d/1lwf_E7eULprHsL3bQYPYfZdo4VmafAoX/view",
+      "https://docs.google.com/document/d/1I0UgdRaRptBlzsb_EVH55I9azX-1m4Bo/edit?usp=sharing&ouid=115427612197801979579&rtpof=true&sd=true",
     certifications: "Certifications",
+    certifications_link: "https://drive.google.com/file/d/155D_WDM7ZLKUH_8rlangKlkF0TFTl3un/view?usp=sharing",
     background: "Background",
     background_subtitle: "My development",
     work_experience: "Work Experience",
