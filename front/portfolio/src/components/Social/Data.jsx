@@ -1,6 +1,5 @@
 import React from "react";
 import { useLanguage } from "../Language/Language";
-import HiFiveButton from "../Home/Picture";
 
 function Data() {
   const { sentences } = useLanguage();
