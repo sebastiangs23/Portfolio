@@ -143,13 +143,21 @@ button {
   color: #1c1e21;
   line-height: 16px;
   overflow: hidden;
-  padding: 13px 20px;
+  /* padding: 13px 20px; */
   position: relative;
   text-align: center;
   transition: color 0.33s linear 0.5s, border-color ease-out 0.5s;
   background-color: #fff;
   white-space: pre;
   z-index: 1;
+}
+
+.hover-style_v2--small {
+  padding: 10px;
+}
+
+.hover-style_v2--normal {
+  padding: 13px 20px;
 }
 
 .hover-style_v2:hover {
@@ -163,10 +171,10 @@ button {
 
 .hover-style_v2:after {
   background-color: #1c1e21;
-  border-radius: 50%;
+  border-radius: 100%;
   content: "";
   height: 167px;
-  min-width: 167px;
+  /* min-width: 167px; */
   position: absolute;
   top: 0;
   transform: scale(1) translateY(67px);

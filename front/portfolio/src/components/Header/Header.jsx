@@ -35,22 +35,22 @@ function Header() {
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 mr-10">
         <li className="font-poppins font-normal cursor-pointer text-[14px] mr-3">
-          <a href="#home" className="hover-style_v2">
+          <a href="#home" className="hover-style_v2 hover-style_v2--normal">
             {sentences.start}
           </a>
         </li>
         <li className="font-poppins font-normal cursor-pointer text-[14px] mr-3">
-          <a href="#desarrollo" className="hover-style_v2">
+          <a href="#desarrollo" className="hover-style_v2 hover-style_v2--normal">
             {sentences.background_}
           </a>
         </li>
         <li className="font-poppins font-normal cursor-pointer text-[14px] mr-3">
-          <a href="#projectos" className="hover-style_v2">
+          <a href="#projectos" className="hover-style_v2 hover-style_v2--normal">
             {sentences.projects}
           </a>
         </li>
         <li className="font-poppins font-normal cursor-pointer text-[14px]">
-          <a href="#tecnologias" className="hover-style_v2">
+          <a href="#tecnologias" className="hover-style_v2 hover-style_v2--normal">
             {sentences.technologies}
           </a>
         </li>

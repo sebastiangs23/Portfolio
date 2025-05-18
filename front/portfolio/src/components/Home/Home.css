@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: max-content;
     row-gap: 1rem;
+    width: 100%;
 }
 
 .home__social-icon{
@@ -19,15 +20,8 @@
     color: var(--title-color);
 }
 
-
 .uil-social-icons{
     font-size: 28px;
-    padding-right: 4px;
-}
-
-.home__social-icon:hover{
-    background-color: rgba(74, 253, 253, 0.899);
-    border-radius: 5px;
 }
 
 .home__title{
