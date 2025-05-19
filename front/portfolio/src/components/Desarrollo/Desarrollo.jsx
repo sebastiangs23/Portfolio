@@ -61,6 +61,8 @@ function Education() {
         </div>
 
         <div className="training__core-data">
+
+          {/* TODO: Refactorizar esto */}
           {/* JOB EXPERIENCE */}
           <div
             className={
@@ -69,8 +71,139 @@ function Education() {
                 : "training__core-data-content"
             }
           >
+            {/* NEORIS */}
+            <div className="training__core-data-content-each">
+              <div>
+                <h3 className="training__core-title">
+                  {sentences.work_neoris_position}
+                </h3>
+                <div className="company_name">
+                  <FaRegBuilding className="icon_office" />
+                  <p className="text-job">Neoris</p>
+                </div>
+                <div className="flex items-center">
+                  <i className="uil uil-calendar-alt"></i>
+                  <p className="text-range-date">{sentences.work_neoris_date} </p>
+                </div>
+                <br />
+
+                <div>
+                  <p>
+                    {sentences.work_neoris_description} <br />
+                    {sentences.work_neoris_description_2}
+                  </p>
+                </div>
+
+                <br />
+
+                <Link
+                  to="/experience/dazlabs"
+                  className="button  button--flex"
+                >
+                  {sentences.see_more}
+                </Link>
+              </div>
+
+              <div>
+                <span className="training__timeline-rounder"></span>
+                <span className="training__timeline-line"></span>
+              </div>
+            </div>
+
+            {/* INLEARNING */}
+            <div className="training__core-data-content-each">
+              <div></div>
+
+              <div>
+                <span className="training__timeline-rounder"></span>
+                <span className="training__timeline-line"></span>
+              </div>
+
+              <div>
+                <h3 className="training__core-title">
+                  {sentences.work_inlearning_position}
+                </h3>
+
+                <div className="company_name">
+                  <FaRegBuilding className="icon_office" />
+                  <p className="text-job">Inlearning - Intercorp</p>
+                </div>
+
+                <div className="training__core-calendar">
+                  <div className="flex items-center">
+                    <i className="uil uil-calendar-alt"></i>
+                    <p>{sentences.work_inlearning_date}</p>
+                  </div>
+                </div>
+
+                <br />
+
+                <div>
+                  <p>
+                    {sentences.work_inlearing_description} <br />
+                    {sentences.work_inlearning_description_2}
+                  </p>
+                </div>
+
+                <br />
+
+                <Link
+                  to="/experience/dazlabs"
+                  className="button  button--flex"
+                >
+                  {sentences.see_more}
+                </Link>
+              </div>
+            </div>
+
+            {/* DAZLABS */}
+            <div className="training__core-data-content-each">
+              <div>
+                <h3 className="training__core-title">
+                  {sentences.work_dazlabs_position}
+                </h3>
+                <div className="company_name">
+                  <FaRegBuilding className="icon_office" />
+                  <p className="text-job">Dazlabs</p>
+                </div>
+                <div className="flex items-center">
+                  <i className="uil uil-calendar-alt"></i>
+                  <p className="text-range-date">{sentences.work_dazlabs_date} </p>
+                </div>
+                <br />
+
+                <div>
+                  <p>
+                    {sentences.work_dazlabs_description} <br />
+                    {sentences.work_dazlabs_description_2}
+                  </p>
+                </div>
+
+                <br />
+
+                <Link
+                  to="/experience/dazlabs"
+                  className="button  button--flex"
+                >
+                  {sentences.see_more}
+                </Link>
+              </div>
+
+              <div>
+                <span className="training__timeline-rounder"></span>
+                <span className="training__timeline-line"></span>
+              </div>
+            </div>
+
             {/* IBC */}
             <div className="training__core-data-content-each">
+              <div></div>
+              
+              <div>
+                <span className="training__timeline-rounder"></span>
+                <span className="training__timeline-line"></span>
+              </div>
+
               <div>
                 <h3 className="training__core-title">
                   {sentences.work_ibc_position}
@@ -101,22 +234,10 @@ function Education() {
                   {sentences.see_more}
                 </Link>
               </div>
-
-              <div>
-                <span className="training__timeline-rounder"></span>
-                <span className="training__timeline-line"></span>
-              </div>
             </div>
 
             {/* INTELIGENIO */}
             <div className="training__core-data-content-each">
-              <div></div>
-
-              <div>
-                <span className="training__timeline-rounder"></span>
-                <span className="training__timeline-line"></span>
-              </div>
-
               <div>
                 <h3 className="training__core-title">
                   {sentences.work_inte_position}
@@ -152,10 +273,22 @@ function Education() {
                   {sentences.see_more}
                 </Link>
               </div>
+
+              <div>
+                <span className="training__timeline-rounder"></span>
+                <span className="training__timeline-line"></span>
+              </div>
             </div>
 
             {/* Freelance */}
             <div className="training__core-data-content-each">
+              <div></div>
+              
+              <div>
+                <span className="training__timeline-rounder"></span>
+                <span className="training__timeline-line"></span>
+              </div>
+
               <div>
                 <h3 className="training__core-title">
                   {sentences.work_1_position}{" "}
@@ -180,11 +313,6 @@ function Education() {
                 </div>
 
                 <br />
-              </div>
-
-              <div>
-                <span className="training__timeline-rounder"></span>
-                <span className="training__timeline-line"></span>
               </div>
             </div>
           </div>

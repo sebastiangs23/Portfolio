@@ -18,6 +18,21 @@ const sentences = {
     work_experience: "Experiencia laboral",
     education: "Mi educación",
     skill: "Aptitudes",
+    work_neoris_position: "Desarrollador Frontend Semi Senior",
+    work_neoris_date: "2025 Marzo - Actualidad",
+    work_neoris_description: "Diseñé Web Components reutilizables y totalmente responsivos para BBVA, utilizando un framework interno (Cells) y principios de clean code. Cada componente fue testeado, documentado e incluía casos de uso detallados para asegurar su funcionalidad y mantenibilidad.",
+    work_neoris_description_2: " Además, implementé funcionalidades avanzadas, refactoricé código y mantuve altos estándares de calidad aplicando buenas prácticas y la convención BEM.",
+
+    work_inlearning_position: "Desarrollador Frontend",
+    work_inlearning_date: "2024 Octubre - 2025 Marzo",
+    work_inlearing_description: "Diseñé y refactoricé componentes y vistas jerárquicas completamente responsivas, con hasta 5 niveles de interconexión mediante props, emits, inject, provide y refs. Migré más de 20 vistas a TypeScript aplicando buenas prácticas con interfaces, tipos, operadores ternarios, type guards y coalescencia nula.",
+    work_inlearning_description_2: "Además, desarrollé más de 50 plantillas de correo electrónico automatizadas, enviadas cronológicamente a todos los usuarios.",
+
+    work_dazlabs_position: "Desarrollador Backend",
+    work_dazlabs_date: "2024 Agosto - 2025 Marzo",
+    work_dazlabs_description: "Desarrollé múltiples servicios backend para diferentes productos (viajes, belleza y automatización interna), diseñando colecciones en MongoDB y entregando endpoints RESTful probados y documentados con Swagger;",
+    work_dazlabs_description_2: " además, facilité una capacitación técnica sobre APIs de inteligencia artificial a más de 110 personas.",
+    
     work_ibc_position: "Desarrollador de Software",
     work_ibc_date: "2023 Noviembre - 2024 Junio",
     work_ibc_description:
@@ -26,7 +41,7 @@ const sentences = {
       "Además, migré el proyecto de React 15 a React 18 y apliqué arquitectura hexagonal en el front.",
     see_more: "Ver más",
     work_inte_position:
-      "Desarroollador Backend & Administrador de base de datos.",
+      "Desarrollador Backend & Administrador de base de datos.",
     work_inte_date: "2023 Marzo - 2024 Junio",
     work_inte_description:
       "Trabajé de la mano con el equipo de QA, desarrolladores y el product owner para rediseñar la arquitectura de la base de datos, aplicando reglas de negocio, constrains, uniques y relaciones para una plataforma educativa.",
@@ -107,6 +122,20 @@ const sentences = {
       "I Developed a service using Azure Speech AI which allows the client to enter into a conversation with the system. All the data is transformed into metrics and statistics, to be rendered in graphs on the administrator dashboard.",
     work_ibc_description_2:
       "In addition to migrating the project from React 15 to React 18 and applying hexagonal architecture in the front.",
+    work_neoris_position: "Frontend Developer Semi Senior",
+    work_neoris_date: "2025 March - Present",
+    work_neoris_description: "Designed reusable and fully responsive Web Components for BBVA using an internal framework (Cells) and clean code principles. Each component was thoroughly tested, documented, and included detailed use cases to ensure functionality and maintainability.",
+    work_neoris_description_2: " Additionally, implemented advanced features, refactored code, and upheld high-quality standards by applying best practices and the BEM convention.",
+    work_inlearning_position: "Frontend Developer",
+    work_inlearning_date: "2024 October - 2025 March",
+    work_inlearing_description: "Created and refactored hierarchical, fully responsive components and views with up to 5 levels of interconnection using props, emits, inject, provide, and refs. Migrated over 20 views to TypeScript, implementing interfaces, types, ternary operators, type guards, and nullish coalescing.",
+    work_inlearning_description_2: "Developed 50+ automated email templates triggered chronologically for all users.",
+
+    work_dazlabs_position: "Backend Developer",
+    work_dazlabs_date: "2024 August - 2025 March",
+    work_dazlabs_description: "Developed multiple backend services for various products (travel, beauty, and internal automation), designing MongoDB collections and delivering fully tested and documented RESTful endpoints via Swagger; additionally,",
+    work_dazlabs_description_2: " led a technical training session on AI APIs for over 110 people.",
+
     see_more: "See more",
     work_inte_position: "Backend Developer & Database Administrator",
     work_inte_date: "2023 March - 2024 June",
