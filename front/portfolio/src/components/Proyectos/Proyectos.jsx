@@ -10,9 +10,6 @@ import "./slider.css";
 /*____________
 |   PHONE   */
 import phone from "../../assets/projects/phone.svg";
-import login from "../../assets/imagenesproyectos/phone/login-canva.png";
-import score from "../../assets/imagenesproyectos/phone/score-canva.png";
-import selectAi from "../../assets/imagenesproyectos/phone/select-ia-canva.png";
 
 /*____________
 |   WEB   */

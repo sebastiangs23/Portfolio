@@ -87,7 +87,7 @@
   transition: 1s box-shadow;
 }
 
-#reactjs {
+.reactjs {
   width: 200px;
 }
 
@@ -95,11 +95,11 @@
   width: 200px;
 }
 
-#nodeimg {
+.nodeimg {
   width: 100px;
 }
 
-#express {
+.express {
   width: 100px;
   padding-top: 8px;
 }

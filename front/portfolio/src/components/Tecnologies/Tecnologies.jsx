@@ -43,19 +43,19 @@ function Tecnologies() {
         <div className="seccion">
           <h3 className="subtitulo">Front-end</h3>
           <div className="solo">
-            <img src={vue} className="image-big" />
+            <img src={vue} loading="lazy" className="image-big"  />
           </div>
           <div className="solo">
-            <img src={react} className="imagen" id="reactjs" />
+            <img src={react} loading="lazy" className="imagen reactjs" />
           </div>
           <div className="solo">
-            <img src={redux} className="imagen" />
+            <img src={redux} loading="lazy" className="imagen" />
           </div>
           <div className="solo">
-            <img src={reactNative} className="image-big" />
+            <img src={reactNative} loading="lazy" className="image-big" />
           </div>
           <div className="solo">
-            <img src={figma} className="image-big" />
+            <img src={figma} loading="lazy" className="image-big" />
           </div>
           
         </div>
@@ -64,13 +64,13 @@ function Tecnologies() {
         <div className="seccion">
           <h3 className="subtitulo">Back-end</h3>
           <div className="solo">
-            <img src={typescript} className="image-big" />
+            <img src={typescript} loading="lazy" className="image-big" />
           </div>
           <div className="solo">
-            <img src={node} className="imagen" id="nodeimg" />
+            <img src={node} loading="lazy" className="imagen nodeimg" />
           </div>
           <div className="solo">
-            <img src={express} className="imagen" id="express" />
+            <img src={express} loading="lazy" className="imagen express" />
           </div>
         </div>
 
@@ -78,13 +78,13 @@ function Tecnologies() {
         <div className="seccion">
           <h3 className="subtitulo">{sentences.database} </h3>
           <div className="solo">
-            <img src={mysql} className="imagen" />
+            <img src={mysql} loading="lazy" className="imagen" />
           </div>
           <div className="solo">
-            <img src={postgres} className="image-big" />
+            <img src={postgres} loading="lazy" className="image-big" />
           </div>
           <div className="solo">
-            <img src={mongodb} className="image-mongo" />
+            <img src={mongodb} loading="lazy" className="image-mongo" />
           </div>
         </div>
 
@@ -92,10 +92,10 @@ function Tecnologies() {
         <div className="seccion">
           <h3 className="subtitulo">ORM</h3>
           <div className="solo">
-            <img src={sequelize} className="image-big" />
+            <img src={sequelize} loading="lazy" className="image-big" />
           </div>
           <div className="solo">
-            <img src={mongoose} className="imagen" />
+            <img src={mongoose} loading="lazy" className="imagen" />
           </div>
         </div>
 
@@ -103,10 +103,10 @@ function Tecnologies() {
         <div className="seccion">
           <h3 className="subtitulo">Cloud, hosting & Version Control</h3>
           <div className="solo">
-            <img src={aws} className="image-big" />
+            <img src={aws} loading="lazy" className="image-big" />
           </div>
           <div className="solo">
-            <img src={github} className="image-big" />
+            <img src={github} loading="lazy" className="image-big" />
           </div>
           <div></div>
         </div>
