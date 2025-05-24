@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./sliderJob.css";
 
 export default function SliderJob({ slides, type }) {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
+
+  useEffect(() => {
+    const nextImage = (current + 1) % length;
+    const preloadImg = new Image();
+    preloadImg.src = slides[nextImage].image;
+  });
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
