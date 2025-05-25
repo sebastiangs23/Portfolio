@@ -1,15 +1,21 @@
-import React from "react";
-import "./Header.css";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { useLanguage } from "../Language/Language";
 import signature from '../../assets/icon/sgomezs.png';
-import { useState } from "react";
 import english from "../../assets/languages/united-states.svg";
 import spanish from "../../assets/languages/spain.svg";
-import { useLanguage } from "../Language/Language";
+import "./Header.css";
 
 function Header() {
   const [language, setLanguage] = useState("spanish");
   const [animating, setAnimating] = useState(false);
+  const [showNavbar, setShowNavBar] = useState(true);
   const { sentences, switchLanguage } = useLanguage();
+  const location = useLocation();
+
+  useEffect(() => {
+    location.pathname !== '/' ? setShowNavBar(false) : setShowNavBar(true);
+  }, [location.pathname]);
 
   const toggleLanguageButton = () => {
     setAnimating(true);
@@ -31,31 +37,19 @@ function Header() {
       >
         <span className="text-gradient">
           <img className="signature" src={signature} alt="signature" />
-          {/* SGS <br className="sm:block hidden" /> */}
         </span>
       </h1>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 mr-10">
-        <li className="font-poppins font-normal cursor-pointer text-[14px] mr-3">
-          <a href="#home" className="hover-style_v2 hover-style_v2--normal">
-            {sentences.start}
-          </a>
-        </li>
-        <li className="font-poppins font-normal cursor-pointer text-[14px] mr-3">
-          <a href="#desarrollo" className="hover-style_v2 hover-style_v2--normal">
-            {sentences.background_}
-          </a>
-        </li>
-        <li className="font-poppins font-normal cursor-pointer text-[14px] mr-3">
-          <a href="#projectos" className="hover-style_v2 hover-style_v2--normal">
-            {sentences.projects}
-          </a>
-        </li>
-        <li className="font-poppins font-normal cursor-pointer text-[14px]">
-          <a href="#tecnologias" className="hover-style_v2 hover-style_v2--normal">
-            {sentences.technologies}
-          </a>
-        </li>
+        {showNavbar && sentences.navBar.map((item, index) => {
+          return (
+            <li key={index} className="font-poppins font-normal cursor-pointer text-[14px] mr-3">
+              <a href={item.href} className="hover-style_v2 hover-style_v2--normal">
+                {item.name}
+              </a>
+            </li>
+          )
+        }) }
       </ul>
 
       <span

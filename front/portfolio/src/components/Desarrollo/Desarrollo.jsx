@@ -178,15 +178,6 @@ function Education() {
                     {sentences.work_dazlabs_description_2}
                   </p>
                 </div>
-
-                <br />
-
-                <Link
-                  to="/experience/dazlabs"
-                  className="button  button--flex"
-                >
-                  {sentences.see_more}
-                </Link>
               </div>
 
               <div>

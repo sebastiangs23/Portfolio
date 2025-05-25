@@ -2,6 +2,24 @@ import React, { createContext, useContext, useState } from "react";
 
 const sentences = {
   spanish: {
+    navBar: [
+      {
+        name: 'Inicio',
+        href: '#home'
+      },
+      {
+        name: 'Desarrollo',
+        href: '#desarrollo'
+      },
+      {
+        name: 'Proyectos',
+        href: '#projectos'
+      },
+      {
+        name: 'Tecnologías',
+        href: '#tecnologias'
+      }
+    ],
     start: "Inicio",
     background_: "Desarrollo",
     projects: "Proyectos",
@@ -31,7 +49,7 @@ const sentences = {
     work_dazlabs_position: "Desarrollador Backend",
     work_dazlabs_date: "2024 Agosto - 2025 Marzo",
     work_dazlabs_description: "Desarrollé múltiples servicios backend para diferentes productos (viajes, belleza y automatización interna), diseñando colecciones en MongoDB y entregando endpoints RESTful probados y documentados con Swagger;",
-    work_dazlabs_description_2: " además, facilité una capacitación técnica sobre APIs de inteligencia artificial a más de 110 personas.",
+    work_dazlabs_description_2: " además, di una capacitación técnica sobre APIs de inteligencia artificial a más de 110 personas.",
     
     work_ibc_position: "Desarrollador de Software",
     work_ibc_date: "2023 Noviembre - 2024 Junio",
@@ -99,6 +117,24 @@ const sentences = {
     database: "Base de datos"
   },
   english: {
+    navBar: [
+      {
+        name: 'Start',
+        href: '#home'
+      },
+      {
+        name: 'Background',
+        href: '#desarrollo'
+      },
+      {
+        name: 'Projects',
+        href: '#projectos'
+      },
+      {
+        name: 'Technologies',
+        href: '#tecnologias'
+      }
+    ],
     start: "Start",
     background_: "Background",
     projects: "Projects",
