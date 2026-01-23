@@ -57,7 +57,7 @@ export const sliderIbc = [
 
 /*_______________
 |  INLEARNING  */
-import adminSessions from "../../assets/imagenes-trabajo/Inlearning/admin-profile-sessions-enablement.jpg";
+import adminSessions from "../../assets/imagenes-trabajo/inlearning/admin-profile-sessions-enablement.jpg";
 import studentPaperwork from "../../assets/imagenes-trabajo/Inlearning/student-profile-paperwork-typescript.jpg";
 import teacherDinamicAlerts from "../../assets/imagenes-trabajo/inlearning/teacher-profile-dinamic-alerts.jpg";
 import teacherSessionRescheduleBot from "../../assets/imagenes-trabajo/inlearning/teacher-profile-session-reschedule-bottom.jpg";
