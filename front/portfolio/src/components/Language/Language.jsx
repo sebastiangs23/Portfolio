@@ -37,7 +37,7 @@ const sentences = {
     education: "Mi educación",
     skill: "Aptitudes",
     work_neoris_position: "Desarrollador Frontend Semi Senior",
-    work_neoris_date: "2025 Marzo - Actualidad",
+    work_neoris_date: "2025 Marzo - 2025 Agosto",
     work_neoris_description: "Diseñé Web Components reutilizables y totalmente responsivos para BBVA, utilizando un framework interno (Cells) y principios de clean code. Cada componente fue testeado, documentado e incluía casos de uso detallados para asegurar su funcionalidad y mantenibilidad.",
     work_neoris_description_2: " Además, implementé funcionalidades avanzadas, refactoricé código y mantuve altos estándares de calidad aplicando buenas prácticas y la convención BEM.",
 
@@ -159,7 +159,7 @@ const sentences = {
     work_ibc_description_2:
       "In addition to migrating the project from React 15 to React 18 and applying hexagonal architecture in the front.",
     work_neoris_position: "Frontend Developer Semi Senior",
-    work_neoris_date: "2025 March - Present",
+    work_neoris_date: "2025 March - 2025 August",
     work_neoris_description: "Designed reusable and fully responsive Web Components for BBVA using an internal framework (Cells) and clean code principles. Each component was thoroughly tested, documented, and included detailed use cases to ensure functionality and maintainability.",
     work_neoris_description_2: " Additionally, implemented advanced features, refactored code, and upheld high-quality standards by applying best practices and the BEM convention.",
     work_inlearning_position: "Frontend Developer",

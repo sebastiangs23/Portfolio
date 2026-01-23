@@ -1,4 +1,3 @@
-import React from "react";
 import { useLanguage } from "../../Language/Language";
 import SliderJob from "./sliderJob";
 import { sliderIbc } from "../../../assets/imagenes-trabajo/imagenes";

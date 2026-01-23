@@ -14,6 +14,8 @@ import Tecnologies from "./components/Tecnologies/Tecnologies";
 import JobDetailsInte from "./components/Desarrollo/components/JobDetailsInte";
 import JobDetailsIbc from "./components/Desarrollo/components/JobDetailsIbc";
 import JobDetailsDazlabs from "./components/Desarrollo/components/JobDetailsDazlabs";
+import JobDetailsInlearning from "./components/Desarrollo/components/JobDetailsInlearning";
+import JobDetailsEpamNeoris from "./components/Desarrollo/components/JobDetailsNeoris";
 
 import "./App.css";
 
@@ -38,6 +40,8 @@ function App() {
             <Route path="/experience/inteligenio" element={<JobDetailsInte />} />
             <Route path="/experience/ibc-institute" element={<JobDetailsIbc />} />
             <Route path="/experience/dazlabs" element={<JobDetailsDazlabs/> } />
+            <Route path="/experience/inlearning" element={<JobDetailsInlearning/> } />
+            <Route path="/experience/epam-neoris" element={<JobDetailsEpamNeoris/> } />
           </Routes>
         </main>
       </div>

@@ -51,7 +51,7 @@
 
 
 .home__img {
-    background: url(../../assets/sgs.jpeg);
+    /* background: url(../../assets/sgs.jpeg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../Language/Language";
 import { FaLaptopCode, FaRegBuilding } from "react-icons/fa";
@@ -62,7 +62,7 @@ function Education() {
 
         <div className="training__core-data">
 
-          {/* TODO: Refactorizar esto */}
+          {/* TODO: Refactorizar esta mierda urgente */}
           {/* JOB EXPERIENCE */}
           <div
             className={
@@ -79,7 +79,7 @@ function Education() {
                 </h3>
                 <div className="company_name">
                   <FaRegBuilding className="icon_office" />
-                  <p className="text-job">Neoris</p>
+                  <p className="text-job">EPAM Neoris</p>
                 </div>
                 <div className="flex items-center">
                   <i className="uil uil-calendar-alt"></i>
@@ -97,6 +97,7 @@ function Education() {
                 <br />
 
                 <Link
+                  // to="/experience/epam-neoris"
                   to="/experience/dazlabs"
                   className="button  button--flex"
                 >
@@ -148,7 +149,7 @@ function Education() {
                 <br />
 
                 <Link
-                  to="/experience/dazlabs"
+                  to="/experience/inlearning"
                   className="button  button--flex"
                 >
                   {sentences.see_more}

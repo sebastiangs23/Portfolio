@@ -54,3 +54,47 @@ export const sliderIbc = [
         image: ibcVocabulary
     },
 ];
+
+/*_______________
+|  INLEARNING  */
+import adminSessions from "../../assets/imagenes-trabajo/Inlearning/admin-profile-sessions-enablement.jpg";
+import studentPaperwork from "../../assets/imagenes-trabajo/Inlearning/student-profile-paperwork-typescript.jpg";
+import teacherDinamicAlerts from "../../assets/imagenes-trabajo/inlearning/teacher-profile-dinamic-alerts.jpg";
+import teacherSessionRescheduleBot from "../../assets/imagenes-trabajo/inlearning/teacher-profile-session-reschedule-bottom.jpg";
+import teacherSessionRescheduleTop from "../../assets//imagenes-trabajo/inlearning/teacher-profile-session-reschedule-top.jpg";
+
+export const sliderInlearning = [
+    {
+        image: adminSessions
+    },
+    {
+        image: studentPaperwork
+    },
+    {   
+        image: teacherDinamicAlerts
+    },
+    {
+        image: teacherSessionRescheduleBot
+    },
+    {
+        image: teacherSessionRescheduleTop
+    }
+];
+
+/*___________
+|  NEORIS  */
+import home from "../../assets/imagenes-trabajo/neoris/home.jpg";
+import serviceDetails from "../../assets/imagenes-trabajo/neoris/service-details.jpg";
+import services from "../../assets/imagenes-trabajo/neoris/services.jpg";
+
+export const sliderNeoris = [
+    {
+        image: home
+    },
+    {
+        image: serviceDetails
+    },
+    {
+        image: services
+    }
+];
