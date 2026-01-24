@@ -14,7 +14,6 @@ function Education() {
 
   return (
     <section className="training" id="desarrollo">
-
       <h2 className="training__title">{sentences.background} </h2>
 
       <span className="training__subtitle">
@@ -22,7 +21,6 @@ function Education() {
       </span>
 
       <div className="training__core container">
-
         <div className="training__core-tabs">
           <div
             className={
@@ -61,7 +59,6 @@ function Education() {
         </div>
 
         <div className="training__core-data">
-
           {/* TODO: Refactorizar esta mierda urgente */}
           {/* JOB EXPERIENCE */}
           <div
@@ -71,242 +68,66 @@ function Education() {
                 : "training__core-data-content"
             }
           >
-            {/* NEORIS */}
-            <div className="training__core-data-content-each">
-              <div>
-                <h3 className="training__core-title">
-                  {sentences.work_neoris_position}
-                </h3>
-                <div className="company_name">
-                  <FaRegBuilding className="icon_office" />
-                  <p className="text-job">EPAM Neoris</p>
-                </div>
-                <div className="flex items-center">
-                  <i className="uil uil-calendar-alt"></i>
-                  <p className="text-range-date">{sentences.work_neoris_date} </p>
-                </div>
-                <br />
+            {sentences.work_experience_items?.map((job, index) => {
+              const isLeft = index % 2 === 0;
+              const isLast =
+                index === sentences.work_experience_items.length - 1;
 
+              const Content = () => (
                 <div>
-                  <p>
-                    {sentences.work_neoris_description} <br />
-                    {sentences.work_neoris_description_2}
-                  </p>
-                </div>
+                  <h3 className="training__core-title">{job.position}</h3>
 
-                <br />
+                  <div className="company_name">
+                    <FaRegBuilding className="icon_office" />
+                    <p className="text-job">{job.company}</p>
+                  </div>
 
-                <Link
-                  // to="/experience/epam-neoris"
-                  to="/experience/dazlabs"
-                  className="button  button--flex"
-                >
-                  {sentences.see_more}
-                </Link>
-              </div>
-
-              <div>
-                <span className="training__timeline-rounder"></span>
-                <span className="training__timeline-line"></span>
-              </div>
-            </div>
-
-            {/* INLEARNING */}
-            <div className="training__core-data-content-each">
-              <div></div>
-
-              <div>
-                <span className="training__timeline-rounder"></span>
-                <span className="training__timeline-line"></span>
-              </div>
-
-              <div>
-                <h3 className="training__core-title">
-                  {sentences.work_inlearning_position}
-                </h3>
-
-                <div className="company_name">
-                  <FaRegBuilding className="icon_office" />
-                  <p className="text-job">Inlearning - Intercorp</p>
-                </div>
-
-                <div className="training__core-calendar">
                   <div className="flex items-center">
                     <i className="uil uil-calendar-alt"></i>
-                    <p>{sentences.work_inlearning_date}</p>
+                    <p className="text-range-date">{job.date}</p>
                   </div>
-                </div>
 
-                <br />
+                  <br />
 
-                <div>
-                  <p>
-                    {sentences.work_inlearing_description} <br />
-                    {sentences.work_inlearning_description_2}
-                  </p>
-                </div>
-
-                <br />
-
-                <Link
-                  to="/experience/inlearning"
-                  className="button  button--flex"
-                >
-                  {sentences.see_more}
-                </Link>
-              </div>
-            </div>
-
-            {/* DAZLABS */}
-            <div className="training__core-data-content-each">
-              <div>
-                <h3 className="training__core-title">
-                  {sentences.work_dazlabs_position}
-                </h3>
-                <div className="company_name">
-                  <FaRegBuilding className="icon_office" />
-                  <p className="text-job">Dazlabs</p>
-                </div>
-                <div className="flex items-center">
-                  <i className="uil uil-calendar-alt"></i>
-                  <p className="text-range-date">{sentences.work_dazlabs_date} </p>
-                </div>
-                <br />
-
-                <div>
-                  <p>
-                    {sentences.work_dazlabs_description} <br />
-                    {sentences.work_dazlabs_description_2}
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <span className="training__timeline-rounder"></span>
-                <span className="training__timeline-line"></span>
-              </div>
-            </div>
-
-            {/* IBC */}
-            <div className="training__core-data-content-each">
-              <div></div>
-              
-              <div>
-                <span className="training__timeline-rounder"></span>
-                <span className="training__timeline-line"></span>
-              </div>
-
-              <div>
-                <h3 className="training__core-title">
-                  {sentences.work_ibc_position}
-                </h3>
-                <div className="company_name">
-                  <FaRegBuilding className="icon_office" />
-                  <p className="text-job">IBC Institute - Ceoline</p>
-                </div>
-                <div className="flex items-center">
-                  <i className="uil uil-calendar-alt"></i>
-                  <p className="text-range-date">{sentences.work_ibc_date} </p>
-                </div>
-                <br />
-
-                <div>
-                  <p>
-                    {sentences.work_ibc_description} <br />
-                    {sentences.work_ibc_description_2}
-                  </p>
-                </div>
-
-                <br />
-
-                <Link
-                  to="/experience/ibc-institute"
-                  className="button  button--flex"
-                >
-                  {sentences.see_more}
-                </Link>
-              </div>
-            </div>
-
-            {/* INTELIGENIO */}
-            <div className="training__core-data-content-each">
-              <div>
-                <h3 className="training__core-title">
-                  {sentences.work_inte_position}
-                </h3>
-
-                <div className="company_name">
-                  <FaRegBuilding className="icon_office" />
-                  <p className="text-job">Inteligenio - Ceoline</p>
-                </div>
-
-                <div className="training__core-calendar">
-                  <div className="flex items-center">
-                    <i className="uil uil-calendar-alt"></i>
-                    <p>{sentences.work_inte_date}</p>
+                  <div>
+                    <p>
+                      {job.descriptions?.map((text, i) => (
+                        <span key={i}>
+                          {text}
+                          {i < job.descriptions.length - 1 ? <br /> : null}
+                        </span>
+                      ))}
+                    </p>
                   </div>
+
+                  <br />
+
+                  {job.route ? (
+                    <Link to={job.route} className="button button--flex">
+                      {sentences.see_more}
+                    </Link>
+                  ) : null}
                 </div>
+              );
 
-                <br />
+              return (
+                <div className="training__core-data-content-each" key={job.id}>
+                  {/* Left */}
+                  {isLeft ? <Content /> : <div></div>}
 
-                <div>
-                  <p>
-                    {sentences.work_inte_description} <br />
-                    {sentences.work_inte_description_2}
-                  </p>
-                </div>
-
-                <br />
-
-                <Link
-                  to="/experience/inteligenio"
-                  className="button  button--flex"
-                >
-                  {sentences.see_more}
-                </Link>
-              </div>
-
-              <div>
-                <span className="training__timeline-rounder"></span>
-                <span className="training__timeline-line"></span>
-              </div>
-            </div>
-
-            {/* Freelance */}
-            <div className="training__core-data-content-each">
-              <div></div>
-              
-              <div>
-                <span className="training__timeline-rounder"></span>
-                <span className="training__timeline-line"></span>
-              </div>
-
-              <div>
-                <h3 className="training__core-title">
-                  {sentences.work_1_position}{" "}
-                </h3>
-
-                <div className="company_name">
-                  <FaRegBuilding className="icon_office" />
-                  <p className="text-job">Page for a clinic - Freelance</p>
-                </div>
-
-                <div className="training__core-calendar">
-                  <div className="flex items-center  ">
-                    <i className="uil uil-calendar-alt"></i>
-                    <p>{sentences.work_1_date} </p>
+                  {/* Timeline */}
+                  <div>
+                    <span className="training__timeline-rounder"></span>
+                    {!isLast && (
+                      <span className="training__timeline-line"></span>
+                    )}
                   </div>
+
+                  {/* Right */}
+                  {!isLeft ? <Content /> : null}
                 </div>
-
-                <br />
-
-                <div>
-                  <p>{sentences.work_1_description}</p>
-                </div>
-
-                <br />
-              </div>
-            </div>
+              );
+            })}
           </div>
 
           {/* EDUCATION */}
@@ -379,24 +200,21 @@ function Education() {
 
             <div className="training__core-data-content-each">
               <div>
-                <h3 className="training__core-title">
-                  {sentences.carrer_upc}
-                </h3>
+                <h3 className="training__core-title">{sentences.carrer_upc}</h3>
 
                 <div className="company_name">
                   <FaRegBuilding className="icon_office" />
-                  <span className="text-job">
-                  {sentences.carrer_place_upc}
-                  </span>
+                  <span className="text-job">{sentences.carrer_place_upc}</span>
                 </div>
 
                 <br />
                 <span className="training__core-subtitle">
-                {sentences.carrer_status_upc}
+                  {sentences.carrer_status_upc}
                 </span>
 
                 <div className="training__core-calendar">
-                  <i className="uil uil-calendar-alt"></i> {sentences.carrer_date_upc}
+                  <i className="uil uil-calendar-alt"></i>{" "}
+                  {sentences.carrer_date_upc}
                 </div>
               </div>
 
@@ -422,13 +240,10 @@ function Education() {
                   {sentences.skills_personal}
                 </h3>
                 <ul>
-                  { sentences.skills_personal_all && (
-                      sentences.skills_personal_all.map((skill, index) => {
-                        return (
-                          <li key={index}>{skill}</li>
-                        )
-                      })
-                  ) }
+                  {sentences.skills_personal_all &&
+                    sentences.skills_personal_all.map((skill, index) => {
+                      return <li key={index}>{skill}</li>;
+                    })}
                 </ul>
               </div>
 
@@ -452,21 +267,15 @@ function Education() {
                   {sentences.skills_team}
                 </h3>
                 <ul className="pl-5">
-                  {
-                    sentences.skills_team_all && (
-                      sentences.skills_team_all.map((skill,index)=> {
-                        return (
-                          <li key={index}>{skill}</li>
-                        )
-                      })
-                    )
-                  }
+                  {sentences.skills_team_all &&
+                    sentences.skills_team_all.map((skill, index) => {
+                      return <li key={index}>{skill}</li>;
+                    })}
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        
       </div>
     </section>
   );
