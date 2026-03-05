@@ -46,7 +46,7 @@ const sentences = {
           "Diseñé Web Components reutilizables y totalmente responsivos para BBVA, utilizando un framework interno (Cells) y principios de clean code. Cada componente fue testeado, documentado e incluía casos de uso detallados para asegurar su funcionalidad y mantenibilidad.",
           "Además, implementé funcionalidades avanzadas, refactoricé código y mantuve altos estándares de calidad aplicando buenas prácticas y la convención BEM.",
         ],
-        route: "/experience/dazlabs",
+        route: "/experience/epam-neoris",
       },
       {
         id: "inlearning",

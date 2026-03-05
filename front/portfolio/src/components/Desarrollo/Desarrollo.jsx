@@ -59,7 +59,6 @@ function Education() {
         </div>
 
         <div className="training__core-data">
-          {/* TODO: Refactorizar esta mierda urgente */}
           {/* JOB EXPERIENCE */}
           <div
             className={
