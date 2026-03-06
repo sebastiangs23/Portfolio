@@ -9,15 +9,15 @@ const sentences = {
       },
       {
         name: "Desarrollo",
-        href: "#desarrollo",
+        href: "#background",
       },
       {
         name: "Proyectos",
-        href: "#projectos",
+        href: "#projects",
       },
       {
         name: "Tecnologías",
-        href: "#tecnologias",
+        href: "#technologies",
       },
     ],
     start: "Inicio",
@@ -179,15 +179,15 @@ const sentences = {
       },
       {
         name: "Background",
-        href: "#desarrollo",
+        href: "#background",
       },
       {
         name: "Projects",
-        href: "#projectos",
+        href: "#projects",
       },
       {
         name: "Technologies",
-        href: "#tecnologias",
+        href: "#technologies",
       },
     ],
     start: "Start",
@@ -244,10 +244,12 @@ const sentences = {
         company: "Dazlabs",
         position: "Backend Developer",
         date: "2024 August - 2025 March",
-        descriptions: [
-          "Developed multiple backend services for different products (travel, beauty, and internal automation), designing MongoDB collections and delivering tested and documented RESTful endpoints using Swagger.",
-          "Also led a technical training session about AI APIs for 110+ people.",
-        ],
+        descriptions: {
+          general: [
+            "Developed multiple backend services for different products (travel, beauty, and internal automation), designing MongoDB collections and delivering tested and documented RESTful endpoints using Swagger.",
+            "Also led a technical training session about AI APIs for 110+ people.",
+          ]
+        },
         route: null,
       },
       {

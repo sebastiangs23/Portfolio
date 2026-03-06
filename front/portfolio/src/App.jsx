@@ -5,17 +5,17 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 |   LANDING   */
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
-import Desarrollo from "./components/Desarrollo/Desarrollo";
-import Proyectos from "./components/Proyectos/Proyectos";
-import Tecnologies from "./components/Tecnologies/Tecnologies";
+import Background from "./components/Background/Background";
+import Projects from "./components/Projects/Projects";
+import Technologies from "./components/Technologies/Technologies";
 
 /*__________________
 |   JOB DETAILS   */
-import JobDetailsInte from "./components/Desarrollo/components/JobDetailsInte";
-import JobDetailsIbc from "./components/Desarrollo/components/JobDetailsIbc";
-import JobDetailsDazlabs from "./components/Desarrollo/components/JobDetailsDazlabs";
-import JobDetailsInlearning from "./components/Desarrollo/components/JobDetailsInlearning";
-import JobDetailsEpamNeoris from "./components/Desarrollo/components/JobDetailsNeoris";
+import JobDetailsInte from "./components/Background/components/JobDetailsInte";
+import JobDetailsIbc from "./components/Background/components/JobDetailsIbc";
+import JobDetailsDazlabs from "./components/Background/components/JobDetailsDazlabs";
+import JobDetailsInlearning from "./components/Background/components/JobDetailsInlearning";
+import JobDetailsEpamNeoris from "./components/Background/components/JobDetailsNeoris";
 
 import "./App.css";
 
@@ -31,9 +31,9 @@ function App() {
               element={
                 <>
                   <Home />
-                  <Desarrollo />
-                  <Proyectos />
-                  <Tecnologies />
+                  <Background />
+                  <Projects />
+                  <Technologies />
                 </>
               }
             />

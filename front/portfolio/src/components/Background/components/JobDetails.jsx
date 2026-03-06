@@ -1,4 +1,3 @@
-import { useState } from "react";
 import SliderJob from "./sliderJob";
 
 export default function JobDetails({title, slides, descriptions}) {

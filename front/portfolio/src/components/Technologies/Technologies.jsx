@@ -1,6 +1,5 @@
-import React from "react";
 import { useLanguage } from "../Language/Language";
-import "./tecnologies.css";
+import "./technologies.css";
 
 /*_____________
 |   CLIENT   */
@@ -36,7 +35,7 @@ function Tecnologies() {
   const {sentences} = useLanguage();
 
   return (
-    <div className="container-tecnologies" id="tecnologias">
+    <div className="container-tecnologies" id="technologies">
       <h2 className="section__title">{sentences.technologies} </h2>
       <div className="flex-container">
         {/* FRONT */}

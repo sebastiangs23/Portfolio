@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../Language/Language";
 import { FaLaptopCode, FaRegBuilding } from "react-icons/fa";
-import "./Desarrollo.css";
+import "./Background.css";
 
-function Education() {
+export default function Background() {
   const [toggleState, setToggleState] = useState(1);
   const { sentences } = useLanguage();
 
@@ -13,7 +13,7 @@ function Education() {
   };
 
   return (
-    <section className="training" id="desarrollo">
+    <section className="training" id="background">
       <h2 className="training__title">{sentences.background} </h2>
 
       <span className="training__subtitle">
@@ -279,5 +279,3 @@ function Education() {
     </section>
   );
 }
-
-export default Education;
