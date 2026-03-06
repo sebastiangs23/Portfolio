@@ -90,10 +90,10 @@ function Education() {
 
                   <div>
                     <p>
-                      {job.descriptions?.map((text, i) => (
+                      {job.descriptions.general?.map((text, i) => (
                         <span key={i}>
                           {text}
-                          {i < job.descriptions.length - 1 ? <br /> : null}
+                          {i < job.descriptions?.general.length - 1 ? <br /> : null}
                         </span>
                       ))}
                     </p>

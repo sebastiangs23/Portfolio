@@ -42,10 +42,15 @@ const sentences = {
         company: "EPAM Neoris",
         position: "Desarrollador Frontend Semi Senior",
         date: "2025 Marzo - 2025 Agosto",
-        descriptions: [
-          "Diseñé Web Components reutilizables y totalmente responsivos para BBVA, utilizando un framework interno (Cells) y principios de clean code. Cada componente fue testeado, documentado e incluía casos de uso detallados para asegurar su funcionalidad y mantenibilidad.",
-          "Además, implementé funcionalidades avanzadas, refactoricé código y mantuve altos estándares de calidad aplicando buenas prácticas y la convención BEM.",
-        ],
+        descriptions: {
+          general: [
+            "Diseñé Web Components reutilizables y totalmente responsivos para BBVA, utilizando un framework interno (Cells) y principios de clean code. Cada componente fue testeado, documentado e incluía casos de uso detallados para asegurar su funcionalidad y mantenibilidad.",
+            "Además, implementé funcionalidades avanzadas, refactoricé código y mantuve altos estándares de calidad aplicando buenas prácticas y la convención BEM.",
+          ],
+          details: [
+            ""
+          ]
+        },
         route: "/experience/epam-neoris",
       },
       {
@@ -53,10 +58,15 @@ const sentences = {
         company: "Inlearning - Intercorp",
         position: "Desarrollador Frontend",
         date: "2024 Octubre - 2025 Marzo",
-        descriptions: [
-          "Diseñé y refactoricé componentes y vistas jerárquicas completamente responsivas, con hasta 5 niveles de interconexión mediante props, emits, inject, provide y refs. Migré más de 20 vistas a TypeScript aplicando buenas prácticas con interfaces, tipos, operadores ternarios, type guards y coalescencia nula.",
-          "Además, desarrollé más de 50 plantillas de correo electrónico automatizadas, enviadas cronológicamente a todos los usuarios.",
-        ],
+        descriptions: {
+          general: [
+            "Diseñé y refactoricé componentes y vistas jerárquicas completamente responsivas, con hasta 5 niveles de interconexión mediante props, emits, inject, provide y refs. Migré más de 20 vistas a TypeScript aplicando buenas prácticas con interfaces, tipos, operadores ternarios, type guards y coalescencia nula.",
+            "Además, desarrollé más de 50 plantillas de correo electrónico automatizadas, enviadas cronológicamente a todos los usuarios.",
+          ],
+          details: [
+            ""
+          ]
+        },
         route: "/experience/inlearning",
       },
       {
@@ -64,10 +74,12 @@ const sentences = {
         company: "Dazlabs",
         position: "Desarrollador Backend",
         date: "2024 Agosto - 2025 Marzo",
-        descriptions: [
-          "Desarrollé múltiples servicios backend para diferentes productos (viajes, belleza y automatización interna), diseñando colecciones en MongoDB y entregando endpoints RESTful probados y documentados con Swagger;",
-          "además, di una capacitación técnica sobre APIs de inteligencia artificial a más de 110 personas.",
-        ],
+        descriptions: {
+          general: [
+            "Desarrollé múltiples servicios backend para diferentes productos (viajes, belleza y automatización interna), diseñando colecciones en MongoDB y entregando endpoints RESTful probados y documentados con Swagger;",
+            "además, di una capacitación técnica sobre APIs de inteligencia artificial a más de 110 personas.",
+          ],
+        },
         route: null,
       },
       {
@@ -75,10 +87,17 @@ const sentences = {
         company: "IBC Institute - Ceoline",
         position: "Desarrollador de Software",
         date: "2023 Noviembre - 2024 Junio",
-        descriptions: [
-          "Desarrollé un servicio utilizando Azure Speech AI que permite al cliente entablar una conversación con el sistema. Todos los datos se transforman en métricas y estadísticas, para ser representados en gráficos en el panel de administración.",
-          "Además, migré el proyecto de React 15 a React 18 y apliqué arquitectura hexagonal en el front.",
-        ],
+        descriptions: {
+          general: [
+            "Desarrollé un servicio utilizando Azure Speech AI que permite al cliente entablar una conversación con el sistema. Todos los datos se transforman en métricas y estadísticas, para ser representados en gráficos en el panel de administración.",
+            "Además, migré el proyecto de React 15 a React 18 y apliqué arquitectura hexagonal en el front.",
+          ],
+          details: [
+            "Plataforma de idiomas certificada con TrackTest, enfocada en los niveles básico (A1 - A2) e intermedio (B1 - B2), con métodos dinámicos de aprendizaje como prácticas de vocabulario, gramática, pronunciación, simuladores de exámenes y conversaciones interactivas que se desbloquean a medida que el estudiante aprueba las lecciones.",
+            "Cada nivel cuenta con múltiples lecciones, y dentro de cada lección el estudiante adquiere conocimientos que le permiten seguir avanzando. Además, el sistema recopila datos de las evaluaciones para generar gráficos y métricas que identifican los puntos fuertes y débiles de los estudiantes.",
+            "Uno de mis roles fue rediseñar la base de datos para hacerla más escalable y capaz de soportar la enseñanza de más idiomas en el futuro. Además, migré el sistema de evaluación para utilizar una API integrada con el reconocedor de voz de inteligencia artificial de Azure Speech, que es más preciso al evaluar al estudiante en aspectos como pronunciación, prosodia, fluidez y oraciones completas, entre otros.",
+          ],
+        },
         route: "/experience/ibc-institute",
       },
       {
@@ -86,10 +105,17 @@ const sentences = {
         company: "Inteligenio - Ceoline",
         position: "Desarrollador Backend & Administrador de base de datos.",
         date: "2023 Marzo - 2024 Junio",
-        descriptions: [
-          "Trabajé de la mano con el equipo de QA, desarrolladores y el product owner para rediseñar la arquitectura de la base de datos, aplicando reglas de negocio, constrains, uniques y relaciones para una plataforma educativa.",
-          "Además, desarrollé los roles y permisos administrativos, considerando el rendimiento y la optimización.",
-        ],
+        descriptions: {
+          general: [
+            "Trabajé de la mano con el equipo de QA, desarrolladores y el product owner para rediseñar la arquitectura de la base de datos, aplicando reglas de negocio, constrains, uniques y relaciones para una plataforma educativa.",
+            "Además, desarrollé los roles y permisos administrativos, considerando el rendimiento y la optimización.",
+          ],
+          details: [
+            "Una plataforma educativa enfocada en facilitar y mejorar el aprendizaje de los estudiantes, simplificar la enseñanza para los docentes, y monitorear el desempeño de todos los estudiantes, así como el de los docentes, coordinadores y directores de la institución.",
+            "El core del producto es gestionar todo el funcionamiento de una institución educativa a nivel de plataforma. Las funcionalidades varían según los perfiles. Inicialmente, la configuración del colegio la realizará el 'Webmaster', quien representa la máxima autoridad de la institución y puede crear perfiles como Director, coordinador, docentes, estudiantes, etc. Por otro lado, el docente puede crear evaluaciones y monitorear el desempeño de los estudiantes. El estudiante, a su vez, puede revisar las clases, resolver evaluaciones y visualizar su libreta de notas, entre otras cosas.",
+            "Después de 1 año desarrollando la plataforma, se empezó a comercializar, lo cual para mi es una gran satisfacción , ya que es un producto al cual mis compañeros y yo le pusimos bastante cariño y esfuerzo para de cierta manera aportar con la educación del Perú.",
+          ],
+        },
         route: "/experience/inteligenio",
       },
       {
@@ -97,9 +123,11 @@ const sentences = {
         company: "Page for a clinic - Freelance",
         position: "Desarrollador Full Stack",
         date: "2023 Febrero - 2023 Marzo",
-        descriptions: [
-          "Estuve a cargo de diseñar la base de datos, configurar el servidor, crear la landing page y la página de inicio para una clínica.",
-        ],
+        descriptions: {
+          general: [
+            "Estuve a cargo de diseñar la base de datos, configurar el servidor, crear la landing page y la página de inicio para una clínica.",
+          ],
+        },
         route: null,
       },
     ],
@@ -140,19 +168,6 @@ const sentences = {
       "Capacitar",
       "Adaptabilidad y flexibilidad",
     ],
-    ibc_see_more_1: "Plataforma de idiomas certificada con ",
-    ibc_see_more_2:
-      ", enfocada en los niveles básico (A1 - A2) e intermedio (B1 - B2), con métodos dinámicos de aprendizaje como prácticas de vocabulario, gramática, pronunciación, simuladores de exámenes y conversaciones interactivas que se desbloquean a medida que el estudiante aprueba las lecciones.",
-    ibc_see_more_3:
-      "Cada nivel cuenta con múltiples lecciones, y dentro de cada lección el estudiante adquiere conocimientos que le permiten seguir avanzando. Además, el sistema recopila datos de las evaluaciones para generar gráficos y métricas que identifican los puntos fuertes y débiles de los estudiantes.",
-    ibc_see_more_4:
-      "Uno de mis roles fue rediseñar la base de datos para hacerla más escalable y capaz de soportar la enseñanza de más idiomas en el futuro. Además, migré el sistema de evaluación para utilizar una API integrada con el reconocedor de voz de inteligencia artificial de Azure Speech, que es más preciso al evaluar al estudiante en aspectos como pronunciación, prosodia, fluidez y oraciones completas, entre otros.",
-    inte_see_more_1:
-      "Una plataforma educativa enfocada en facilitar y mejorar el aprendizaje de los estudiantes, simplificar la enseñanza para los docentes, y monitorear el desempeño de todos los estudiantes, así como el de los docentes, coordinadores y directores de la institución.",
-    inte_see_more_2:
-      "El core del producto es gestionar todo el funcionamiento de una institución educativa a nivel de plataforma. Las funcionalidades varían según los perfiles. Inicialmente, la configuración del colegio la realizará el 'Webmaster', quien representa la máxima autoridad de la institución y puede crear perfiles como Director, coordinador, docentes, estudiantes, etc. Por otro lado, el docente puede crear evaluaciones y monitorear el desempeño de los estudiantes. El estudiante, a su vez, puede revisar las clases, resolver evaluaciones y visualizar su libreta de notas, entre otras cosas.",
-    inte_see_more_3:
-      "Después de 1 año desarrollando la plataforma, se empezó a comercializar, lo cual para mi es una gran satisfacción , ya que es un producto al cual mis compañeros y yo le pusimos bastante cariño y esfuerzo para de cierta manera aportar con la educación del Perú.",
     _projects: "Proyectos",
     database: "Base de datos",
   },
@@ -197,10 +212,15 @@ const sentences = {
         company: "EPAM Neoris",
         position: "Frontend Developer Semi Senior",
         date: "2025 March - 2025 August",
-        descriptions: [
-          "Designed reusable and fully responsive Web Components for BBVA using an internal framework (Cells) and clean code principles. Each component was thoroughly tested, documented, and included detailed use cases to ensure functionality and maintainability.",
-          "Additionally, I implemented advanced features, refactored code, and maintained high-quality standards by applying best practices and the BEM convention.",
-        ],
+        descriptions: {
+          general: [
+            "Designed reusable and fully responsive Web Components for BBVA using an internal framework (Cells) and clean code principles. Each component was thoroughly tested, documented, and included detailed use cases to ensure functionality and maintainability.",
+            "Additionally, I implemented advanced features, refactored code, and maintained high-quality standards by applying best practices and the BEM convention.",
+          ],
+          details: [
+            ""
+          ]
+        },
         route: "/experience/dazlabs",
       },
       {
@@ -208,10 +228,15 @@ const sentences = {
         company: "Inlearning - Intercorp",
         position: "Frontend Developer",
         date: "2024 October - 2025 March",
-        descriptions: [
-          "Created and refactored hierarchical, fully responsive components and views with up to 5 levels of interconnection using props, emits, inject, provide, and refs. Migrated 20+ views to TypeScript using interfaces, types, ternary operators, type guards, and nullish coalescing.",
-          "Developed 50+ automated email templates triggered chronologically for all users.",
-        ],
+        descriptions: {
+          general: [
+            "Created and refactored hierarchical, fully responsive components and views with up to 5 levels of interconnection using props, emits, inject, provide, and refs. Migrated 20+ views to TypeScript using interfaces, types, ternary operators, type guards, and nullish coalescing.",
+            "Developed 50+ automated email templates triggered chronologically for all users.",
+          ],
+          details: [
+            ""
+          ]
+        },
         route: "/experience/inlearning",
       },
       {
@@ -230,10 +255,17 @@ const sentences = {
         company: "IBC Institute - Ceoline",
         position: "Software Developer",
         date: "2023 November - 2024 June",
-        descriptions: [
-          "Developed a service using Azure Speech AI that allows users to have a conversation with the system. All data is transformed into metrics and statistics, then rendered in charts in the admin dashboard.",
-          "Also migrated the project from React 15 to React 18 and applied hexagonal architecture in the frontend.",
-        ],
+        descriptions: {
+          general: [
+            "Developed a service using Azure Speech AI that allows users to have a conversation with the system. All data is transformed into metrics and statistics, then rendered in charts in the admin dashboard.",
+            "Also migrated the project from React 15 to React 18 and applied hexagonal architecture in the frontend.",
+          ],
+          details: [
+            "Certified language platform with TrackTest, focused on basic (A1 - A2) and intermediate (B1 - B2) levels, with dynamic learning methods such as vocabulary practice, grammar, pronunciation, exam simulators, and interactive conversations that unlock as the student passes the lessons.",
+            "Each level has multiple lessons, and within each lesson, the student acquires knowledge that allows them to keep advancing. Additionally, the system collects data from the assessments to generate graphs and metrics that identify the students' strengths and weaknesses.",
+            "One of my roles was to redesign the database to make it more scalable and capable of supporting the teaching of more languages in the future. Additionally, I migrated the assessment system to use an API integrated with Azure Speech's AI speech recognizer, which is more accurate in evaluating the student on aspects such as pronunciation, prosody, fluency, and complete sentences, among others.",
+          ],
+        },
         route: "/experience/ibc-institute",
       },
       {
@@ -241,10 +273,17 @@ const sentences = {
         company: "Inteligenio - Ceoline",
         position: "Backend Developer & Database Administrator",
         date: "2023 March - 2024 June",
-        descriptions: [
-          "Worked closely with QA, developers, and the Product Owner to redesign the database architecture, applying business rules, constraints, unique keys, and relationships for an educational platform.",
-          "Also developed administrative roles and permissions, focusing on performance and optimization.",
-        ],
+        descriptions: {
+          general: [
+            "Worked closely with QA, developers, and the Product Owner to redesign the database architecture, applying business rules, constraints, unique keys, and relationships for an educational platform.",
+            "Also developed administrative roles and permissions, focusing on performance and optimization.",
+          ],
+          details: [
+            "An educational platform focused on facilitating and enhancing student learning, simplifying teaching for educators, and monitoring the performance of all students, as well as that of teachers, coordinators, and institution directors.",
+            "The core of the product is to manage the entire operation of an educational institution at the platform level. The functionalities vary according to the profiles. Initially, the configuration of the school will be carried out by the 'Webmaster,' who represents the highest authority of the institution and can create profiles such as Director, Coordinator, Teachers, Students, etc. On the other hand, the Teacher can create assessments and monitor student performance. The Student, in turn, can review classes, complete assessments, and view their grade book, among other things.",
+            "After 1 year of developing the platform, it started being commercialized, which is a great satisfaction for me, as it is a product to which my colleagues and I put a lot of love and effort to contribute to the education of Peru in some way.",
+          ],
+        },
         route: "/experience/inteligenio",
       },
       {
@@ -252,9 +291,11 @@ const sentences = {
         company: "Clinic Website - Freelance",
         position: "Full Stack Developer",
         date: "2023 February - 2023 March",
-        descriptions: [
-          "Designed the database, set up the server, built the landing page, and created the home page for a clinic.",
-        ],
+        descriptions: {
+          general: [
+            "Designed the database, set up the server, built the landing page, and created the home page for a clinic.",
+          ],
+        },
         route: null,
       },
     ],
@@ -295,19 +336,6 @@ const sentences = {
       "Train",
       "Adaptability and Flexibility",
     ],
-    ibc_see_more_1: "Certified language platform with ",
-    ibc_see_more_2:
-      ", focused on basic (A1 - A2) and intermediate (B1 - B2) levels, with dynamic learning methods such as vocabulary practice, grammar, pronunciation, exam simulators, and interactive conversations that unlock as the student passes the lessons.",
-    ibc_see_more_3:
-      "Each level has multiple lessons, and within each lesson, the student acquires knowledge that allows them to keep advancing. Additionally, the system collects data from the assessments to generate graphs and metrics that identify the students' strengths and weaknesses.",
-    ibc_see_more_4:
-      "One of my roles was to redesign the database to make it more scalable and capable of supporting the teaching of more languages in the future. Additionally, I migrated the assessment system to use an API integrated with Azure Speech's AI speech recognizer, which is more accurate in evaluating the student on aspects such as pronunciation, prosody, fluency, and complete sentences, among others.",
-    inte_see_more_1:
-      "An educational platform focused on facilitating and enhancing student learning, simplifying teaching for educators, and monitoring the performance of all students, as well as that of teachers, coordinators, and institution directors.",
-    inte_see_more_2:
-      "The core of the product is to manage the entire operation of an educational institution at the platform level. The functionalities vary according to the profiles. Initially, the configuration of the school will be carried out by the 'Webmaster,' who represents the highest authority of the institution and can create profiles such as Director, Coordinator, Teachers, Students, etc. On the other hand, the Teacher can create assessments and monitor student performance. The Student, in turn, can review classes, complete assessments, and view their grade book, among other things.",
-    inte_see_more_3:
-      "After 1 year of developing the platform, it started being commercialized, which is a great satisfaction for me, as it is a product to which my colleagues and I put a lot of love and effort to contribute to the education of Peru in some way.",
     _projects: "Projects",
     database: "Database",
   },

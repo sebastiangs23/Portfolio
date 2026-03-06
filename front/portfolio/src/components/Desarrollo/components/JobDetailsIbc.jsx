@@ -14,20 +14,11 @@ export default function JobDetailsIbc() {
 
       <div className="content_conteiner">
         <div className="content">
-          <p>
-            {sentences.ibc_see_more_1}
-            <a
-              href="https://tracktest.eu/"
-              target="_blank"
-              className="redirect-link"
-            >
-              TrackTest
-            </a>
-            {sentences.ibc_see_more_2}
-          </p>
-
-          <p>{sentences.ibc_see_more_3}</p>
-          <p>{sentences.ibc_see_more_4}</p>
+          {
+            sentences.work_experience_items[3]?.descriptions.details.map((item, index) => {
+              return <p key={index}>{item}</p>;
+            })
+          }
         </div>
       </div>
     </div>
