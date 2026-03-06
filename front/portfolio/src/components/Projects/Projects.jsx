@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ImageSlider } from "./ImageSlider";
 import {
   SliderData,
@@ -16,7 +16,7 @@ import phone from "../../assets/projects/phone.svg";
 import web from "../../assets/projects/web.svg";
 import { useLanguage } from "../Language/Language";
 
-function Proyectos() {
+export default function Projects() {
   const { sentences } = useLanguage();
   const [type, setType] = useState("web");
 
@@ -25,7 +25,7 @@ function Proyectos() {
   };
 
   return (
-    <section className="section__projects" id="projectos">
+    <section className="section__projects" id="projects">
       <h2 className="section__title">{sentences._projects}</h2>
 
       {/* RADIO BUTTOM */}
@@ -97,6 +97,4 @@ function Proyectos() {
       )}
     </section>
   );
-}
-
-export default Proyectos;
+};

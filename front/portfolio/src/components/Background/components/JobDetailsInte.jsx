@@ -14,12 +14,13 @@ export default function JobDetailsinte() {
       </div>
 
       <div className="content_conteiner">
+        
         <div className="content">
-          <p>{sentences.inte_see_more_1}</p>
-
-          <p>{sentences.inte_see_more_2}</p>
-
-          <p>{sentences.inte_see_more_3}</p>
+          {
+            sentences.work_experience_items[4]?.descriptions.details.map((item, index) => {
+              return <p key={index}>{item}</p>;
+            })
+          }
         </div>
       </div>
     </div>
