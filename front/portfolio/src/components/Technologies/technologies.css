@@ -25,7 +25,7 @@
   display: inline-block;
 }
 
-.imagenes {
+.images {
   display: inline-block;
   width: 1200px;
   text-align: center;
@@ -33,7 +33,7 @@
   margin-top: 80px;
 }
 
-.imagenes-responsive {
+.images-responsive {
   display: none;
 }
 

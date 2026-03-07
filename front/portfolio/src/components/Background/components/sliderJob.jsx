@@ -32,12 +32,12 @@ export default function SliderJob({ slides, type }) {
         return (
           <div
             key={index}
+            className="flex items-center justify-center"
           >
             {index === current && (
               <img
                 src={s.image}
                 className={type == "web" ? "image-job" : "screenshot-image"}
-                // className="image"
               />
             )}
           </div>

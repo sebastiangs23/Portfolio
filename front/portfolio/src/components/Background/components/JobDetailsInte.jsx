@@ -1,7 +1,7 @@
 import React from "react";
 import { useLanguage } from "../../Language/Language";
 import SliderJob from "./sliderJob";
-import { sliderInteligenio } from "../../../assets/imagenes-trabajo/imagenes";
+import { sliderInteligenio } from "../../../assets/work-images/images";
 
 export default function JobDetailsinte() {
   const { sentences } = useLanguage();
@@ -17,7 +17,7 @@ export default function JobDetailsinte() {
         
         <div className="content">
           {
-            sentences.work_experience_items[4]?.descriptions.details.map((item, index) => {
+            sentences.background.work_experience_items[4]?.descriptions.details.map((item, index) => {
               return <p key={index}>{item}</p>;
             })
           }

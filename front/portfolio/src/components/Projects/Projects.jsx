@@ -4,7 +4,7 @@ import {
   SliderData,
   SliderManga,
   SliderChatTutor,
-} from "../../assets/imagenesproyectos/imagenes";
+} from "../../assets/project-images/images";
 import "./slider.css";
 
 /*____________

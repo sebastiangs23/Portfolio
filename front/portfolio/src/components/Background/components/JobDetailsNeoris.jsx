@@ -1,5 +1,5 @@
 import SliderJob from "./sliderJob";
-import { sliderNeoris } from "../../../assets/imagenes-trabajo/imagenes";
+import { sliderNeoris } from "../../../assets/work-images/images";
 
 export default function JobDetailsNeoris() {
   return (
