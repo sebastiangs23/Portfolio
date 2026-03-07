@@ -14,10 +14,10 @@ export default function Background() {
 
   return (
     <section className="training" id="background">
-      <h2 className="training__title">{sentences.background} </h2>
+      <h2 className="training__title">{sentences._background} </h2>
 
       <span className="training__subtitle">
-        {sentences.background_subtitle}
+        {sentences.background.background_subtitle}
       </span>
 
       <div className="training__core container">
@@ -31,7 +31,7 @@ export default function Background() {
             onClick={() => toggleTab(1)}
           >
             <FaLaptopCode />
-            <p className="ml-2">{sentences.work_experience} </p>
+            <p className="ml-2">{sentences.background.work_experience} </p>
           </div>
           <div
             className={
@@ -42,7 +42,7 @@ export default function Background() {
             onClick={() => toggleTab(2)}
           >
             <i className="uil uil-graduation-cap training__core-icons"></i>
-            <p> {sentences.education} </p>
+            <p> {sentences.background.education} </p>
           </div>
 
           <div
@@ -54,7 +54,7 @@ export default function Background() {
             onClick={() => toggleTab(3)}
           >
             <i className="uil uil-smile training__core-icons"></i>
-            <p>{sentences.skill}</p>
+            <p>{sentences.background.skill}</p>
           </div>
         </div>
 
@@ -67,10 +67,10 @@ export default function Background() {
                 : "training__core-data-content"
             }
           >
-            {sentences.work_experience_items?.map((job, index) => {
+            {sentences.background.work_experience_items?.map((job, index) => {
               const isLeft = index % 2 === 0;
               const isLast =
-                index === sentences.work_experience_items.length - 1;
+                index === sentences.background.work_experience_items.length - 1;
 
               const Content = () => (
                 <div>
@@ -103,7 +103,7 @@ export default function Background() {
 
                   {job.route ? (
                     <Link to={job.route} className="button button--flex">
-                      {sentences.see_more}
+                      {sentences.background.see_more}
                     </Link>
                   ) : null}
                 </div>
@@ -140,23 +140,23 @@ export default function Background() {
             <div className="training__core-data-content-each">
               <div>
                 <h3 className="training__core-title">
-                  {sentences.carrer_henry}
+                  {sentences.background.carrer_henry}
                 </h3>
 
                 <div className="company_name">
                   <FaRegBuilding className="icon_office" />
                   <span className="text-job">
-                    {sentences.carrer_place_henry}
+                    {sentences.background.carrer_place_henry}
                   </span>
                 </div>
 
                 <br />
                 <span className="training__core-subtitle">
-                  {sentences.carrer_status_henry}
+                  {sentences.background.carrer_status_henry}
                 </span>
                 <div className="training__core-calendar">
                   <i className="uil uil-calendar-alt"></i>
-                  {sentences.carrer_date_henry}
+                  {sentences.background.carrer_date_henry}
                 </div>
               </div>
 
@@ -176,44 +176,44 @@ export default function Background() {
 
               <div>
                 <h3 className="training__core-title">
-                  {sentences.carrer_zegel}
+                  {sentences.background.carrer_zegel}
                 </h3>
 
                 <div className="company_name">
                   <FaRegBuilding className="icon_office" />
                   <span className="text-job">
-                    {sentences.carrer_place_zegel}
+                    {sentences.background.carrer_place_zegel}
                   </span>
                 </div>
 
                 <br />
                 <span className="training__core-subtitle">
-                  {sentences.carrer_status_zegel}
+                  {sentences.background.carrer_status_zegel}
                 </span>
                 <div className="training__core-calendar">
                   <i className="uil uil-calendar-alt"></i>{" "}
-                  {sentences.carrer_date_zegel}
+                  {sentences.background.carrer_date_zegel}
                 </div>
               </div>
             </div>
 
             <div className="training__core-data-content-each">
               <div>
-                <h3 className="training__core-title">{sentences.carrer_upc}</h3>
+                <h3 className="training__core-title">{sentences.background.carrer_upc}</h3>
 
                 <div className="company_name">
                   <FaRegBuilding className="icon_office" />
-                  <span className="text-job">{sentences.carrer_place_upc}</span>
+                  <span className="text-job">{sentences.background.carrer_place_upc}</span>
                 </div>
 
                 <br />
                 <span className="training__core-subtitle">
-                  {sentences.carrer_status_upc}
+                  {sentences.background.carrer_status_upc}
                 </span>
 
                 <div className="training__core-calendar">
                   <i className="uil uil-calendar-alt"></i>{" "}
-                  {sentences.carrer_date_upc}
+                  {sentences.background.carrer_date_upc}
                 </div>
               </div>
 
@@ -236,11 +236,11 @@ export default function Background() {
               <div>
                 <h3 className="training__core-title">
                   <i className="uil uil-user"></i>
-                  {sentences.skills_personal}
+                  {sentences.background.skills_personal}
                 </h3>
                 <ul>
-                  {sentences.skills_personal_all &&
-                    sentences.skills_personal_all.map((skill, index) => {
+                  {sentences.background.skills_personal_all &&
+                    sentences.background.skills_personal_all.map((skill, index) => {
                       return <li key={index}>{skill}</li>;
                     })}
                 </ul>
@@ -263,11 +263,11 @@ export default function Background() {
               <div>
                 <h3 className="training__core-title">
                   <i className="uil uil-users-alt"></i>
-                  {sentences.skills_team}
+                  {sentences.background.skills_team}
                 </h3>
                 <ul className="pl-5">
-                  {sentences.skills_team_all &&
-                    sentences.skills_team_all.map((skill, index) => {
+                  {sentences.background.skills_team_all &&
+                    sentences.background.skills_team_all.map((skill, index) => {
                       return <li key={index}>{skill}</li>;
                     })}
                 </ul>

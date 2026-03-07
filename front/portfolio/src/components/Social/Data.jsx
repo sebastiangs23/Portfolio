@@ -59,26 +59,26 @@ function Data() {
         </svg>
       </h1>
 
-      {/* <HiFiveButton /> */}
+      
+      <h3 className="home__subtitle">{sentences.home.position}</h3>
 
-      <h3 className="home__subtitle">{sentences.position}</h3>
-      <p className="home__description">{sentences.description_position} </p>
+      <p className="home__description">{sentences.home.description_position} </p>
 
       <a
-        href={sentences.curriculum_link}
+        href={sentences.home.links.curriculum_link}
         className="button button--flex"
         target="_black"
       >
-        {sentences.curriculum}
+        {sentences.home.curriculum}
         <i className="uil uil-file-download"></i>
       </a>
 
       <a
-        href={sentences.certifications_link}
+        href={sentences.home.links.certifications_link}
         className="button button--flex"
         target="_blank"
       >
-        {sentences.certifications}
+        {sentences.home.links.certifications}
         <i className="uil uil-graduation-cap"></i>
       </a>
     </div>

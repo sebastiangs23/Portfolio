@@ -1,11 +1,11 @@
 /*__________________
 |   INTELIGENIO   */
 import webMasterUsuario from "../../assets/imagenes-trabajo/Inteligenio/webmaster-usuarios.png";
-import cierreAnioDiagram from "../../assets/imagenes-trabajo/Inteligenio/CierreAñoMayo.drawio.png";
-import docenteSelecClase from "../../assets/imagenes-trabajo/Inteligenio/docente-seleccionar-clase.png";
-import docenteEditEval from "../../assets/imagenes-trabajo/Inteligenio/docente-editar-evaluacion.png";
-import averageDiagram from "../../assets/imagenes-trabajo/Inteligenio/AverageGrade.drawio.png";
-import docenteRegAux from "../../assets/imagenes-trabajo/Inteligenio/docente-registro-auxiliar.png";
+import cierreAnioDiagram from "../../assets/imagenes-trabajo/Inteligenio/close-year.png";
+import docenteSelecClase from "../../assets/imagenes-trabajo/Inteligenio/teacher-select-class.png";
+import docenteEditEval from "../../assets/imagenes-trabajo/Inteligenio/teacher-edit-evaluation.png";
+import averageDiagram from "../../assets/imagenes-trabajo/Inteligenio/average-grade.png";
+import docenteRegAux from "../../assets/imagenes-trabajo/Inteligenio/teacher-auxiliar-record.png";
 
 export const sliderInteligenio = [
     {
@@ -33,7 +33,7 @@ export const sliderInteligenio = [
 import landingIbc from "../../assets/imagenes-trabajo/Ibc/ibc_institute.png";
 import ibcConversation from "../../assets/imagenes-trabajo/Ibc/ibc-convers-diagram.png";
 import ibcBasic from "../../assets/imagenes-trabajo/Ibc/ibc-basic.png";
-import ibcInicio from "../../assets/imagenes-trabajo/Ibc/inicio.png";
+import ibcInicio from "../../assets/imagenes-trabajo/Ibc/home.png";
 import ibcVocabulary from "../../assets/imagenes-trabajo/Ibc/vocabulary.png";
 
 
