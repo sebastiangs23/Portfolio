@@ -4,7 +4,7 @@ import "./sliderJob.css";
 
 export default function SliderJob({ slides, type }) {
   const [current, setCurrent] = useState(0);
-  const length = slides.length;
+  const length = slides?.length;
 
   useEffect(() => {
     const nextImage = (current + 1) % length;

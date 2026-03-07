@@ -1,5 +1,5 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useLanguage } from "./components/Language/Language";
 
 /*______________
 |   LANDING   */
@@ -11,15 +11,61 @@ import Technologies from "./components/Technologies/Technologies";
 
 /*__________________
 |   JOB DETAILS   */
-import JobDetailsInte from "./components/Background/components/JobDetailsInte";
-import JobDetailsIbc from "./components/Background/components/JobDetailsIbc";
-import JobDetailsDazlabs from "./components/Background/components/JobDetailsDazlabs";
-import JobDetailsInlearning from "./components/Background/components/JobDetailsInlearning";
-import JobDetailsEpamNeoris from "./components/Background/components/JobDetailsNeoris";
+import JobDetails from "./components/Background/components/JobDetails";
 
 import "./App.css";
 
+import {
+  sliderInteligenio,
+  sliderIbc,
+  sliderInlearning,
+  sliderNeoris,
+} from "./assets/work-images/images";
+
 function App() {
+  const { sentences } = useLanguage();
+
+  const experienceItems = [
+    {
+      id: "epam-neoris",
+      path: "/experience/epam-neoris",
+      slider: sliderNeoris,
+      sentences:
+        sentences.background.work_experience_items[0]?.descriptions.details,
+      typeImage: "screenshot",
+    },
+    {
+      id: "inlearning",
+      path: "/experience/inlearning",
+      slider: sliderInlearning,
+      sentences:
+        sentences.background.work_experience_items[1]?.descriptions.details,
+      typeImage: "web",
+    },
+    {
+      id: "inteligenio",
+      path: "/experience/inteligenio",
+      slider: sliderInteligenio,
+      sentences:
+        sentences.background.work_experience_items[4]?.descriptions.details,
+      typeImage: "web",
+    },
+    {
+      id: "ibc-institute",
+      path: "/experience/ibc-institute",
+      slider: sliderIbc,
+      sentences:
+        sentences.background.work_experience_items[3]?.descriptions.details,
+      typeImage: "web",
+    },
+    {
+      id: "dazlabs",
+      path: "/experience/dazlabs",
+      slider: [],
+      typeImage: "web",
+    },
+  ];
+
   return (
     <Router>
       <div>
@@ -37,11 +83,22 @@ function App() {
                 </>
               }
             />
-            <Route path="/experience/inteligenio" element={<JobDetailsInte />} />
-            <Route path="/experience/ibc-institute" element={<JobDetailsIbc />} />
-            <Route path="/experience/dazlabs" element={<JobDetailsDazlabs/> } />
-            <Route path="/experience/inlearning" element={<JobDetailsInlearning/> } />
-            <Route path="/experience/epam-neoris" element={<JobDetailsEpamNeoris/> } />
+
+            {experienceItems?.map((item, index) => {
+              return (
+                <Route
+                  key={index}
+                  path={item.path}
+                  element={
+                    <JobDetails
+                      title={item.id}
+                      slides={item.slider}
+                      descriptions={item.sentences}
+                    />
+                  }
+                />
+              );
+            })}
           </Routes>
         </main>
       </div>
