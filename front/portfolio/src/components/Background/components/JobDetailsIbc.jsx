@@ -1,6 +1,6 @@
 import { useLanguage } from "../../Language/Language";
 import SliderJob from "./sliderJob";
-import { sliderIbc } from "../../../assets/imagenes-trabajo/imagenes";
+import { sliderIbc } from "../../../assets/work-images/images";
 
 export default function JobDetailsIbc() {
   const { sentences } = useLanguage();
@@ -15,7 +15,7 @@ export default function JobDetailsIbc() {
       <div className="content_conteiner">
         <div className="content">
           {
-            sentences.work_experience_items[3]?.descriptions.details.map((item, index) => {
+            sentences.background.work_experience_items[3]?.descriptions.details.map((item, index) => {
               return <p key={index}>{item}</p>;
             })
           }

@@ -1,5 +1,5 @@
 import SliderJob from "./sliderJob";
-import { sliderInlearning } from "../../../assets/imagenes-trabajo/imagenes";
+import { sliderInlearning } from "../../../assets/work-images/images";
 
 export default function JobDetailsInlearning() {
   return (
