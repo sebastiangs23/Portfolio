@@ -14,11 +14,14 @@
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
+  --black-color: rgb(0 0 0);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
 
+
   /*.5rem = 8px | 1rem = 16px ...*/
+  --very-big-font-size: 8.5rem;
   --big-font-size: 3.5rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;

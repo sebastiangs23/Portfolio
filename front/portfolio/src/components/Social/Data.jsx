@@ -6,8 +6,8 @@ function Data() {
 
   return (
     <div className="home__data">
-      <h1 className="flex items-center home__title">
-        Sebastian Gomez
+      <h1 className="flex items-center home__title md:text-9xl text-5xl">
+        Sebastián Gómez
         <svg
           width="65"
           height="65"

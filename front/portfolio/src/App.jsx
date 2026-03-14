@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useLanguage } from "./components/Language/Language";
+import MouseDistortion from "./components/MouseDistortion/MouseDistortion";
 
 /*______________
 |   LANDING   */
@@ -68,9 +69,10 @@ function App() {
 
   return (
     <Router>
+      <MouseDistortion />
       <div>
         <Header />
-        <main className="main">
+        <main className="main" data-cursor="hover">
           <Routes>
             <Route
               path="/"
