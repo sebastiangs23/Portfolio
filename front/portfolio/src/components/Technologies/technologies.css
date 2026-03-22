@@ -1,4 +1,4 @@
-.container-tecnologies {
+.container-technologies {
   margin-top: 9.3rem;
   margin-bottom: 9.3rem;
   display: block;
@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.imagen {
+.image {
   width: 5rem;
   height: auto;
   display: inline-block;
@@ -36,7 +36,7 @@
   display: none;
 }
 
-.container-tecnologies {
+.container-technologies {
   padding: 2rem;
 }
 
