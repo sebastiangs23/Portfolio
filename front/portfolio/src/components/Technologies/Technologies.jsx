@@ -4,7 +4,7 @@ import "./technologies.css";
 
 export default function technologies() {
   const { sentences } = useLanguage();
-
+  //TODO: Migrate Solo , seccion & subtitulo from CSS to tailwindCss
   return (
     <div className="container-technologies" id="technologies">
       <h2 className="section__title">{sentences.technologies} </h2>
