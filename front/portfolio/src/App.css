@@ -156,11 +156,11 @@ button {
 }
 
 .hover-style_v2--small {
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .hover-style_v2--normal {
-  padding: 13px 20px;
+  padding: 0.813rem 1.25rem;
 }
 
 .hover-style_v2:hover {
@@ -176,7 +176,7 @@ button {
   background-color: #1c1e21;
   border-radius: 100%;
   content: "";
-  height: 167px;
+  height: 10.4rem;
   position: absolute;
   top: 0;
   transform: scale(1) translateY(67px);
@@ -189,7 +189,7 @@ button {
 /*_____________
 |   LAYOUT   */
 .container {
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -205,10 +205,10 @@ button {
   display: inline-block;
   background-color: var(--title-color);
   color: var(--container-color);
-  padding: 10px;
+  padding: 0.625rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .button:hover {
@@ -225,8 +225,8 @@ button {
 }
 
 .uil{
-  font-size: 18px;
-  padding-right: 4px;
+  font-size: 1.125rem;
+  padding-right: 0.25rem;
 }
 
 /*___________________
@@ -239,9 +239,9 @@ button {
   }
 
   .button {
-    padding: 10px;
+    padding: 0.625rem;
   }
-
+  
   .button__icon {
     width: 22px;
     height: 22px;
