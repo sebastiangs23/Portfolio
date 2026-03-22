@@ -1,36 +1,35 @@
 .container-tecnologies {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 9.3rem;
+  margin-bottom: 9.3rem;
   display: block;
   align-items: center;
   justify-content: center;
 }
 
 .imagen {
-  width: 80px;
+  width: 5rem;
   height: auto;
   display: inline-block;
-  /* margin-top: 20px; */
 }
 
 .image-mongo {
-  width: 120px;
+  width: 7.5rem;
   height: auto;
   display: inline-block;
 }
 
 .image-big {
-  width: 60px;
+  width: 3.75rem;
   height: auto;
   display: inline-block;
 }
 
 .images {
   display: inline-block;
-  width: 1200px;
+  width: 75rem;
   text-align: center;
-  margin-left: 180px;
-  margin-top: 80px;
+  margin-left: 11.25rem;
+  margin-top: 5;
 }
 
 .images-responsive {
@@ -51,7 +50,6 @@
 .flex-container {
   display: flex;
   justify-content: space-around;
-  /* align-items: flex-start; */
   border-left: 2px solid #ccc;
 }
 
@@ -77,8 +75,8 @@
   justify-content: center;
   position: relative;
   margin: 10px 0px;
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   background: white;
   border-radius: 15px;
   font-family: "Montserrat", sans-serif;
@@ -88,20 +86,20 @@
 }
 
 .reactjs {
-  width: 200px;
+  width: 12.5rem;
 }
 
 #jsimagen {
-  width: 200px;
+  width: 12.5rem;
 }
 
 .nodeimg {
-  width: 100px;
+  width: 6.25rem;
 }
 
 .express {
-  width: 100px;
-  padding-top: 8px;
+  width: 6.25rem;
+  padding-top: 0.5rem;
 }
 
 .solo:hover {
@@ -113,8 +111,8 @@
   display: block;
   content: "";
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   background-color: rgba(74, 253, 253, 0.899);
   border-radius: 15px;
   z-index: -1;
@@ -230,7 +228,7 @@
   .seccion {
     min-width: 100%;
     margin: 0;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     border-bottom: 1px solid #ddd;
   }
 
@@ -241,11 +239,11 @@
   .imagen,
   .image-big,
   .image-mongo {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 5rem;
+    max-height: 5rem;
   }
 
   .solo {
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
   }
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import { useLanguage } from "../Language/Language";
 
 function Data() {

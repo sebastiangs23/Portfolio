@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Social from "../Social/Social.jsx";
 import Data from "../Social/Data";

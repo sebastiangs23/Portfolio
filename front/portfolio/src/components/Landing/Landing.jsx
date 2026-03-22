@@ -1,4 +1,4 @@
-import React, { Suspense, useRef, useLayoutEffect, useMemo } from 'react';
+import { Suspense, useRef, useLayoutEffect, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, Html, Environment, ContactShadows } from '@react-three/drei';
 import { useScroll, motion, useTransform } from 'framer-motion';
@@ -24,7 +24,7 @@ function LaptopModel({ scrollProgress, children }) {
     });
   }, [clonedScene]);
 
-  useFrame((state) => {
+  useFrame(() => {
     const p = scrollProgress.get(); 
 
     // 1. ROTATION: Start looking down, End facing the high camera
