@@ -1,6 +1,6 @@
 .slider-scroll-section {
   position: relative;
-  height: 320vh; /* more height = more scroll distance */
+  height: 320vh;
 }
 
 .slider-scroll-sticky {
@@ -34,7 +34,7 @@
 .image-job-scroll {
   width: min(72vw, 1100px);
   height: auto;
-  border-radius: 18px;
+  border-radius: 1.125rem;
   display: block;
   object-fit: cover;
 }
@@ -42,7 +42,7 @@
 .screenshot-image-scroll {
   width: min(28vw, 380px);
   height: auto;
-  border-radius: 18px;
+  border-radius: 1.125rem;
   display: block;
   object-fit: cover;
 }
@@ -53,7 +53,7 @@
   }
 
   .slider-scroll-track {
-    gap: 18px;
+    gap: 1.125rem;
     padding: 0 6vw;
   }
 
@@ -64,6 +64,6 @@
 
   .screenshot-image-scroll {
     width: 58vw;
-    border-radius: 14px;
+    border-radius: 0.875rem;
   }
 }
