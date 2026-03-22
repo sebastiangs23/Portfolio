@@ -38,7 +38,7 @@
   color: #1c1e21;
   line-height: 16px;
   overflow: hidden;
-  padding: 13px 20px;
+  padding: 0.813rem 1.25rem;
   position: relative;
   text-align: center;
   transition: color 0.33s linear 0.5s, border-color ease-out 0.5s;
@@ -70,7 +70,7 @@
   color: #1c1e21;
   line-height: 16px;
   overflow: hidden;
-  padding: 13px 20px;
+  padding: 0.813rem 1.25rem;
   position: relative;
   text-align: center;
   transition: color 0.33s linear 0.5s, border-color ease-out 0.5s;
@@ -108,8 +108,8 @@
   background-color: #1c1e21;
   border-radius: 50%;
   content: "";
-  height: 167px;
-  min-width: 167px;
+  height: 10.4rem;
+  min-width: 10.4rem;
   position: absolute;
   top: 0;
   transition: transform 1s cubic-bezier(0.66, 0, 0.34, 1);

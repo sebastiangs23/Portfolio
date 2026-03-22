@@ -20,7 +20,7 @@
 .slider-scroll-track {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 2rem;
   padding: 0 8vw;
   width: max-content;
   will-change: transform;
@@ -32,7 +32,7 @@
 }
 
 .image-job-scroll {
-  width: min(72vw, 1100px);
+  width: min(72vw, 68.75rem);
   height: auto;
   border-radius: 1.125rem;
   display: block;
@@ -40,7 +40,7 @@
 }
 
 .screenshot-image-scroll {
-  width: min(28vw, 380px);
+  width: min(28vw, 23.75rem);
   height: auto;
   border-radius: 1.125rem;
   display: block;
