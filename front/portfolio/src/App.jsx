@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useLanguage } from "./components/Language/Language";
 import MouseDistortion from "./components/MouseDistortion/MouseDistortion";
+import "./App.css";
 
 /*______________
 |   LANDING   */
@@ -15,7 +16,6 @@ import Technologies from "./components/Technologies/Technologies";
 |   JOB DETAILS   */
 import JobDetails from "./components/Background/components/JobDetails";
 
-import "./App.css";
 
 import {
   sliderInteligenio,
@@ -24,7 +24,7 @@ import {
   sliderNeoris,
 } from "./assets/work-images/images";
 
-function App() {
+export default function App() {
   const { sentences } = useLanguage();
 
   const experienceItems = [
@@ -107,6 +107,4 @@ function App() {
       </div>
     </Router>
   );
-}
-
-export default App;
+};

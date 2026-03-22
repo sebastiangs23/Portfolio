@@ -1,6 +1,6 @@
 import { useLanguage } from "../Language/Language";
 
-function Data() {
+export default function Data() {
   const { sentences } = useLanguage();
 
   return (
@@ -82,6 +82,4 @@ function Data() {
       </a>
     </div>
   );
-}
-
-export default Data;
+};
