@@ -6,7 +6,7 @@ import english from "../../assets/languages/united-states.svg";
 import spanish from "../../assets/languages/spain.svg";
 import "./Header.css";
 
-function Header() {
+export default function Header() {
   const [language, setLanguage] = useState("spanish");
   const [animating, setAnimating] = useState(false);
   const [showNavbar, setShowNavBar] = useState(true);
@@ -86,6 +86,4 @@ function Header() {
       </span>
     </nav>
   );
-}
-
-export default Header;
+};

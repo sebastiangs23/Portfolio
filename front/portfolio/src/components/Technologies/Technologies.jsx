@@ -2,9 +2,9 @@ import { technologiesArray } from "../../assets/images";
 import { useLanguage } from "../Language/Language";
 import "./technologies.css";
 
-export default function technologies() {
+export default function Technologies() {
   const { sentences } = useLanguage();
-  
+
   return (
     <div className="technologies" id="technologies">
       <h2 className="text-[2rem] font-bold mb-[2rem]">
