@@ -1,11 +1,13 @@
 /*_____________
 |   CLIENT   */
 import react from "./technologies-black/client/reactjsb.png";
-import LitElement from "./technologies-black/client/lit-element.png";
+import litElement from "./technologies-black/client/lit-element.png";
 import reactNative from "./technologies-black/client/reactnativebb.png";
 import vue from "./technologies-black/client/vue-js.png";
+import nuxt from "./technologies-black/client/nuxt.webp";
 import figma from "./technologies-black/client/figmablack.png";
 import redux from "./technologies-black/client/reduxb.png";
+
 
 /*_____________
 |   SERVER   */
@@ -29,11 +31,13 @@ import sequelize from "./technologies-black/orm/sequelize.png";
 import aws from "./technologies-black/cloud/aws.webp";
 import github from "./technologies-black/cloud/github.png";
 
-
+/*_____________________________
+|  ARTIFICIAL INTELLIGENCE   */
+import chatGpt from "./technologies-black/artificial-intelligence/chat-gpt.webp";
+import googleAiStudio from "./technologies-black/artificial-intelligence/google-ai-studio.png";
 
 export const technologiesArray = {
   client: [
-    //TODO: Add Nuxt
     {
       name: "React",
       image: react,
@@ -42,12 +46,17 @@ export const technologiesArray = {
     {
       name: "React Native",
       image: reactNative,
-      className: "image-big",
+      className: "md:w-[3.75rem] h-auto inline-block max-w-[5rem] max-h-[5rem]",
     },
     {
       name: "Vue.js",
       image: vue,
-      className: "image-big",
+      className: "md:w-[3.75rem] h-auto inline-block max-w-[5rem] max-h-[5rem]",
+    },
+    {
+      name: "Nuxt",
+      image: nuxt,
+      className: "md:w-[3.75rem] h-auto inline-block max-w-[5rem] max-h-[5rem]",
     },
     {
       name: "Redux",
@@ -56,30 +65,30 @@ export const technologiesArray = {
     },
     {
       name: "Lit Element",
-      image: LitElement,
-      className: "image-big",
+      image: litElement,
+      className: "md:w-[3.75rem] h-auto inline-block max-w-[5rem] max-h-[5rem]",
     },
     {
       name: "Figma",
       image: figma,
-      className: "image-big",
+      className: "md:w-[3.75rem] h-auto inline-block max-w-[5rem] max-h-[5rem]",
     },
   ],
   backend:[
     {
         name: "Typescript",
         image: typeScript,
-        class: "image-big"
+        class: "md:w-[3.75rem] h-auto inline-block max-w-[5rem] max-h-[5rem]"
     },
     {
         name: "Node",
         image: node,
-        class: "nodeimg"
+        class: "w-[6.25rem]"
     },
     {
         name: "Express",
         image: express,
-        class: "express"
+        class: "w-[6.25rem] pt-[0.5rem]"
     }
   ],
   dataBase: [
@@ -91,12 +100,12 @@ export const technologiesArray = {
     {
         name: "Postgres",
         image: postgres,
-        class: "image-big"
+        class: "md:w-[3.75rem] h-auto inline-block max-w-[5rem] max-h-[5rem]"
     },
     {
         name: "Mongo Db",
         image: mongoDb,
-        class: "image-mongo"
+        class: "md:h-auto max-h-[5rem] md:w-[7.5rem] max-w-[5rem] inline-block "
     }
   ],
   orm: [
@@ -108,21 +117,32 @@ export const technologiesArray = {
     {
         name: "Sequelize",
         image: sequelize,
-        class: "image-big"
+        class: "md:w-[3.75rem] h-auto inline-block max-w-[5rem] max-h-[5rem]"
     }
   ],
   cloud: [
     {
         name: "Aws",
         image: aws,
-        class: "image-big"
+        class: "md:w-[3.75rem] h-auto inline-block max-w-[5rem] max-h-[5rem]"
     },
     {
         name: "Github",
         image: github,
-        class: "image-big"
+        class: "md:w-[3.75rem] h-auto inline-block max-w-[5rem] max-h-[5rem]"
     }
     //VERCEL
+  ],
+  artificialIntelligence: [
+    {
+      name: "ChatGPT",
+      image: chatGpt,
+      class: "md:w-[3.75rem] h-auto inline-block max-w-[5rem] max-h-[5rem]"
+    },
+    {
+      name: "Google AI Studio",
+      image: googleAiStudio,
+      class: "md:w-[3.75rem] h-auto inline-block max-w-[5rem] max-h-[5rem]"
+    }
   ]
-  //TODO: Add AI technologies
 };

@@ -4,61 +4,80 @@ import "./technologies.css";
 
 export default function technologies() {
   const { sentences } = useLanguage();
-  //TODO: Migrate Solo , seccion & subtitulo from CSS to tailwindCss
+  
   return (
-    <div className="container-technologies" id="technologies">
-      <h2 className="section__title">{sentences.technologies} </h2>
-      <div className="flex-container">
+    <div className="technologies" id="technologies">
+      <h2 className="text-[2rem] font-bold mb-[2rem]">
+        {sentences.technologies}
+      </h2>
+
+      <div className="flex flex-col items-center sm:flex-row sm:items-start sm:justify-around border-l-2 border-l-[#ccc]">
         {/* FRONT */}
-        <div className="seccion">
-          <h3 className="subtitulo">Front-end</h3>
+        <section className="technologies__group">
+          <h3 className="md:text-3xl text-2xl font-bold mb-[1rem]">
+            Front-end
+          </h3>
           {technologiesArray.client.map((tech, index) => (
-            <div className="solo" key={index}>
+            <div className="technologies__logo" key={index}>
               <img src={tech.image} loading="lazy" className={tech.className} />
             </div>
           ))}
-        </div>
+        </section>
 
         {/* SERVER */}
-        <div className="seccion">
-          <h3 className="subtitulo">Back-end</h3>
+        <section className="technologies__group">
+          <h3 className="md:text-3xl text-2xl font-bold mb-[1rem]">Back-end</h3>
           {technologiesArray?.backend.map((tech, index) => (
-            <div className="solo" key={index}>
+            <div className="technologies__logo" key={index}>
               <img src={tech.image} loading="lazy" className={tech.class} />
             </div>
           ))}
-        </div>
+        </section>
 
         {/* DATABASE */}
-        <div className="seccion">
-          <h3 className="subtitulo">{sentences.database} </h3>
+        <section className="technologies__group">
+          <h3 className="md:text-3xl text-2xl font-bold mb-[1rem]">
+            {sentences.database}
+          </h3>
 
           {technologiesArray?.dataBase.map((tech, index) => (
-            <div className="solo" key={index}>
+            <div className="technologies__logo" key={index}>
               <img src={tech.image} loading="lazy" className={tech.class} />
             </div>
           ))}
-        </div>
+        </section>
 
         {/* ORM */}
-        <div className="seccion">
-          <h3 className="subtitulo">ORM</h3>
+        <section className="technologies__group">
+          <h3 className="md:text-3xl text-2xl font-bold mb-[1rem]">ORM</h3>
           {technologiesArray?.orm.map((tech, index) => (
-            <div className="solo" key={index}>
+            <div className="technologies__logo" key={index}>
               <img src={tech.image} loading="lazy" className={tech.class} />
             </div>
           ))}
-        </div>
+        </section>
 
         {/* CLOUD, HOSTING & VERSION CONTROL */}
-        <div className="seccion">
-          <h3 className="subtitulo">Cloud, hosting & Version Control</h3>
+        <section className="technologies__group">
+          <h3 className="md:text-3xl text-2xl font-bold mb-[1rem]">
+            Cloud & Version Control
+          </h3>
           {technologiesArray?.cloud.map((tech, index) => (
-            <div className="solo" key={index}>
+            <div className="technologies__logo" key={index}>
               <img src={tech.image} loading="lazy" className={tech.class} />
             </div>
           ))}
-        </div>
+        </section>
+
+        {/* ARTIFICIAL-INTELLIGENCE */}
+        <section className="technologies__group">
+          <h3 className="md:text-3xl text-2xl font-bold mb-[1rem]">AI</h3>
+          {technologiesArray?.artificialIntelligence.map((tech, index) => (
+            <div className="technologies__logo" key={index}>
+              <img src={tech.image} loading="lazy" className={tech.class} />
+            </div>
+          ))}
+        </section>
       </div>
     </div>
   );

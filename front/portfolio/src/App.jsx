@@ -16,7 +16,6 @@ import Technologies from "./components/Technologies/Technologies";
 |   JOB DETAILS   */
 import JobDetails from "./components/Background/components/JobDetails";
 
-
 import {
   sliderInteligenio,
   sliderIbc,
