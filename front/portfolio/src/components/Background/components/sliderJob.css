@@ -1,12 +1,11 @@
 .slider-scroll-section {
   position: relative;
-  height: 320vh;
 }
 
 .slider-scroll-sticky {
   position: sticky;
-  top: 0;
-  height: 100vh;
+  top: 5rem;
+  height: calc(100vh - 5rem);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -21,7 +20,7 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 0 8vw;
+  padding-inline: 8vw;
   width: max-content;
   will-change: transform;
   transform: translate3d(0, 0, 0);
@@ -29,41 +28,52 @@
 
 .slider-scroll-item {
   flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.image-job-scroll {
+.slider-scroll-media {
+  display: block;
+  height: 35rem;
+  max-width: none;
+  border-radius: 1.125rem;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.slider-scroll-media--deskptop {
   width: min(72vw, 68.75rem);
-  height: auto;
-  border-radius: 1.125rem;
-  display: block;
-  object-fit: cover;
 }
 
-.screenshot-image-scroll {
+.slider-scroll-media--shot {
   width: min(28vw, 23.75rem);
-  height: auto;
-  border-radius: 1.125rem;
-  display: block;
-  object-fit: cover;
 }
 
 @media screen and (max-width: 700px) {
-  .slider-scroll-section {
-    height: 220vh;
+  .slider-scroll-sticky {
+    position: sticky;
+    top: 1rem;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 0.5rem;
   }
 
   .slider-scroll-track {
-    gap: 1.125rem;
-    padding: 0 6vw;
+    gap: 1rem;
+    padding-inline: 5vw;
   }
 
-  .image-job-scroll {
-    width: 88vw;
-    border-radius: 14px;
+  .slider-scroll-media--deskptop {
+    width: 92vw;
+    border-radius: 0.875rem;
   }
 
-  .screenshot-image-scroll {
-    width: 58vw;
+  .slider-scroll-media--shot {
+    width: 62vw;
     border-radius: 0.875rem;
   }
 }

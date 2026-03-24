@@ -28,42 +28,51 @@ export default function App() {
 
   const experienceItems = [
     {
-      id: "epam-neoris",
+      id: "Epam-Neoris",
       path: "/experience/epam-neoris",
-      slider: sliderNeoris,
+      slider: {
+        slides: sliderNeoris,
+        type: "mobile"
+      },
       sentences:
         sentences.background.work_experience_items[0]?.descriptions.details,
-      typeImage: "screenshot",
     },
     {
-      id: "inlearning",
+      id: "Inlearning",
       path: "/experience/inlearning",
-      slider: sliderInlearning,
+      slider: {
+        slides: sliderInlearning,
+        type: "desktop"
+      }, 
       sentences:
         sentences.background.work_experience_items[1]?.descriptions.details,
-      typeImage: "web",
     },
     {
-      id: "inteligenio",
+      id: "Inteligenio",
       path: "/experience/inteligenio",
-      slider: sliderInteligenio,
+      slider: {
+        slides: sliderInteligenio,
+        type: "desktop"
+      },
       sentences:
         sentences.background.work_experience_items[4]?.descriptions.details,
-      typeImage: "web",
     },
     {
-      id: "ibc-institute",
+      id: "Ibc-institute",
       path: "/experience/ibc-institute",
-      slider: sliderIbc,
+      slider: { 
+        slides: sliderIbc,
+        type: "desktop" 
+      },
       sentences:
         sentences.background.work_experience_items[3]?.descriptions.details,
-      typeImage: "web",
     },
     {
-      id: "dazlabs",
+      id: "Dazlabs",
       path: "/experience/dazlabs",
-      slider: [],
-      typeImage: "web",
+      slider: {
+        slides: []
+      },
     },
   ];
 
@@ -94,7 +103,8 @@ export default function App() {
                   element={
                     <JobDetails
                       title={item.id}
-                      slides={item.slider}
+                      slides={item.slider?.slides}
+                      typeSlider={item.slider?.type}
                       descriptions={item.sentences}
                     />
                   }
