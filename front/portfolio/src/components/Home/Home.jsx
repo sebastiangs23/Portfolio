@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Social from "../Social/Social.jsx";
 import Data from "../Social/Data";
 import "./Home.css";
 
-function Home() {
+export default function Home() {
   const [showHand, setShowHand] = useState(false);
 
   return (
@@ -33,6 +33,4 @@ function Home() {
       </div>
     </section>
   );
-}
-
-export default Home;
+};

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const sentences = {
   spanish: {
@@ -50,10 +50,14 @@ const sentences = {
           date: "2025 Marzo - 2025 Agosto",
           descriptions: {
             general: [
-              "Diseñé Web Components reutilizables y totalmente responsivos para BBVA, utilizando un framework interno (Cells) y principios de clean code. Cada componente fue testeado, documentado e incluía casos de uso detallados para asegurar su funcionalidad y mantenibilidad.",
+              "Diseñé Web Components reutilizables y totalmente responsivos para el banco BBVA, utilizando un framework interno (Cells) y principios de clean code. Cada componente fue testeado, documentado e incluía casos de uso detallados para asegurar su funcionalidad y mantenibilidad.",
               "Además, implementé funcionalidades avanzadas, refactoricé código y mantuve altos estándares de calidad aplicando buenas prácticas y la convención BEM.",
             ],
-            details: [""],
+            details: [
+              "Desarrollé Web Components reutilizables y accesibles, así como vistas de página completas, utilizando las librerías internas y el framework de BBVA.",
+              "Escribí pruebas unitarias para la lógica, el renderizado y la accesibilidad de los componentes mediante snapshots con @open-wc/testing, y documenté cada componente con casos de uso detallados.",
+              "Realicé revisiones de código semanales, refactoricé código legado e implementé nuevas funcionalidades siguiendo buenas prácticas de clean code y la metodología BEM.",
+            ],
           },
           route: "/experience/epam-neoris",
         },
@@ -67,7 +71,11 @@ const sentences = {
               "Diseñé y refactoricé componentes y vistas jerárquicas completamente responsivas, con hasta 5 niveles de interconexión mediante props, emits, inject, provide y refs. Migré más de 20 vistas a TypeScript aplicando buenas prácticas con interfaces, tipos, operadores ternarios, type guards y coalescencia nula.",
               "Además, desarrollé más de 50 plantillas de correo electrónico automatizadas, enviadas cronológicamente a todos los usuarios.",
             ],
-            details: [""],
+            details: [
+              "Creé y refactoricé componentes jerárquicos y vistas con hasta cinco niveles de interconexión utilizando props, emits, inject, provide y refs, garantizando una responsividad completa en distintos dispositivos.",
+              "Migré más de 20 vistas a TypeScript mediante el uso de interfaces, tipos personalizados, operadores ternarios, type guards, nullish coalescing y otras buenas prácticas para mejorar la mantenibilidad y la seguridad de tipos.",
+              "Desarrollé más de 50 plantillas de correos automatizados que se activaban cronológicamente y se enviaban a todos los usuarios.",
+            ],
           },
           route: "/experience/inlearning",
         },
@@ -222,10 +230,14 @@ const sentences = {
           date: "2025 March - 2025 August",
           descriptions: {
             general: [
-              "Designed reusable and fully responsive Web Components for BBVA using an internal framework (Cells) and clean code principles. Each component was thoroughly tested, documented, and included detailed use cases to ensure functionality and maintainability.",
+              "Designed reusable and fully responsive Web Components for BBVA Bank using an internal framework (Cells) and clean code principles. Each component was thoroughly tested, documented, and included detailed use cases to ensure functionality and maintainability.",
               "Additionally, I implemented advanced features, refactored code, and maintained high-quality standards by applying best practices and the BEM convention.",
             ],
-            details: [""],
+            details: [
+              "Developed reusable, accessible Web Components and full-page views using BBVA’s internal libraries and framework.",
+              "Wrote unit tests for component logic, rendering, and accessibility using snapshots with @open-wc/testing, and documented each component with detailed use cases.",
+              "Conducted weekly code reviews, refactored legacy code, and implemented new features following clean code practices and BEM methodology.",
+            ],
           },
           route: "/experience/dazlabs",
         },
@@ -239,7 +251,11 @@ const sentences = {
               "Created and refactored hierarchical, fully responsive components and views with up to 5 levels of interconnection using props, emits, inject, provide, and refs. Migrated 20+ views to TypeScript using interfaces, types, ternary operators, type guards, and nullish coalescing.",
               "Developed 50+ automated email templates triggered chronologically for all users.",
             ],
-            details: [""],
+            details: [
+              "Created and refactored hierarchical components and views with up to five levels of interconnection using props, emits, inject, provide, and refs, ensuring full responsiveness across devices.",
+              "Migrated more than 20 views to TypeScript using interfaces, custom types, ternary operators, type guards, nullish coalescing, and other best practices to improve maintainability and type safety.",
+              "Developed over 50 automated email templates that were triggered chronologically and sent to all users.",
+            ],
           },
           route: "/experience/inlearning",
         },

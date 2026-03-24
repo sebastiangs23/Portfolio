@@ -1,8 +1,11 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useLanguage } from "./components/Language/Language";
+import MouseDistortion from "./components/MouseDistortion/MouseDistortion";
+import "./App.css";
 
 /*______________
 |   LANDING   */
+import Landing from "./components/Landing/Landing";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Background from "./components/Background/Background";
@@ -11,20 +14,74 @@ import Technologies from "./components/Technologies/Technologies";
 
 /*__________________
 |   JOB DETAILS   */
-import JobDetailsInte from "./components/Background/components/JobDetailsInte";
-import JobDetailsIbc from "./components/Background/components/JobDetailsIbc";
-import JobDetailsDazlabs from "./components/Background/components/JobDetailsDazlabs";
-import JobDetailsInlearning from "./components/Background/components/JobDetailsInlearning";
-import JobDetailsEpamNeoris from "./components/Background/components/JobDetailsNeoris";
+import JobDetails from "./components/Background/components/JobDetails";
 
-import "./App.css";
+import {
+  sliderInteligenio,
+  sliderIbc,
+  sliderInlearning,
+  sliderNeoris,
+} from "./assets/work-images/images";
 
-function App() {
+export default function App() {
+  const { sentences } = useLanguage();
+
+  const experienceItems = [
+    {
+      id: "Epam-Neoris",
+      path: "/experience/epam-neoris",
+      slider: {
+        slides: sliderNeoris,
+        type: "mobile"
+      },
+      sentences:
+        sentences.background.work_experience_items[0]?.descriptions.details,
+    },
+    {
+      id: "Inlearning",
+      path: "/experience/inlearning",
+      slider: {
+        slides: sliderInlearning,
+        type: "desktop"
+      }, 
+      sentences:
+        sentences.background.work_experience_items[1]?.descriptions.details,
+    },
+    {
+      id: "Inteligenio",
+      path: "/experience/inteligenio",
+      slider: {
+        slides: sliderInteligenio,
+        type: "desktop"
+      },
+      sentences:
+        sentences.background.work_experience_items[4]?.descriptions.details,
+    },
+    {
+      id: "Ibc-institute",
+      path: "/experience/ibc-institute",
+      slider: { 
+        slides: sliderIbc,
+        type: "desktop" 
+      },
+      sentences:
+        sentences.background.work_experience_items[3]?.descriptions.details,
+    },
+    {
+      id: "Dazlabs",
+      path: "/experience/dazlabs",
+      slider: {
+        slides: []
+      },
+    },
+  ];
+
   return (
     <Router>
+      <MouseDistortion />
       <div>
         <Header />
-        <main className="main">
+        <main className="main" data-cursor="hover">
           <Routes>
             <Route
               path="/"
@@ -37,16 +94,26 @@ function App() {
                 </>
               }
             />
-            <Route path="/experience/inteligenio" element={<JobDetailsInte />} />
-            <Route path="/experience/ibc-institute" element={<JobDetailsIbc />} />
-            <Route path="/experience/dazlabs" element={<JobDetailsDazlabs/> } />
-            <Route path="/experience/inlearning" element={<JobDetailsInlearning/> } />
-            <Route path="/experience/epam-neoris" element={<JobDetailsEpamNeoris/> } />
+
+            {experienceItems?.map((item, index) => {
+              return (
+                <Route
+                  key={index}
+                  path={item.path}
+                  element={
+                    <JobDetails
+                      title={item.id}
+                      slides={item.slider?.slides}
+                      typeSlider={item.slider?.type}
+                      descriptions={item.sentences}
+                    />
+                  }
+                />
+              );
+            })}
           </Routes>
         </main>
       </div>
     </Router>
   );
-}
-
-export default App;
+};

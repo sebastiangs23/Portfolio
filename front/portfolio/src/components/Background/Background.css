@@ -1,5 +1,5 @@
 .training {
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 
 .training__title {
@@ -19,13 +19,13 @@
 }
 
 .training__core {
-  max-width: 768px;
+  max-width: 48rem;
 }
 
 .training__core-tabs {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 0.5rem;
   margin-bottom: var(--mb-2);
 }
 
@@ -38,7 +38,7 @@
   color: #1c1e21;
   line-height: 16px;
   overflow: hidden;
-  padding: 13px 20px;
+  padding: 0.813rem 1.25rem;
   position: relative;
   text-align: center;
   transition: color 0.33s linear 0.5s, border-color ease-out 0.5s;
@@ -52,8 +52,8 @@
   background-color: #1c1e21;
   border-radius: 50%;
   content: "";
-  height: 167px;
-  min-width: 167px;
+  height: 10.4rem;
+  min-width: 10.4rem;
   position: absolute;
   top: 0;
   transform: scale(1) translateY(67px);
@@ -70,7 +70,7 @@
   color: #1c1e21;
   line-height: 16px;
   overflow: hidden;
-  padding: 13px 20px;
+  padding: 0.813rem 1.25rem;
   position: relative;
   text-align: center;
   transition: color 0.33s linear 0.5s, border-color ease-out 0.5s;
@@ -83,8 +83,8 @@
   background-color: #1c1e21;
   border-radius: 50%;
   content: "";
-  height: 167px;
-  min-width: 167px;
+  height: 10.4rem;
+  min-width: 10.4rem;
   position: absolute;
   top: 0;
   transform: scale(1) translateY(67px);
@@ -99,7 +99,6 @@
 }
 
 .training__core-tabs-active {
-  /* color: var(--title-color-dark); */
   transition-delay: 0.5s;
   color: #fff;
 }
@@ -109,11 +108,10 @@
   background-color: #1c1e21;
   border-radius: 50%;
   content: "";
-  height: 167px;
-  min-width: 167px;
+  height: 10.4rem;
+  min-width: 10.4rem;
   position: absolute;
   top: 0;
-  /* transform: scale(1) translateY(67px); */
   transition: transform 1s cubic-bezier(0.66, 0, 0.34, 1);
   width: 100%;
   z-index: -1;
@@ -127,7 +125,6 @@
 }
 
 .training__core-data-content {
-  /*  NOSE PUEDE ALINEAR CON GRID PQ MI PANTALLA NO ENCAJA CON LA DE EL*/
   display: none;
 }
 
@@ -163,11 +160,11 @@
 }
 
 .text-job{
-  margin-left: 4px;
+  margin-left: 0.25rem;
 }
 
 .icon_office {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .text-range-date {
@@ -176,8 +173,8 @@
 
 .training__timeline-rounder {
   display: inline-block;
-  width: 13px;
-  height: 13px;
+  width: 0.813rem;
+  height: 0.813rem;
   background-color: var(--text-color);
   border-radius: 50%;
 }
@@ -190,7 +187,9 @@
   transform: translate(6px, -7px);
 }
 
-/*=============== BREAKPOINTS ===============*/
+/*__________________
+|  MEDIA QUERIES  */
+
 /* For large devices */
 @media screen and (max-width: 992px) {
   .training__core {

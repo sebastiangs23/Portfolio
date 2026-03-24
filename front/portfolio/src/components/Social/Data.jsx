@@ -1,13 +1,12 @@
-import React from "react";
 import { useLanguage } from "../Language/Language";
 
-function Data() {
+export default function Data() {
   const { sentences } = useLanguage();
 
   return (
     <div className="home__data">
-      <h1 className="flex items-center home__title">
-        Sebastian Gomez
+      <h1 className="flex items-center home__title md:text-9xl text-5xl">
+        Sebastián Gómez
         <svg
           width="65"
           height="65"
@@ -83,6 +82,4 @@ function Data() {
       </a>
     </div>
   );
-}
-
-export default Data;
+};

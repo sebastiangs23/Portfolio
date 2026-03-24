@@ -1,48 +1,89 @@
-import { useEffect, useState } from "react";
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import { useEffect, useRef } from "react";
 import "./sliderJob.css";
 
-export default function SliderJob({ slides, type }) {
-  const [current, setCurrent] = useState(0);
-  const length = slides.length;
+export default function SliderJob({ slides, type = "web" }) {
+  const sectionRef = useRef(null);
+  const stickyRef = useRef(null);
+  const trackRef = useRef(null);
 
   useEffect(() => {
-    const nextImage = (current + 1) % length;
-    const preloadImg = new Image();
-    preloadImg.src = slides[nextImage].image;
-  });
+    const section = sectionRef.current;
+    const sticky = stickyRef.current;
+    const track = trackRef.current;
 
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
+    if (!section || !sticky || !track || !slides?.length) return;
 
-  const previousSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
+    let raf = 0;
+    let currentX = 0;
+    let targetX = 0;
 
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
-  }
+    const clamp = (value, min, max) => Math.max(min, Math.min(value, max));
+
+    const updateTarget = () => {
+      const rect = section.getBoundingClientRect();
+      const maxTranslate = Math.max(0, track.scrollWidth - window.innerWidth);
+
+      const stickyStyles = window.getComputedStyle(sticky);
+      const stickyTop = parseFloat(stickyStyles.top) || 0;
+      const stickyHeight = sticky.offsetHeight;
+
+      section.style.height = `${maxTranslate + stickyHeight + stickyTop}px`;
+
+      const scrollable = section.offsetHeight - stickyHeight - stickyTop;
+      if (scrollable <= 0) return;
+
+      const progress = clamp(-rect.top / scrollable, 0, 1);
+      targetX = -progress * maxTranslate;
+    };
+
+    const animate = () => {
+      currentX += (targetX - currentX) * 0.08;
+      track.style.transform = `translate3d(${currentX}px, 0, 0)`;
+      raf = requestAnimationFrame(animate);
+    };
+
+    const onScroll = () => updateTarget();
+    const onResize = () => updateTarget();
+
+    updateTarget();
+    animate();
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onResize);
+
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
+    };
+  }, [slides]);
+
+  if (!Array.isArray(slides) || slides.length === 0) return null;
 
   return (
-    <section className="slider_web_job">
-      <FaArrowAltCircleLeft className="left-arrow" onClick={previousSlide} />
-      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-      {slides.map((s, index) => {
-        return (
-          <div
-            key={index}
-            className="flex items-center justify-center"
-          >
-            {index === current && (
-              <img
-                src={s.image}
-                className={type == "web" ? "image-job" : "screenshot-image"}
-              />
-            )}
+    <section ref={sectionRef} className="slider-scroll-section">
+      <div ref={stickyRef} className="slider-scroll-sticky">
+        <div className="slider-scroll-viewport">
+          <div ref={trackRef} className="slider-scroll-track">
+            {slides.map((s, index) => (
+              <article
+                className="slider-scroll-item"
+                key={index}
+              >
+                <img
+                  src={s.image}
+                  alt={s.title || `slide-${index}`}
+                  className={
+                    type === "desktop"
+                      ? "slider-scroll-media slider-scroll-media--desktop"
+                      : "slider-scroll-media slider-scroll-media--shot"
+                  }
+                />
+              </article>
+            ))}
           </div>
-        );
-      })}
+        </div>
+      </div>
     </section>
   );
-};
+}
