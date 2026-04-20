@@ -1,20 +1,80 @@
 .technologies {
-  margin-top: 9.3rem;
-  margin-bottom: 9.3rem;
-  display: block;
-  align-items: center;
-  justify-content: center;
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+  padding: 0 1.25rem;
+}
+
+.technologies__intro {
+  max-width: 760px;
+  margin: 0 auto 3.5rem auto;
+  text-align: center;
+}
+
+.technologies__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.technologies__subtitle {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+.technologies__grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
 .technologies__group {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.05),
+    0 1px 3px rgba(15, 23, 42, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.technologies__group-header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  padding-left: 1rem;
-  flex: 1;
-  border-left: 2px solid #ccc;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+}
+
+.technologies__group-title {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.technologies__group-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7280;
+  background: rgba(17, 24, 39, 0.05);
+  padding: 0.35rem 0.65rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.technologies__logos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: 1rem;
+  align-items: stretch;
 }
 
 .technologies__logo {
@@ -42,48 +102,39 @@
   background: black;
   animation: counterclockwise 2s infinite;
 }
-
 @keyframes clockwise {
   0% {
     top: -5px;
     left: 0;
   }
-
   12% {
     top: -2px;
     left: 2px;
   }
-
   25% {
     top: 0;
     left: 5px;
   }
-
   37% {
     top: 2px;
     left: 2px;
   }
-
   50% {
     top: 5px;
     left: 0;
   }
-
   62% {
     top: 2px;
     left: -2px;
   }
-
   75% {
     top: 0;
     left: -5px;
   }
-
   87% {
     top: -2px;
     left: -2px;
   }
-
   100% {
     top: -5px;
     left: 0;
@@ -95,62 +146,111 @@
     top: -5px;
     right: 0;
   }
-
   12% {
     top: -2px;
     right: 2px;
   }
-
   25% {
     top: 0;
     right: 5px;
   }
-
   37% {
     top: 2px;
     right: 2px;
   }
-
   50% {
     top: 5px;
     right: 0;
   }
-
   62% {
     top: 2px;
     right: -2px;
   }
-
   75% {
     top: 0;
     right: -5px;
   }
-
   87% {
     top: -2px;
     right: -2px;
   }
-
   100% {
     top: -5px;
     right: 0;
   }
 }
-
-/* Responsive styles */
-@media screen and (max-width: 600px) {
-  .technologies__group {
-    min-width: 100%;
-    margin: 0;
-    padding: 0.625rem 0;
-    border-bottom: 1px solid #ddd;
+@media screen and (max-width: 576px) {
+  .technologies {
+    padding: 0 1rem;
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
   }
 
-  .technologies__group:last-child {
-    border-bottom: none;
+  .technologies__intro {
+    margin-bottom: 2.25rem;
+  }
+
+  .technologies__group {
+    padding: 1.1rem;
+    border-radius: 20px;
+  }
+
+  .technologies__group-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .technologies__logos-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85rem;
+    justify-items: center;
   }
 
   .technologies__logo {
-    margin-bottom: 0.3125rem;
+    width: 100%;
+    max-width: 5.25rem;
+    height: 5.25rem;
+    min-height: unset;
+    margin: 0;
+  }
+
+  .technologies__logo img {
+    max-width: 42px;
+    max-height: 42px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .technologies__logo:hover::before,
+  .technologies__logo:hover::after {
+    width: 5.25rem;
+    height: 5.25rem;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .technologies__logos-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .technologies__logo {
+    max-width: 5rem;
+    height: 5rem;
+  }
+
+  .technologies__logo img {
+    max-width: 38px;
+    max-height: 38px;
+  }
+
+  .technologies__logo:hover::before,
+  .technologies__logo:hover::after {
+    width: 5rem;
+    height: 5rem;
   }
 }

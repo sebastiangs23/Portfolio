@@ -56,10 +56,6 @@ export default function Projects() {
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {sentences?._projects || "Projects"}
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
-            A selection of web and mobile work with a smoother and more modern
-            browsing experience.
-          </p>
         </div>
 
         {/* Toggle */}
