@@ -5,7 +5,6 @@ import "./App.css";
 
 /*______________
 |   LANDING   */
-import Landing from "./components/Landing/Landing";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Background from "./components/Background/Background";

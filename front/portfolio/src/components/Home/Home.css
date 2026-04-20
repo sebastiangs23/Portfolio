@@ -10,6 +10,7 @@
   grid-template-columns: max-content;
   row-gap: 1rem;
   width: 100%;
+  justify-content: center;
 }
 
 .home__social-icon {
