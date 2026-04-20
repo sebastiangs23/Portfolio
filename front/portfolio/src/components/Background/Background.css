@@ -1,32 +1,10 @@
-.training {
-  margin-top: 6.25rem;
-}
-
 .training__title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
 }
 
 .training__subtitle {
-  display: block;
   font-size: var(--small-font-size);
-  margin-bottom: 4rem;
-}
-
-.training__title,
-.training__subtitle {
-  text-align: center;
-}
-
-.training__core {
-  max-width: 48rem;
-}
-
-.training__core-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: var(--mb-2);
 }
 
 .training__core-tabs-button {
@@ -34,7 +12,7 @@
   display: inline-flex;
   justify-content: center;
   border: 1px solid #1c1e21;
-  border-radius: 50px;
+  border-radius: 9999px;
   color: #1c1e21;
   line-height: 16px;
   overflow: hidden;
@@ -43,14 +21,14 @@
   text-align: center;
   transition: color 0.33s linear 0.5s, border-color ease-out 0.5s;
   background-color: #fff;
-  white-space: pre;
+  white-space: nowrap;
   z-index: 1;
   cursor: pointer;
 }
 
-.training__core-tabs-button:after {
+.training__core-tabs-button::after {
   background-color: #1c1e21;
-  border-radius: 50%;
+  border-radius: 9999px;
   content: "";
   height: 10.4rem;
   min-width: 10.4rem;
@@ -62,64 +40,20 @@
 }
 
 .training__core-tabs-active {
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-  border: 1px solid #1c1e21;
-  border-radius: 50px;
-  color: #1c1e21;
-  line-height: 16px;
-  overflow: hidden;
-  padding: 0.813rem 1.25rem;
-  position: relative;
-  text-align: center;
-  transition: color 0.33s linear 0.5s, border-color ease-out 0.5s;
-  background-color: #fff;
-  white-space: pre;
-  z-index: 1;
-}
-
-.training__core-tabs-active:after {
-  background-color: #1c1e21;
-  border-radius: 50%;
-  content: "";
-  height: 10.4rem;
-  min-width: 10.4rem;
-  position: absolute;
-  top: 0;
-  transform: scale(1) translateY(67px);
-  transition: transform 1s cubic-bezier(0.66, 0, 0.34, 1);
-  width: 100%;
-  z-index: -1;
-}
-
-.training__core-icons {
-  font-size: 1.8rem;
-  margin-right: var(--mb-0-25);
-}
-
-.training__core-tabs-active {
-  transition-delay: 0.5s;
   color: #fff;
 }
 
-.training__core-tabs-active:after {
-  transform: scale(1.47) translateY(0);
-  background-color: #1c1e21;
-  border-radius: 50%;
-  content: "";
-  height: 10.4rem;
-  min-width: 10.4rem;
-  position: absolute;
-  top: 0;
-  transition: transform 1s cubic-bezier(0.66, 0, 0.34, 1);
-  width: 100%;
-  z-index: -1;
+.training__core-tabs-active::after {
+  transform: scale(1.6) translateY(0);
+}
+
+.training__core-icons {
+  font-size: 1.1rem;
+  margin-right: 0.25rem;
 }
 
 .training__core-data {
   display: grid;
-  grid-template-columns: 0.9fr;
   justify-content: center;
   align-items: center;
 }
@@ -132,10 +66,31 @@
   display: block;
 }
 
+/* ===== TIMELINE WRAPPER ===== */
+.timeline-wrapper {
+  position: relative;
+}
+
+.timeline-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  background-color: var(--text-color);
+  z-index: 0;
+}
+
+/* ===== EACH ROW ===== */
 .training__core-data-content-each {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  align-items: start;
+  position: relative;
 }
 
 .training__core-title {
@@ -143,32 +98,30 @@
   font-weight: var(--font-medium);
 }
 
-.training__core-subtitle {
-  display: inline-block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
-}
-
-.training__core-calendar {
+.training__core-subtitle,
+.training__core-calendar,
+.company_name,
+.text-range-date {
   font-size: var(--small-font-size);
 }
 
 .company_name {
   display: flex;
   align-items: center;
-  font-size: var(--small-font-size);
-}
-
-.text-job{
-  margin-left: 0.25rem;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
 }
 
 .icon_office {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
-.text-range-date {
-  font-size: 14px;
+.timeline-center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
 }
 
 .training__timeline-rounder {
@@ -177,38 +130,67 @@
   height: 0.813rem;
   background-color: var(--text-color);
   border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.45s ease, opacity 0.45s ease;
+  transition-delay: 0.15s;
 }
 
-.training__timeline-line {
+.timeline-card {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: transform, opacity;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-item--visible .timeline-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item--visible .training__timeline-rounder {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.timeline-spacer {
   display: block;
-  width: 1px;
-  height: 100%;
-  background-color: var(--text-color);
-  transform: translate(6px, -7px);
 }
 
-/*__________________
-|  MEDIA QUERIES  */
-
-/* For large devices */
-@media screen and (max-width: 992px) {
-  .training__core {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* For medium devices */
+/* ===== RESPONSIVE ===== */
 @media screen and (max-width: 768px) {
-  .training__core {
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb--1-5);
+  .timeline-wrapper::before {
+    left: 6px;
+    transform: none;
+  }
+
+  .training__core-data-content-each {
+    grid-template-columns: max-content 1fr;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-center {
+    grid-column: 1;
+    grid-row: 1;
+    justify-content: flex-start;
+  }
+
+  .timeline-card {
+    grid-column: 2;
+  }
+
+  .timeline-spacer {
+    display: none;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .training__core-data {
-    grid-template-columns: initial;
+  .training__core-tabs-button {
+    padding: 0.72rem 1rem;
+    font-size: 0.9rem;
   }
 
   .training__core-icons {
@@ -216,9 +198,13 @@
   }
 }
 
-/* For small devices */
 @media screen and (max-width: 350px) {
+  .training__core-tabs-button {
+    width: 100%;
+    justify-content: center;
+  }
+
   .training__core-data-content-each {
-    gap: 0.5rem;
+    column-gap: 0.75rem;
   }
 }
