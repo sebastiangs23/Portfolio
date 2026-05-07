@@ -1,6 +1,5 @@
 .home__content {
   grid-template-columns: 7.25rem repeat(2, 1fr);
-
   column-gap: 2rem;
   align-items: center;
 }
@@ -49,13 +48,31 @@
   margin-bottom: var(--mb-3);
 }
 
+.home__img-container {
+  animation: cloudZoomIn 1.2s ease-out 0.2s both;
+  order: 1;
+}
+
+@keyframes cloudZoomIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.85);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
 .home__img {
   background: url(../../assets/sgs.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
-  order: 1;
   justify-self: center;
   width: 27rem;
   height: 27rem;
