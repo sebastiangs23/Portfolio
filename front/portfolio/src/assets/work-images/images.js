@@ -65,20 +65,20 @@ import teacherSessionRescheduleTop from "../../assets/work-images/inlearning/tea
 
 export const sliderInlearning = [
     {
-        image: adminSessions
-    },
-    {
-        image: studentPaperwork
+        image: teacherSessionRescheduleBot
     },
     {   
         image: teacherDinamicAlerts
     },
     {
-        image: teacherSessionRescheduleBot
+        image: teacherSessionRescheduleTop
     },
     {
-        image: teacherSessionRescheduleTop
-    }
+        image: adminSessions
+    },
+    {
+        image: studentPaperwork
+    },
 ];
 
 /*___________
