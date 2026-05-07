@@ -12,6 +12,7 @@ export default function Home() {
       <div className="home__container container grid">
         <div className="home__content grid">
           <Social />
+          <div className="home__img-container">
           <div className="home__img" onClick={() => setShowHand(true)}>
             {showHand && (
               <motion.div
@@ -27,6 +28,8 @@ export default function Home() {
                 👨🏻‍💻
               </motion.div>
             )}
+          </div>
+
           </div>
           <Data />
         </div>
