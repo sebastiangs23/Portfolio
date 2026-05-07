@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import SliderJob from "./sliderJob";
 
 export default function JobDetails({title, slides, typeSlider, descriptions }) {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div>
             <h2 className="section__title">{title}</h2>
