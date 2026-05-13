@@ -197,6 +197,10 @@
     width: 16rem;
     height: 16rem;
   }
+
+  .home__social {
+    margin-left: 0;
+  }
 }
 
 /* For small devices */
@@ -217,5 +221,9 @@
 
   .home__hand {
     display: none;
+  }
+
+  .home__social {
+    margin-left: 0;
   }
 }
