@@ -7,7 +7,7 @@ import spanish from "../../assets/languages/spain.svg";
 import "./Header.css";
 
 export default function Header() {
-  const [language, setLanguage] = useState("spanish");
+  const [language, setLanguage] = useState("english");
   const [showNavbar, setShowNavBar] = useState(true);
   const { sentences, switchLanguage } = useLanguage();
   const location = useLocation();

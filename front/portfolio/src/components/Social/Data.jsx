@@ -62,8 +62,8 @@ export default function Data() {
         <span className="home__subtitle-rotator">
           <span className="home__subtitle-rotator__inner">
             <span className="home__subtitle-rotator__word">Full Stack Developer</span>
-            <span className="home__subtitle-rotator__word">Frontend Developer</span>
-            <span className="home__subtitle-rotator__word">Backend Developer</span>
+            <span className="home__subtitle-rotator__word text-[var(--gray-color)]">Frontend Developer</span>
+            <span className="home__subtitle-rotator__word text-[var(--gray-color)]">Backend Developer</span>
           </span>
         </span>
       </h1>

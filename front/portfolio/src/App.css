@@ -18,6 +18,7 @@
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
   --black-color: rgb(0 0 0);
+  --gray-color: rgba(192,192,192,0.75);
 
   /*_________________________
   |   FONTS & TYPOGRAPHY   */
