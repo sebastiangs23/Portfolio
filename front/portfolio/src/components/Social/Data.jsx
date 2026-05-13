@@ -58,10 +58,15 @@ export default function Data() {
         </svg>
       </h1>
 
-      
-      <h3 className="home__subtitle">{sentences.home.position}</h3>
-
-      <p className="home__description">{sentences.home.description_position} </p>
+      <h1 className="home__subtitle">
+        <span className="home__subtitle-rotator">
+          <span className="home__subtitle-rotator__inner">
+            <span className="home__subtitle-rotator__word">Full Stack Developer</span>
+            <span className="home__subtitle-rotator__word text-[var(--gray-color)]">Frontend Developer</span>
+            <span className="home__subtitle-rotator__word text-[var(--gray-color)]">Backend Developer</span>
+          </span>
+        </span>
+      </h1>
 
       <a
         href={sentences.home.links.curriculum_link}
@@ -82,4 +87,4 @@ export default function Data() {
       </a>
     </div>
   );
-};
+}
