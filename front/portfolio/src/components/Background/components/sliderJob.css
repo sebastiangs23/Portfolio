@@ -4,7 +4,7 @@
 
 .slider-scroll-sticky {
   position: sticky;
-  top: 5rem;
+  top: 1.5rem;
   height: calc(100vh - 5rem);
   overflow: hidden;
   display: flex;
@@ -26,18 +26,11 @@
   transform: translate3d(0, 0, 0);
 }
 
-.slider-scroll-item {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .slider-scroll-media {
   display: block;
   height: 35rem;
   max-width: none;
-  border-radius: 1.125rem;
+  border-radius: 1.5rem;
   object-fit: contain;
   user-select: none;
   -webkit-user-drag: none;
