@@ -83,9 +83,9 @@ export const sliderInlearning = [
 
 /*___________
 |  NEORIS  */
-import home from "../../assets/work-images/neoris/home.jpg";
-import serviceDetails from "../../assets/work-images/neoris/service-details.jpg";
-import services from "../../assets/work-images/neoris/services.jpg";
+import home from "../../assets/work-images/neoris/home.png";
+import serviceDetails from "../../assets/work-images/neoris/service-details.png";
+import services from "../../assets/work-images/neoris/services.png";
 
 export const sliderNeoris = [
     {
@@ -96,5 +96,31 @@ export const sliderNeoris = [
     },
     {
         image: services
+    }
+];
+
+/*_____________
+|  FREELNACE */
+import componentCatalog from "../../assets/work-images/freelance/component-catalog.png";
+import login from "../../assets/work-images/freelance/login.png";
+import managePermission from "../../assets/work-images/freelance/manage-permission.png";
+import thumbnail from "../../assets/work-images/freelance/thumbnail.png";
+import restApiCalls from "../../assets/work-images/freelance/rest-api-calls.png";
+
+export const sliderFreelance = [
+    {
+        image: componentCatalog
+    },
+    {
+        image: login
+    },
+    {
+        image: managePermission
+    },
+    {
+        image: thumbnail
+    },
+    {
+        image: restApiCalls
     }
 ];

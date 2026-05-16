@@ -20,12 +20,22 @@ import {
   sliderIbc,
   sliderInlearning,
   sliderNeoris,
+  sliderFreelance
 } from "./assets/work-images/images";
 
 export default function App() {
   const { sentences } = useLanguage();
 
   const experienceItems = [
+    {
+      id: "Freelance in UAE",
+      path: "/experience/freelance",
+      slider: {
+        slides: sliderFreelance,
+        type: "desktop"
+      },
+      sentences: sentences.background.work_experience_items[0]?.descriptions.details,
+    },
     {
       id: "Epam-Neoris",
       path: "/experience/epam-neoris",
@@ -34,7 +44,7 @@ export default function App() {
         type: "mobile"
       },
       sentences:
-        sentences.background.work_experience_items[0]?.descriptions.details,
+        sentences.background.work_experience_items[1]?.descriptions.details,
     },
     {
       id: "Inlearning",
@@ -44,7 +54,14 @@ export default function App() {
         type: "desktop"
       }, 
       sentences:
-        sentences.background.work_experience_items[1]?.descriptions.details,
+        sentences.background.work_experience_items[2]?.descriptions.details,
+    },
+    {
+      id: "Dazlabs",
+      path: "/experience/dazlabs",
+      slider: {
+        slides: []
+      },
     },
     {
       id: "Inteligenio",
@@ -54,7 +71,7 @@ export default function App() {
         type: "desktop"
       },
       sentences:
-        sentences.background.work_experience_items[4]?.descriptions.details,
+      sentences.background.work_experience_items[5]?.descriptions.details,
     },
     {
       id: "Ibc-institute",
@@ -64,14 +81,7 @@ export default function App() {
         type: "desktop" 
       },
       sentences:
-        sentences.background.work_experience_items[3]?.descriptions.details,
-    },
-    {
-      id: "Dazlabs",
-      path: "/experience/dazlabs",
-      slider: {
-        slides: []
-      },
+        sentences.background.work_experience_items[4]?.descriptions.details,
     },
   ];
 

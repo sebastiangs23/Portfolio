@@ -69,7 +69,11 @@ export const sentences = {
               "Desarrollé un panel de administración con módulos para gestión de usuarios, monitoreo de llamadas a la API, comunicación mediante WebSockets y gestión de tiendas, creando componentes de UI reutilizables y layouts escalables,",
               "implementando actualizaciones en tiempo real con WebSockets, integrando servicios backend con recursos en la nube de AWS, y manteniendo la calidad del código mediante documentación, refactorización y buenas prácticas de código limpio.",
             ],
+            details: [
+              "Built and maintained a scalable Admin Panel dashboard, including user management, API call monitoring, WebSocket-based real-time communication, store management features, reusable UI components, backend service integrations, AWS cloud resource deployment, technical documentation, refactoring, and clean code practices."
+            ]
           },
+          route: "/experience/freelance",
         },
         {
           id: "neoris",
@@ -250,6 +254,7 @@ export const sentences = {
               "integrating backend services with AWS cloud resources, and maintaining code quality through documentation, refactoring, and clean code practices."
             ],
           },
+          route: "/experience/freelance",
         },
         {
           id: "neoris",
