@@ -60,9 +60,9 @@ export const sentences = {
       work_experience: "Experiencia Laboral",
       work_experience_items: [
         {
-          id: "freelance",
+          id: "Freelance",
           company: "Freelance",
-          position: "Desarrollador Full Stack",
+          position: "Full Stack Developer",
           date: "2025 Octubre - Actualidad",
           descriptions: {
             general: [
@@ -70,8 +70,8 @@ export const sentences = {
               "implementando actualizaciones en tiempo real con WebSockets, integrando servicios backend con recursos en la nube de AWS, y manteniendo la calidad del código mediante documentación, refactorización y buenas prácticas de código limpio.",
             ],
             details: [
-              "Built and maintained a scalable Admin Panel dashboard, including user management, API call monitoring, WebSocket-based real-time communication, store management features, reusable UI components, backend service integrations, AWS cloud resource deployment, technical documentation, refactoring, and clean code practices."
-            ]
+              "Construí y mantuve un dashboard escalable de Panel de Administración, incluyendo gestión de usuarios, monitoreo de llamadas a la API, comunicación en tiempo real basada en WebSockets, funcionalidades de gestión del store, componentes reutilizables de UI, integraciones con servicios backend, despliegue de recursos en la nube de AWS, documentación técnica, refactorización y buenas prácticas de código limpio.",
+            ],
           },
           route: "/experience/freelance",
         },
@@ -246,12 +246,15 @@ export const sentences = {
         {
           id: "freelance",
           company: "Freelance",
-          position: "Desarrollador Full Stack",
+          position: "Full Stack Developer",
           date: "2025 October - Present",
           descriptions: {
             general: [
               "Built an admin panel with modules for user management, API call monitoring, WebSocket communication, and store management, while developing reusable UI components and scalable layouts, implementing real-time updates via WebSockets,",
-              "integrating backend services with AWS cloud resources, and maintaining code quality through documentation, refactoring, and clean code practices."
+              "integrating backend services with AWS cloud resources, and maintaining code quality through documentation, refactoring, and clean code practices.",
+            ],
+            details: [
+              "Built and maintained a scalable Admin Panel dashboard, including user management, API call monitoring, WebSocket-based real-time communication, store management features, reusable UI components, backend service integrations, AWS cloud resource deployment, technical documentation, refactoring, and clean code practices.",
             ],
           },
           route: "/experience/freelance",
