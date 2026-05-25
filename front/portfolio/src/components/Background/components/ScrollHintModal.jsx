@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { BsMouse } from "react-icons/bs";
+import { sentences } from "../../../utils/utils";
+import { useLanguage } from "../../Language/Language";
 import "./ScrollHintModal.css";
-
 
 export default function ScrollHintModal() {
   const [isOpen, setIsOpen] = useState(false);
+  const { sentences } = useLanguage();
 
   useEffect(() => {
     const hasSeenHint = localStorage.getItem("hasSeenScrollHint");
@@ -44,12 +46,11 @@ export default function ScrollHintModal() {
         </div>
 
         <h3 className="mb-3 text-xl font-bold text-gray-900 sm:text-2xl">
-          Keep scrolling
+          {sentences.background?.modal?.title}
         </h3>
 
         <p className="mb-6 text-sm leading-relaxed text-gray-600 sm:text-base">
-          There is more content below. Scroll down to continue exploring the
-          timeline and sections.
+          {sentences.background?.modal?.description}
         </p>
 
         <button

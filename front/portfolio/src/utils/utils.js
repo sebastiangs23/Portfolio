@@ -198,6 +198,12 @@ export const sentences = {
         "Capacitar",
         "Adaptabilidad y flexibilidad",
       ],
+      modal: {
+        title: "Sigue desplazándote",
+        description:
+          "Hay más contenido debajo. Desplázate hacia abajo para seguir explorando.",
+        button: "Entendido",
+      },
     },
     _projects: "Proyectos",
     database: "Base de datos",
@@ -382,6 +388,12 @@ export const sentences = {
         "Train",
         "Adaptability and Flexibility",
       ],
+      modal: {
+        title: "Keep scrolling",
+        description:
+          "There is more content below. Scroll down to continue exploring.",
+        button: "Got it",
+      },
     },
     _projects: "Projects",
     database: "Database",
