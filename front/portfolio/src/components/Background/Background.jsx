@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../Language/Language";
-import { FaLaptopCode, FaRegBuilding } from "react-icons/fa";
+import { FaLaptopCode, FaRegBuilding, FaGraduationCap } from "react-icons/fa";
 import TimelineItem from "./components/TimeLineItem.jsx";
 import "./Background.css";
 
@@ -9,6 +9,30 @@ export default function Background() {
   const timelineRefs = useRef([]);
   const { sentences } = useLanguage();
   const [toggleState, setToggleState] = useState(1);
+
+  const education = [
+    {
+      title: sentences.background.carrer_henry,
+      place: sentences.background.carrer_place_henry,
+      degree: sentences.background.carrer_degree_henry,
+      status: sentences.background.carrer_status_henry,
+      date: sentences.background.carrer_date_henry,
+    },
+    {
+      title: sentences.background.carrer_zegel,
+      place: sentences.background.carrer_place_zegel,
+      degree: sentences.background.carrer_degree_zegel,
+      status: sentences.background.carrer_status_zegel,
+      date: sentences.background.carrer_date_zegel,
+    },
+    {
+      title: sentences.background.carrer_upc,
+      place: sentences.background.carrer_place_upc,
+      degree: sentences.background.carrer_degree_upc,
+      status: sentences.background.carrer_status_upc,
+      date: sentences.background.carrer_date_upc,
+    },
+  ];
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -119,7 +143,7 @@ export default function Background() {
 
                       <div className="company_name">
                         <FaRegBuilding className="icon_office" />
-                        <p className="text-job">{job.company}</p>
+                        <p>{job.company}</p>
                       </div>
 
                       <div className="flex items-center gap-1 mt-2">
@@ -164,26 +188,7 @@ export default function Background() {
             }
           >
             <div className="timeline-wrapper">
-              {[
-                {
-                  title: sentences.background.carrer_henry,
-                  place: sentences.background.carrer_place_henry,
-                  status: sentences.background.carrer_status_henry,
-                  date: sentences.background.carrer_date_henry,
-                },
-                {
-                  title: sentences.background.carrer_zegel,
-                  place: sentences.background.carrer_place_zegel,
-                  status: sentences.background.carrer_status_zegel,
-                  date: sentences.background.carrer_date_zegel,
-                },
-                {
-                  title: sentences.background.carrer_upc,
-                  place: sentences.background.carrer_place_upc,
-                  status: sentences.background.carrer_status_upc,
-                  date: sentences.background.carrer_date_upc,
-                },
-              ].map((item, index) => {
+              {education.map((item, index) => {
                 const isLeft = index % 2 === 0;
 
                 return (
@@ -198,11 +203,16 @@ export default function Background() {
                       <h3 className="training__core-title">{item.title}</h3>
 
                       <div className="company_name">
-                        <FaRegBuilding className="icon_office" />
-                        <span className="text-job">{item.place}</span>
+                        <FaRegBuilding className="font-[1rem]" />
+                        <span>{item.place}</span>
                       </div>
 
-                      <div className="mt-4 training__core-subtitle">
+                      <div className="company_name">
+                        <FaGraduationCap className="font-[1.5rem]" />
+                        <span>{item.degree}</span>
+                      </div>
+
+                      <div className="md:my-2 my-1 training__core-subtitle">
                         {item.status}
                       </div>
 
