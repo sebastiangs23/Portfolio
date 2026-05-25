@@ -1,0 +1,20 @@
+@keyframes mouseScrollHint {
+  0% {
+    transform: translateY(-6px);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-6px);
+    opacity: 0.7;
+  }
+}
+
+.animate-scroll-down {
+  animation: mouseScrollHint 1.3s ease-in-out infinite;
+}

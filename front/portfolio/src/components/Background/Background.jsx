@@ -2,12 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../Language/Language";
 import { FaLaptopCode, FaRegBuilding } from "react-icons/fa";
+import TimelineItem from "./components/TimeLineItem.jsx";
 import "./Background.css";
 
 export default function Background() {
-  const [toggleState, setToggleState] = useState(1);
-  const { sentences } = useLanguage();
   const timelineRefs = useRef([]);
+  const { sentences } = useLanguage();
+  const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -44,38 +45,6 @@ export default function Background() {
       observer.disconnect();
     };
   }, [toggleState, sentences]);
-
-  const TimelineItem = ({
-    children,
-    isLeft,
-    index,
-    refIndex,
-    showEmptyRight = true,
-  }) => {
-    return (
-      <div
-        ref={(el) => setTimelineRef(el, refIndex)}
-        className="training__core-data-content-each timeline-item"
-        style={{ transitionDelay: `${index * 120}ms` }}
-      >
-        {isLeft ? (
-          <div className="timeline-card">{children}</div>
-        ) : (
-          <div className="timeline-spacer" aria-hidden="true"></div>
-        )}
-
-        <div className="timeline-center">
-          <span className="training__timeline-rounder"></span>
-        </div>
-
-        {!isLeft ? (
-          <div className="timeline-card">{children}</div>
-        ) : showEmptyRight ? (
-          <div className="timeline-spacer" aria-hidden="true"></div>
-        ) : null}
-      </div>
-    );
-  };
 
   return (
     <section className="training mt-24" id="background">
@@ -143,6 +112,7 @@ export default function Background() {
                     isLeft={isLeft}
                     index={index}
                     refIndex={index}
+                    setTimelineRef={setTimelineRef}
                   >
                     <div>
                       <h3 className="training__core-title">{job.position}</h3>
@@ -222,6 +192,7 @@ export default function Background() {
                     isLeft={isLeft}
                     index={index}
                     refIndex={100 + index}
+                    setTimelineRef={setTimelineRef}
                   >
                     <div>
                       <h3 className="training__core-title">{item.title}</h3>
@@ -275,6 +246,7 @@ export default function Background() {
                     isLeft={isLeft}
                     index={index}
                     refIndex={200 + index}
+                    setTimelineRef={setTimelineRef}
                   >
                     <div>
                       <h3 className="training__core-title flex items-center gap-2">
