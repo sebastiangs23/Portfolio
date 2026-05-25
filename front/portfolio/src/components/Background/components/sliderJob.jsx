@@ -67,7 +67,6 @@ export default function SliderJob({ slides, type = "web" }) {
           <div ref={trackRef} className="slider-scroll-track">
             {slides.map((s, index) => (
               <article
-                className="slider-scroll-item"
                 key={index}
               >
                 <img

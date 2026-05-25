@@ -14,7 +14,7 @@
 .slider-scroll-viewport {
   width: 100%;
   overflow: hidden;
-}
+} 
 
 .slider-scroll-track {
   display: flex;
@@ -48,7 +48,6 @@
   .slider-scroll-sticky {
     position: sticky;
     top: 1rem;
-    height: 60vh;
     overflow: hidden;
     display: flex;
     align-items: flex-start;
