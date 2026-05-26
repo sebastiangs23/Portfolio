@@ -10,27 +10,16 @@ export default function Background() {
   const { sentences } = useLanguage();
   const [toggleState, setToggleState] = useState(1);
 
-  const education = [
+  const softSkillsItems = [
     {
-      title: sentences.background.carrer_henry,
-      place: sentences.background.carrer_place_henry,
-      degree: sentences.background.carrer_degree_henry,
-      status: sentences.background.carrer_status_henry,
-      date: sentences.background.carrer_date_henry,
+      title: sentences.background.skills_personal,
+      icon: "uil uil-user",
+      items: sentences.background.skills_personal_all || [],
     },
     {
-      title: sentences.background.carrer_zegel,
-      place: sentences.background.carrer_place_zegel,
-      degree: sentences.background.carrer_degree_zegel,
-      status: sentences.background.carrer_status_zegel,
-      date: sentences.background.carrer_date_zegel,
-    },
-    {
-      title: sentences.background.carrer_upc,
-      place: sentences.background.carrer_place_upc,
-      degree: sentences.background.carrer_degree_upc,
-      status: sentences.background.carrer_status_upc,
-      date: sentences.background.carrer_date_upc,
+      title: sentences.background.skills_team,
+      icon: "uil uil-users-alt",
+      items: sentences.background.skills_team_all || [],
     },
   ];
 
@@ -112,6 +101,18 @@ export default function Background() {
             }
             onClick={() => toggleTab(3)}
           >
+            <i className="uil uil-books training__core-icons"></i>
+            <p>{sentences.background.certifications}</p>
+          </div>
+
+          <div
+            className={
+              toggleState === 4
+                ? "training__core-tabs-button training__core-tabs-active"
+                : "training__core-tabs-button"
+            }
+            onClick={() => toggleTab(4)}
+          >
             <i className="uil uil-smile training__core-icons"></i>
             <p>{sentences.background.skill}</p>
           </div>
@@ -188,7 +189,7 @@ export default function Background() {
             }
           >
             <div className="timeline-wrapper">
-              {education.map((item, index) => {
+              {sentences.background.educationItems?.map((item, index) => {
                 const isLeft = index % 2 === 0;
 
                 return (
@@ -200,7 +201,7 @@ export default function Background() {
                     setTimelineRef={setTimelineRef}
                   >
                     <div>
-                      <h3 className="training__core-title">{item.title}</h3>
+                      <h3 className="training__core-title">{item.carrer}</h3>
 
                       <div className="company_name">
                         <FaRegBuilding className="font-[1rem]" />
@@ -227,7 +228,7 @@ export default function Background() {
             </div>
           </div>
 
-          {/* SOFT SKILLS */}
+          {/* CERTIFICATIONS */}
           <div
             className={
               toggleState === 3
@@ -236,18 +237,7 @@ export default function Background() {
             }
           >
             <div className="timeline-wrapper">
-              {[
-                {
-                  title: sentences.background.skills_personal,
-                  icon: "uil uil-user",
-                  items: sentences.background.skills_personal_all || [],
-                },
-                {
-                  title: sentences.background.skills_team,
-                  icon: "uil uil-users-alt",
-                  items: sentences.background.skills_team_all || [],
-                },
-              ].map((item, index) => {
+              {sentences.background.certificationItems?.map((item, index) => {
                 const isLeft = index % 2 === 0;
 
                 return (
@@ -256,6 +246,52 @@ export default function Background() {
                     isLeft={isLeft}
                     index={index}
                     refIndex={200 + index}
+                    setTimelineRef={setTimelineRef}
+                  >
+                    <div>
+                      <h3>{item.course}</h3>
+
+                      <div className="company_name">
+                        <FaRegBuilding className="font-[1rem]" />
+                        <span>{item.issuedBy}</span>
+                      </div>
+
+                      <div className="training__core-calendar flex items-center gap-1">
+                        <i className="uil uil-calendar-alt"></i>
+                        <span>{item.date}</span>
+                      </div>
+
+                      <div className="training__core-calendar flex items-center gap-1">
+                        <i className="uil uil-link"></i>
+                        <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline cursor-pointer">
+                          {sentences.background.certificationLink}
+                        </a>
+                      </div>
+                    </div>
+                  </TimelineItem>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* SOFT SKILLS */}
+          <div
+            className={
+              toggleState === 4
+                ? "training__core-data-content training__core-data-content-active"
+                : "training__core-data-content"
+            }
+          >
+            <div className="timeline-wrapper">
+              {softSkillsItems?.map((item, index) => {
+                const isLeft = index % 2 === 0;
+
+                return (
+                  <TimelineItem
+                    key={index}
+                    isLeft={isLeft}
+                    index={index}
+                    refIndex={300 + index}
                     setTimelineRef={setTimelineRef}
                   >
                     <div>
