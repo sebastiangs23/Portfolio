@@ -44,7 +44,7 @@ export const sliderLit = [
 /*___________________
 |  TRUST EXCHANGE  */
 import trustHome from "./web/trust-exchange/trustHome.jpg";
-import trustCards from "./web/trust-exchange/trustCards.jpg";
+import trustAbout from "./web/trust-exchange/trustAbout.jpg";
 import trustStrategy from "./web/trust-exchange/trustStrategy.jpg";
 import trustChart from "./web/trust-exchange/trustChart.jpg";
 
@@ -54,8 +54,8 @@ export const sliderTrust = [
     image: trustHome,
   },
   {
-    id: "trustCards",
-    image: trustCards,
+    id: "trustAbout",
+    image: trustAbout,
   },
   {
     id: "trustStrategy",
