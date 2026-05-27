@@ -253,7 +253,7 @@ export default function Background() {
 
                       <div className="company_name">
                         <FaRegBuilding className="font-[1rem]" />
-                        <span>{item.issuedBy}</span>
+                        <span className="italic">Issued by {item.issuedBy}</span>
                       </div>
 
                       <div className="training__core-calendar flex items-center gap-1">

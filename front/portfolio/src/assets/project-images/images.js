@@ -1,102 +1,153 @@
-/*__________
-|   WEB   */
-import trust1 from "./web/trusthome.jpg";
-import trust2 from "./web/trustcards.jpg";
-import trust3 from "./web/Lunar.jpg";
-import trust4 from "./web/chart.jpg";
-import manga1 from "./web/mangalanding.jpg";
-import manga2 from "./web/mangahome.jpg";
-import manga3 from "./web/cms.jpg";
-import manga4 from "./web/mangalogin.jpg";
-import pi1 from "./web/PIhome.jpg";
-import pi2 from "./web/PIcreate.jpg";
-import pi3 from "./web/PIdetails.jpg";
+/*______________________
+|   FRONTEND REVIEW   */
+import frontDashboard from "./web/frontend-review/frontDashboard.png"; 
+import frontCatalog from "./web/frontend-review/frontCatalog.png"; 
+import frontManagePermissions from "./web/frontend-review/frontManagePermissions.png"; 
+import frontLogin from "./web/frontend-review/frontLogin.png"; 
+import frontApi from "./web/frontend-review/frontApi.png";
 
-/*_____________
-|   MOBILE   */
-import login from "./phone/login-canva.png";
-import selectAi from "./phone/select-ia-canva.png";
-import score from "./phone/score-canva.png";
-
-/*____________
-|   OTHER   */
-import blender from "./web/Blender.jpg";
-import blender1 from "./web/blender1.jpg";
-import blender2 from "./web/blender2.jpg";
-
-export {
-  trust1,
-  trust2,
-  trust3,
-  trust4,
-  manga1,
-  manga2,
-  manga3,
-  manga4,
-  pi1,
-  pi2,
-  pi3,
-};
-
-export const SliderData = [
+export const sliderFront = [
   {
-    image: trust1,
+    id: "frontDashboard",
+    image: frontDashboard,
   },
   {
-    image: trust2,
+    id: "frontCatalog",
+    image: frontCatalog,
   },
   {
-    image: trust3,
+    id: "frontManagePermissions",
+    image: frontManagePermissions,
   },
   {
-    image: trust4,
+    id: "frontApi",
+    image: frontApi,
   },
 ];
 
-export const SliderManga = [
+/*_________________________
+|   LIT ELEMENT PROJECT  */
+import litHome from "./web/lit-project/litLanding.jpg";
+import litLightBox from "./web/lit-project/litLightBox.jpg";
+
+export const sliderLit = [
   {
-    image: manga1,
+    id: "litHome",
+    image: litHome,
   },
   {
-    image: manga3,
+    id: "litLightBox",
+    image: litLightBox,
+  }
+];
+
+/*___________________
+|  TRUST EXCHANGE  */
+import trustHome from "./web/trust-exchange/trustHome.jpg";
+import trustCards from "./web/trust-exchange/trustCards.jpg";
+import trustStrategy from "./web/trust-exchange/trustStrategy.jpg";
+import trustChart from "./web/trust-exchange/trustChart.jpg";
+
+export const sliderTrust = [
+  {
+    id: "trustHome",
+    image: trustHome,
   },
   {
-    image: manga4,
+    id: "trustCards",
+    image: trustCards,
+  },
+  {
+    id: "trustStrategy",
+    image: trustStrategy,
+  },
+  {
+    id: "trustChart",
+    image: trustChart,
   },
 ];
 
-export const SliderPi = [
+/*__________________
+|  ECOMMERCE PF   */
+import ecomDashboard from "./web/ecommerce/ecomDashboard.jpg";
+import ecomLanding from "./web/ecommerce/ecomLanding.jpg";
+import ecomLogin from "./web/ecommerce/ecomLogin.jpg";
+
+export const sliderEcom = [
   {
-    image: pi1,
+    id: "ecomDashboard",
+    image: ecomDashboard,
   },
   {
-    image: pi2,
+    id: "ecomLanding",
+    image: ecomLanding,
   },
   {
-    image: pi3,
+    id: "ecomLogin",
+    image: ecomLogin,
   },
 ];
 
-export const SliderBlender = [
+/*______________
+|  PI HENRY   */
+import piHome from "./web/project-individual/piHome.jpg";
+import piCreate from "./web/project-individual/piCreate.jpg";
+import piRead from "./web/project-individual/piRead.jpg";
+
+export const sliderPi = [
   {
-    image: blender,
+    id: "piHome",
+    image: piHome,
   },
   {
-    image: blender1,
+    id: "piCreate",
+    image: piCreate,
   },
   {
-    image: blender2,
+    id: "piRead",
+    image: piRead,
   },
 ];
 
-export const SliderChatTutor = [
-    {
-        image: login,
-    },
-    {
-        image: selectAi
-    },
-    {
-        image: score
-    }
-]
+/*_______________________
+|   AI TUTOR ENGLISH   */
+import ailogin from "./phone/ai-chat/login-canva.png";
+import aiselectAi from "./phone/ai-chat/select-ia-canva.png";
+import aiscore from "./phone/ai-chat/score-canva.png";
+
+export const sliderAiChat = [
+  {
+    id: "aiLogin",
+    image: ailogin,
+  },
+  {
+    id: "aiSelect",
+    image: aiselectAi,
+  },
+  {
+    id: "aiScore",
+    image: aiscore,
+  },
+];
+
+/*______________
+|   BLENDER   */
+import main from "./web/blender-project/main.jpg";
+import architecture from "./web/blender-project/architecture.jpg";
+import architecture2 from "./web/blender-project/architecture2.jpg";
+
+
+export const sliderBlender = [
+  {
+    id: "main",
+    image: main,
+  },
+  {
+    id: "architecture",
+    image: architecture,
+  },
+  {
+    id: "architecture2",
+    image: architecture2,
+  },
+];

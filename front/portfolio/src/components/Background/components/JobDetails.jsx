@@ -15,6 +15,7 @@ export default function JobDetails({
     <div>
       <ScrollHintModal />
       <h2 className="section__title">{title}</h2>
+      {/* <span>  </span> */}
 
       <div className="flex align-center justify-center md:pt-5 pt-2 md:px-28 px-4 md:text-base text-sm">
         <div>
