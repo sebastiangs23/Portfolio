@@ -5,7 +5,7 @@ export const socialMedia = [
     iconClass: "uil-social-icons uil-envelope",
   },
   {
-    name: "",
+    name: "Linkedin",
     href: "https://www.linkedin.com/in/sebastiangomezsalinas/",
     iconClass: "uil-social-icons uil-linkedin",
   },
@@ -276,6 +276,36 @@ export const sentences = {
       },
     },
     _projects: "Proyectos",
+    project_items: [
+      {
+        id: 0,
+        title: "Proyecto Demo Frontend",
+        description:
+          "Un proyecto demo frontend que muestra funcionalidades reales como autenticación, CRUD de usuarios, permisos, componentes reutilizables, integración con API, gestión de estado, transmisión WebSocket y AWS S3.",
+      },
+      {
+        id: 1,
+        title: "Trust Exchange",
+        description:
+          "Una simulación de exchange de criptomonedas enfocada en préstamos, planes de staking y una introducción a las finanzas descentralizadas. Incluye listado de las 100 principales criptomonedas, búsqueda en tiempo real, noticias cripto, activos en tendencia, componentes personalizados en Figma y gráficos financieros de líneas.",
+      },
+      {
+        id: 2,
+        title: "Lit Elemenet E-commerce",
+        description: "Desarrollo de un e-commerce en JavaScript vanilla en 2 días como evaluación posterior a una capacitación." 
+      },
+      {
+        id: 3,
+        title: "Plataforma E-commerce",
+        description:
+          "Plataforma e-commerce desarrollada con React y Tailwind CSS, con pagos mediante Stripe, promociones, autenticación y perfiles de usuario/administrador.",
+      },
+      {
+        id: 4,
+        title: "AI Chat Tutor",
+        description: "Una aplicación enfocada en la conversación en inglés a través de un chat, donde puedes elegir tu nivel deseado, el tutor que quieras y la conversación de tu elección. Las conversaciones están diseñadas para ayudarte a mejorar tu inglés en escenarios que encontrarás en tu vida cotidiana."
+      }
+    ],
     database: "Base de datos",
   },
   english: {
@@ -535,6 +565,37 @@ export const sentences = {
       },
     },
     _projects: "Projects",
+    project_items: [
+      {
+        id: 0,
+        title: "Frontend Demo Project",
+        description:
+          "A frontend demo project showcasing real-world features like authentication, user CRUD, permissions, reusable components, API integration, state management, WebSocket streaming, and AWS S3.",
+      },
+      {
+        id: 1,
+        title: "Trust Exchange",
+        description:
+          "A cryptocurrency exchange simulation focused on loans, staking plans, and an introduction to decentralized finance. It includes top 100 crypto listings, real-time search, crypto news, trending assets, custom Figma components, and financial line charts.",
+      },
+      {
+        id: 2,
+        title: "Lit Element E-commerce",
+        description:
+          "Development of a vanilla JavaScript e-commerce project in 2 days as a post-training assessment.",
+      },
+      {
+        id: 3,
+        title: "E-commerce Platform",
+        description:
+          "E-commerce platform built with React and Tailwind CSS, featuring Stripe payments, promotions, authentication, and user/admin profiles.",
+      },
+      {
+        id: 4,
+        title: "AI Chat Tutor",
+        description: "An application focused on conversational English through a chat, where you can choose your desired level, the tutor you want, and the conversation of your choice. The conversations are designed to help you improve your English in scenarios you will encounter in your everyday life."
+      }
+    ],
     database: "Database",
   },
 };

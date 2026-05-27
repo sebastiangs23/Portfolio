@@ -2,9 +2,11 @@ import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ImageSlider } from "./ImageSlider";
 import {
-  SliderData,
-  SliderManga,
-  SliderChatTutor,
+  sliderFront,
+  sliderTrust,
+  sliderLit,
+  sliderEcom,
+  sliderAiChat,
 } from "../../assets/project-images/images";
 import phone from "../../assets/projects/phone.svg";
 import web from "../../assets/projects/web.svg";
@@ -18,33 +20,44 @@ export default function Projects() {
     return type === "web"
       ? [
           {
-            id: 1,
-            title: "Trust Exchange",
-            description:
-              "A modern web experience focused on clarity, usability, and strong visual presentation.",
-            slides: SliderData,
+            id: sentences.project_items?.[0].id,
+            title: sentences.project_items?.[0].title,
+            description: sentences.project_items?.[0].description,
+            slides: sliderFront,
             type: "web",
           },
           {
-            id: 2,
-            title: "E-commerce",
-            description:
-              "Responsive product browsing flow with a polished layout and cleaner shopping experience.",
-            slides: SliderManga,
+            id: sentences.project_items?.[1].id,
+            title: sentences.project_items?.[1].title,
+            description: sentences.project_items?.[1].description,
+            slides: sliderTrust,
+            type: "web",
+          },
+          {
+            id: sentences.project_items?.[2].id,
+            title: sentences.project_items?.[2].title,
+            description: sentences.project_items?.[2].description,
+            slides: sliderLit,
+            type: "web",
+          },
+          {
+            id: sentences.project_items?.[3].id,
+            title: sentences.project_items?.[3].title,
+            description: sentences.project_items?.[3].description,
+            slides: sliderEcom,
             type: "web",
           },
         ]
       : [
           {
-            id: 3,
-            title: "Chat Tutor English AI - Mammoth",
-            description:
-              "Mobile-first AI tutor interface designed for a simple, friendly, and immersive experience.",
-            slides: SliderChatTutor,
+            id: sentences.project_items?.[4].id,
+            title: sentences.project_items?.[4].title,
+            description: sentences.project_items?.[4].description,
+            slides: sliderAiChat,
             type: "phone",
           },
         ];
-  }, [type]);
+  }, [type, sentences]);
 
   return (
     <section
