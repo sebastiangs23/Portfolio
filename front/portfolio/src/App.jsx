@@ -35,6 +35,7 @@ export default function App() {
         type: "desktop"
       },
       sentences: sentences.background.work_experience_items[0]?.descriptions.details,
+      url: "https://frontend-review-sgs.vercel.app/" 
     },
     {
       id: "Epam-Neoris",
@@ -45,6 +46,7 @@ export default function App() {
       },
       sentences:
         sentences.background.work_experience_items[1]?.descriptions.details,
+      url: "https://epamneoris.com/"
     },
     {
       id: "Inlearning",
@@ -55,6 +57,7 @@ export default function App() {
       }, 
       sentences:
         sentences.background.work_experience_items[2]?.descriptions.details,
+      url: "https://inlearningescuelas.edu.pe/en/home/"
     },
     {
       id: "Dazlabs",
@@ -62,6 +65,7 @@ export default function App() {
       slider: {
         slides: []
       },
+      url: null
     },
     {
       id: "Inteligenio",
@@ -72,6 +76,7 @@ export default function App() {
       },
       sentences:
       sentences.background.work_experience_items[5]?.descriptions.details,
+      url: null
     },
     {
       id: "Ibc-institute",
@@ -82,6 +87,7 @@ export default function App() {
       },
       sentences:
         sentences.background.work_experience_items[4]?.descriptions.details,
+      url: "https://ibcidiomas.com/"
     },
   ];
 
@@ -115,6 +121,7 @@ export default function App() {
                       slides={item.slider?.slides}
                       typeSlider={item.slider?.type}
                       descriptions={item.sentences}
+                      url={item?.url}
                     />
                   }
                 />
