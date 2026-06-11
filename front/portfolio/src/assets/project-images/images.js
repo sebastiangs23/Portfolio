@@ -1,3 +1,29 @@
+import homeNoon from "./phone/noon-clone/home.png";
+import addressNoon from "./phone/noon-clone/address-modal.png";
+import bestNoon from "./phone/noon-clone/best-picks.png";
+import loginNoon from "./phone/noon-clone/login.png"
+
+/*_________________
+|   NOON CLONE   */
+export const sliderNoon = [
+  {
+    id: "home",
+    image: homeNoon,
+  },
+  {
+    id: "addressNoon",
+    image: addressNoon
+  },
+  {
+    id: "bestNoon",
+    image: bestNoon
+  },
+  {
+    id: "loginNoon",
+    image: loginNoon
+  }
+]
+
 /*______________________
 |   FRONTEND REVIEW   */
 import frontDashboard from "./web/frontend-review/frontDashboard.png"; 

@@ -276,34 +276,46 @@ export const sentences = {
       },
     },
     _projects: "Proyectos",
+    _redirect: "Ver más",
     project_items: [
       {
         id: 0,
-        title: "Proyecto Demo Frontend",
-        description:
-          "Un proyecto demo frontend que muestra funcionalidades reales como autenticación, CRUD de usuarios, permisos, componentes reutilizables, integración con API, gestión de estado, transmisión WebSocket y AWS S3.",
+        title: "Noon App Clone",
+        description: "Desarrollé un frontend ecommerce mobile-first inspirado en Noon utilizando Next.js y React. Me enfoqué en layouts responsivos, una interfaz pixel-perfect, jerarquía visual clara y navegación amigable para el usuario. Creé componentes reutilizables y una estructura frontend escalable para facilitar el mantenimiento y futuras mejoras.",
+        url: "https://noon-clone-next.vercel.app/"
       },
       {
         id: 1,
-        title: "Trust Exchange",
+        title: "Proyecto Demo Frontend",
         description:
-          "Una simulación de exchange de criptomonedas enfocada en préstamos, planes de staking y una introducción a las finanzas descentralizadas. Incluye listado de las 100 principales criptomonedas, búsqueda en tiempo real, noticias cripto, activos en tendencia, componentes personalizados en Figma y gráficos financieros de líneas.",
+          "Un proyecto demo frontend que muestra funcionalidades reales como autenticación, CRUD de usuarios, permisos, componentes reutilizables, integración con API, gestión de estado, transmisión WebSocket y AWS S3.",
+        url: "https://frontend-review-sgs.vercel.app/"
       },
       {
         id: 2,
-        title: "Lit Elemenet E-commerce",
-        description: "Desarrollo de un e-commerce en JavaScript vanilla en 2 días como evaluación posterior a una capacitación." 
+        title: "Trust Exchange",
+        description:
+          "Una simulación de exchange de criptomonedas enfocada en préstamos, planes de staking y una introducción a las finanzas descentralizadas. Incluye listado de las 100 principales criptomonedas, búsqueda en tiempo real, noticias cripto, activos en tendencia, componentes personalizados en Figma y gráficos financieros de líneas.",
+        url: "https://trust-exchange-dy7n5mzm6-sebastiangs23.vercel.app/"
       },
       {
         id: 3,
-        title: "Plataforma E-commerce",
-        description:
-          "Plataforma e-commerce desarrollada con React y Tailwind CSS, con pagos mediante Stripe, promociones, autenticación y perfiles de usuario/administrador.",
+        title: "Lit Elemenet E-commerce",
+        description: "Desarrollo de un e-commerce en JavaScript vanilla en 2 días como evaluación posterior a una capacitación." ,
+        url: null
       },
       {
         id: 4,
+        title: "Plataforma E-commerce",
+        description:
+          "Plataforma e-commerce desarrollada con React y Tailwind CSS, con pagos mediante Stripe, promociones, autenticación y perfiles de usuario/administrador.",
+        url: "https://mymangastore.netlify.app/"
+      },
+      {
+        id: 5,
         title: "AI Chat Tutor",
-        description: "Una aplicación enfocada en la conversación en inglés a través de un chat, donde puedes elegir tu nivel deseado, el tutor que quieras y la conversación de tu elección. Las conversaciones están diseñadas para ayudarte a mejorar tu inglés en escenarios que encontrarás en tu vida cotidiana."
+        description: "Una aplicación enfocada en la conversación en inglés a través de un chat, donde puedes elegir tu nivel deseado, el tutor que quieras y la conversación de tu elección. Las conversaciones están diseñadas para ayudarte a mejorar tu inglés en escenarios que encontrarás en tu vida cotidiana.",
+        url: "https://play.google.com/store/apps/details?id=com.anonymous.EnglishApp"
       }
     ],
     database: "Base de datos",
@@ -565,35 +577,47 @@ export const sentences = {
       },
     },
     _projects: "Projects",
+    _redirect: "See more",
     project_items: [
-      {
-        id: 0,
-        title: "Frontend Demo Project",
-        description:
-          "A frontend demo project showcasing real-world features like authentication, user CRUD, permissions, reusable components, API integration, state management, WebSocket streaming, and AWS S3.",
-      },
-      {
+        {
         id: 1,
-        title: "Trust Exchange",
-        description:
-          "A cryptocurrency exchange simulation focused on loans, staking plans, and an introduction to decentralized finance. It includes top 100 crypto listings, real-time search, crypto news, trending assets, custom Figma components, and financial line charts.",
+        title: "Noon Clone",
+        description: "Built a mobile-first ecommerce frontend inspired by Noon using Next.js and React. Focused on responsive layouts, pixel-perfect UI, clear visual hierarchy, and user-friendly navigation. Created reusable components and a scalable frontend structure to support maintainability and future improvements.",
+        url: "https://noon-clone-next.vercel.app/"
       },
       {
         id: 2,
-        title: "Lit Element E-commerce",
+        title: "Frontend Demo Project",
         description:
-          "Development of a vanilla JavaScript e-commerce project in 2 days as a post-training assessment.",
+          "A frontend demo project showcasing real-world features like authentication, user CRUD, permissions, reusable components, API integration, state management, WebSocket streaming, and AWS S3.",
+        url: "https://frontend-review-sgs.vercel.app/"
       },
       {
         id: 3,
-        title: "E-commerce Platform",
+        title: "Trust Exchange",
         description:
-          "E-commerce platform built with React and Tailwind CSS, featuring Stripe payments, promotions, authentication, and user/admin profiles.",
+          "A cryptocurrency exchange simulation focused on loans, staking plans, and an introduction to decentralized finance. It includes top 100 crypto listings, real-time search, crypto news, trending assets, custom Figma components, and financial line charts.",
+        url: "https://trust-exchange-dy7n5mzm6-sebastiangs23.vercel.app/"
       },
       {
         id: 4,
+        title: "Lit Element E-commerce",
+        description:
+          "Development of a vanilla JavaScript e-commerce project in 2 days as a post-training assessment.",
+        url: null
+      },
+      {
+        id: 5,
+        title: "E-commerce Platform",
+        description:
+          "E-commerce platform built with React and Tailwind CSS, featuring Stripe payments, promotions, authentication, and user/admin profiles.",
+        url: "https://mymangastore.netlify.app/"
+      },
+      {
+        id: 6,
         title: "AI Chat Tutor",
-        description: "An application focused on conversational English through a chat, where you can choose your desired level, the tutor you want, and the conversation of your choice. The conversations are designed to help you improve your English in scenarios you will encounter in your everyday life."
+        description: "An application focused on conversational English through a chat, where you can choose your desired level, the tutor you want, and the conversation of your choice. The conversations are designed to help you improve your English in scenarios you will encounter in your everyday life.",
+        url: "https://play.google.com/store/apps/details?id=com.anonymous.EnglishApp"
       }
     ],
     database: "Database",
