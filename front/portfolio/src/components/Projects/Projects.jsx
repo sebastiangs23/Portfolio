@@ -7,10 +7,12 @@ import {
   sliderLit,
   sliderEcom,
   sliderAiChat,
+  sliderNoon,
 } from "../../assets/project-images/images";
 import phone from "../../assets/projects/phone.svg";
 import web from "../../assets/projects/web.svg";
 import { useLanguage } from "../Language/Language";
+import { BsArrowUpRightCircleFill } from "react-icons/bs";
 
 export default function Projects() {
   const { sentences } = useLanguage();
@@ -20,41 +22,54 @@ export default function Projects() {
     return type === "web"
       ? [
           {
-            id: sentences.project_items?.[0].id,
-            title: sentences.project_items?.[0].title,
-            description: sentences.project_items?.[0].description,
-            slides: sliderFront,
-            type: "web",
-          },
-          {
             id: sentences.project_items?.[1].id,
             title: sentences.project_items?.[1].title,
             description: sentences.project_items?.[1].description,
-            slides: sliderTrust,
+            slides: sliderFront,
             type: "web",
+            url: sentences.project_items?.[1].url,
           },
           {
             id: sentences.project_items?.[2].id,
             title: sentences.project_items?.[2].title,
             description: sentences.project_items?.[2].description,
-            slides: sliderLit,
+            slides: sliderTrust,
             type: "web",
+            url: sentences.project_items?.[2].url,
           },
           {
             id: sentences.project_items?.[3].id,
             title: sentences.project_items?.[3].title,
             description: sentences.project_items?.[3].description,
+            slides: sliderLit,
+            type: "web",
+            url: sentences.project_items?.[3].url,
+          },
+          {
+            id: sentences.project_items?.[4].id,
+            title: sentences.project_items?.[4].title,
+            description: sentences.project_items?.[4].description,
             slides: sliderEcom,
             type: "web",
+            url: sentences.project_items?.[4].url,
           },
         ]
       : [
+          {
+            id: sentences.project_items?.[0].id,
+            title: sentences.project_items?.[0].title,
+            description: sentences.project_items?.[0].description,
+            slides: sliderNoon,
+            type: "phone",
+            url: sentences.project_items?.[0].url,
+          },
           {
             id: sentences.project_items?.[4].id,
             title: sentences.project_items?.[4].title,
             description: sentences.project_items?.[4].description,
             slides: sliderAiChat,
             type: "phone",
+            url: sentences.project_items?.[4].url,
           },
         ];
   }, [type, sentences]);
@@ -83,7 +98,9 @@ export default function Projects() {
             </span>
 
             <button
-              onClick={() => setType((prev) => (prev === "web" ? "phone" : "web"))}
+              onClick={() =>
+                setType((prev) => (prev === "web" ? "phone" : "web"))
+              }
               className="relative flex h-14 w-[120px] items-center rounded-full bg-white/10 p-1 transition focus:outline-none focus:ring-2 focus:ring-white/60"
               aria-label="Toggle project type"
             >
@@ -148,6 +165,24 @@ export default function Projects() {
                     <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-wide text-white/75">
                       {project.type === "web" ? "Web" : "Mobile"}
                     </span>
+
+                    {project.url && (
+                      <div className="group">
+                        <a
+                          className="flex cursor-pointer items-center gap-1  md:gap-2 text-sm text-black transition-colors group-hover:text-gray-500 sm:text-base"
+                          target="_blank"
+                          href={project.url}
+                        >
+                          <span>{sentences._redirect}</span>
+
+                          <BsArrowUpRightCircleFill
+                            className="
+                            text-lg transition-all duration-300 ease-in-out
+                            group-hover:rotate-45 group-hover:scale-110 group-hover:gray-500"
+                          />
+                        </a>
+                      </div>
+                    )}
                   </div>
 
                   <p className="mt-3 max-w-2xl text-sm leading-6 text-black/70 sm:text-base">
